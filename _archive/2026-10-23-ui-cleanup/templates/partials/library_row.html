@@ -1,0 +1,24 @@
+{% load ae %}
+<tr id="lib-{{ kind }}-{{ item.pk }}"{% if saved %} class="flash"{% endif %}>
+  <td>
+    <form hx-post="{% url 'videos:library_tags' kind item.pk %}" hx-target="#lib-{{ kind }}-{{ item.pk }}" hx-swap="outerHTML">
+      <input type="text" name="title" value="{% if kind == 'music' %}{{ item.title }}{% else %}{{ item.name }}{% endif %}" style="font-weight:700;border-color:transparent;padding:4px 6px">
+      <div class="row" style="gap:4px;margin:4px 0">
+        {% if kind == 'music' %}{% for t in item.mood_tags %}<span class="tag {{ t|tagclass }}">{{ t }}</span>{% endfor %}
+        {% else %}{% for t in item.tags %}<span class="tag {{ t|tagclass }}">{{ t }}</span>{% endfor %}{% endif %}
+        <small>· {{ item.duration|mmss }}</small>
+      </div>
+      <details><summary style="font-size:.8rem;color:var(--muted)">teglarni tahrirlash</summary>
+        <div class="row mt-s" style="flex-wrap:nowrap">
+          <input type="text" name="tags" value="{% if kind == 'music' %}{{ item.mood_tags|join:', ' }}{% else %}{{ item.tags|join:', ' }}{% endif %}">
+          {% if kind == 'music' %}<input type="hidden" name="license_note" value="{{ item.license_note }}">{% endif %}
+          <button class="btn sm violet">Saqlash</button>
+        </div>
+      </details>
+      {% if kind == 'music' and item.license_note %}<div class="help" title="{{ item.license_note }}">📄 {{ item.license_note|truncatechars:70 }}</div>{% endif %}
+    </form>
+  </td>
+  <td><audio controls preload="none" src="{{ item.file.url }}"></audio></td>
+  <td><button class="btn ghost sm danger" title="O'chirish" hx-post="{% url 'videos:library_delete' kind item.pk %}"
+      hx-confirm="O'chirilsinmi?" hx-target="#lib-{{ kind }}-{{ item.pk }}" hx-swap="outerHTML">✕</button></td>
+</tr>

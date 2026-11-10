@@ -1,0 +1,87 @@
+{% extends "videos/base.html" %}
+{% load ae %}
+{% block title %}{{ ch.name }} · Kanallar{% endblock %}
+{% block content %}
+<a href="{% url 'videos:channels' %}" class="btn ghost sm">← Kanallar</a>
+<div class="page-head" style="margin-top:8px">
+  <div class="row" style="flex-wrap:nowrap">
+    {% if ch.thumbnail_url %}<img class="avatar" src="{{ ch.thumbnail_url }}" alt="" style="width:64px;height:64px">{% endif %}
+    <div><h1>{{ ch.name }}</h1><p>{{ ch.handle }}{% if ch.last_analyzed_at %} · tahlil: {{ ch.last_analyzed_at|date:"d.m.Y H:i" }}{% endif %}</p></div>
+  </div>
+  <div class="row">
+    <form method="post" action="{% url 'videos:channel_refresh' ch.pk %}" class="inline">{% csrf_token %}
+      <button class="btn" {% if ch.state == 'working' %}disabled{% endif %}>🔄 Qayta tahlil</button></form>
+    {% if ch.youtube_channel_id %}<a class="btn" href="https://www.youtube.com/channel/{{ ch.youtube_channel_id }}" target="_blank" rel="noopener">YouTube ↗</a>{% endif %}
+  </div>
+</div>
+
+{% include "videos/partials/channel_status.html" %}
+
+<div class="grid grid-4">
+  <div class="tile violet"><div class="stat">{{ ch.subscriber_count|compact }}</div><small>obunachi</small></div>
+  <div class="tile orange"><div class="stat">{{ ch.view_count|compact }}</div><small>jami ko'rish</small></div>
+  <div class="tile green"><div class="stat">{% firstof ch.video_count videos|length %}</div><small>video</small></div>
+  <div class="tile sky"><div class="stat">{{ avg_len|default:"—" }}</div><small>o'rtacha uzunlik (daq.)</small></div>
+</div>
+
+<div class="grid grid-main mt">
+  <section>
+    <div class="card">
+      <div class="row spread"><h3>💡 Yangi mavzu takliflari</h3>
+        <form method="post" action="{% url 'videos:channel_suggest' ch.pk %}" class="inline">{% csrf_token %}
+          <button class="btn sm violet" {% if not gemini_ok or ch.state == 'working' %}disabled{% endif %}>✨ Yana 10 ta taklif</button></form></div>
+      {% for s in suggestions %}
+        <div class="list-item">
+          <div style="font-weight:700">{{ s.topic_text }}</div>
+          <small>{{ s.rationale }}</small>
+          <div class="row mt-s">
+            <a class="btn sm primary" href="{% url 'videos:home' %}?suggestion={{ s.pk }}">🎬 Shu videoni yaratish</a>
+            <button class="btn sm ghost" hx-post="{% url 'videos:suggestion_dismiss' s.pk %}" hx-target="closest .list-item" hx-swap="outerHTML">Rad etish</button>
+          </div>
+        </div>
+      {% empty %}
+        <p class="muted" style="margin:0">{% if gemini_ok %}Takliflar yo'q — "Yana 10 ta taklif" tugmasini bosing.{% else %}Takliflar uchun .env ga GEMINI_API_KEY qo'shing.{% endif %}</p>
+      {% endfor %}
+      {% if used %}<details class="mt-s"><summary>Ishlatilgan mavzular ({{ used|length }})</summary>
+        {% for s in used %}<div class="list-item"><small>✅ {{ s.topic_text }}</small></div>{% endfor %}</details>{% endif %}
+    </div>
+
+    <div class="section-title"><h2>🔥 Eng ko'p ko'rilganlar</h2><small>jami {{ total_views|compact }} ko'rish ({{ videos|length }} video)</small></div>
+    <div class="cards">
+      {% for v in top %}
+      <a class="vcard" href="{% url 'videos:watch_reference' v.pk %}">
+        <div class="thumb">{% if v.thumbnail_url %}<img src="{{ v.thumbnail_url }}" alt="" loading="lazy">{% endif %}<span class="dur">{{ v.duration_label }}</span></div>
+        <div class="t">{{ v.title }}</div><div class="m">👁 {{ v.view_count|compact }} · {{ v.published_at|date:"d.m.Y" }}</div>
+      </a>
+      {% endfor %}
+    </div>
+  </section>
+
+  <aside>
+    <div class="card">
+      <h3>🧠 Uslub tahlili (Gemini)</h3>
+      {% if notes %}<dl class="kv">{% for k, v in notes %}<dt>{{ k }}</dt><dd>{{ v }}</dd>{% endfor %}</dl>
+      {% else %}<p class="muted" style="margin:0">Hali tahlil yo'q.</p>{% endif %}
+    </div>
+  </aside>
+</div>
+
+<div class="section-title"><h2>🎞️ Barcha videolar</h2></div>
+<div class="card flat">
+  <table>
+    <thead><tr><th style="width:110px"></th><th>Sarlavha</th><th>Ko'rish</th><th>Layk</th><th>Uzunlik</th><th>Sana</th></tr></thead>
+    <tbody>
+    {% for v in videos %}
+      <tr class="clickable" onclick="location.href='{% url 'videos:watch_reference' v.pk %}'">
+        <td><div class="thumb" style="width:96px">{% if v.thumbnail_url %}<img src="{{ v.thumbnail_url }}" alt="" loading="lazy">{% endif %}</div></td>
+        <td><strong>{{ v.title }}</strong></td><td>{{ v.view_count|compact }}</td><td>{{ v.like_count|compact }}</td>
+        <td>{{ v.duration_label }}</td><td><small>{{ v.published_at|date:"d.m.Y" }}</small></td>
+      </tr>
+    {% empty %}<tr><td colspan="6" class="empty-state">Videolar hali olinmagan.</td></tr>{% endfor %}
+    </tbody>
+  </table>
+</div>
+
+<form method="post" action="{% url 'videos:channel_delete' ch.pk %}" class="mt" onsubmit="return confirm('Kanal va uning takliflari o\'chirilsinmi?')">
+  {% csrf_token %}<button class="btn ghost danger">Kanalni o'chirish</button></form>
+{% endblock %}

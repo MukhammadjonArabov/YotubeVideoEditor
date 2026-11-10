@@ -1,0 +1,37 @@
+<div class="card card-accent" id="flow-auto">
+  <h3>🤖 Flow'ga avtomatik (Chrome kengaytmasi)</h3>
+  <p class="muted" style="margin-top:0">Kengaytma navbatdagi promptni Flow'ga yozadi, natijani kutadi, yuklab oladi va shu yerga yuboradi. Yaroqsiz natijani o'zi qayta so'raydi.
+    O'rnatish: <code>flow_extension/README.md</code>. Kengaytma oynasiga quyidagi tokenni kiriting:</p>
+  <div class="row"><input id="flow-token" value="{{ flow_token }}" readonly style="flex:1;font-size:12px">
+    <button type="button" class="btn sm" onclick="copyText('flow-token', this)">📋</button></div>
+  <form method="post" action="{% url 'videos:flow_character_save' project.pk %}" class="row mt-s">{% csrf_token %}
+    <input name="name" value="{{ project.flow_character }}" placeholder="main_hero" style="max-width:200px">
+    <button class="btn sm">🧍 Flow'dagi qahramon nomini saqlash</button>
+    <small class="muted">Flow'ning <b>Characters</b> bo'limida qahramonni shu nom bilan yarating: kengaytma uni har rasmga biriktiradi.</small></form>
+  <div class="row mt-s">
+    <form method="post" action="{% url 'videos:flow_enqueue' project.pk %}">{% csrf_token %}<input type="hidden" name="kind" value="image">
+      <button class="btn primary">🖼️ Rasmsiz sahnalarni navbatga</button></form>
+    <form method="post" action="{% url 'videos:flow_enqueue' project.pk %}">{% csrf_token %}<input type="hidden" name="kind" value="video">
+      <button class="btn primary">🎬 Hook videolarini navbatga</button></form>
+    <form method="post" action="{% url 'videos:flow_enqueue' project.pk %}" onsubmit="return confirm('Har sahna uchun video juda ko'p Flow krediti oladi (har klip 10-20 kredit). Davom etasizmi?')">{% csrf_token %}<input type="hidden" name="kind" value="video"><input type="hidden" name="scope" value="all">
+      <button class="btn">🎞️ Hamma sahnalarga video</button></form>
+  </div>
+  <form method="post" action="{% url 'videos:flow_auto_render_toggle' project.pk %}" class="row mt-s">{% csrf_token %}
+    <input type="hidden" name="on" value="{% if project.flow_auto_render %}0{% else %}1{% endif %}">
+    <button class="btn {% if project.flow_auto_render %}violet{% endif %}">{% if project.flow_auto_render %}✅ Flow tugagach avtomatik montaj YOQILGAN (o'chirish){% else %}⚙️ Flow tugagach avtomatik montaj qilinsin{% endif %}</button>
+    <small class="muted">Ovoz ham shunda yaratiladi (ElevenLabs krediti ketadi). Ssenariy tasdiqlangan bo'lishi kerak.</small></form>
+  <p class="muted mt-s">📁 Natijalar sahna raqami bilan shu papkaga ham saqlanadi: <code>{{ flow_export_dir }}</code><br>
+    Nomlar: <code>scene_001_image.png</code>, <code>scene_001_video.mp4</code> …</p>
+  <p class="muted mt-s">Navbatda {{ flow_counts.pending }} · Flow'da {{ flow_counts.running }} · Tekshiring {{ flow_counts.review }} · Tayyor {{ flow_counts.done }} · Xato {{ flow_counts.failed }}</p>
+  {% for job in flow_jobs %}
+    <div class="list-item" style="display:flex;gap:10px;align-items:center">
+      <strong style="min-width:38px">{{ job.scene.order|stringformat:"03d" }}</strong>
+      <span>{{ job.get_kind_display }}</span>
+      <span class="muted" style="flex:1">{{ job.get_status_display }}{% if job.attempts %} · {{ job.attempts }}-urinish{% endif %}{% if job.note %} · {{ job.note|truncatechars:90 }}{% endif %}</span>
+      {% if job.result %}<a class="btn sm" href="{{ job.result.url }}" target="_blank">👁️</a>{% endif %}
+      {% if job.status == "review" %}<form method="post" action="{% url 'videos:flow_job_action' job.pk 'approve' %}">{% csrf_token %}<button class="btn sm">✅ Qabul</button></form>{% endif %}
+      {% if job.status == "review" or job.status == "failed" %}<form method="post" action="{% url 'videos:flow_job_action' job.pk 'retry' %}">{% csrf_token %}<button class="btn sm">↻ Qayta</button></form>{% endif %}
+      {% if job.status != "running" %}<form method="post" action="{% url 'videos:flow_job_action' job.pk 'cancel' %}">{% csrf_token %}<button class="btn sm ghost">✖</button></form>{% endif %}
+    </div>
+  {% endfor %}
+</div>

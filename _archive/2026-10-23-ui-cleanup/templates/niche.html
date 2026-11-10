@@ -1,0 +1,76 @@
+{% extends "videos/base.html" %}
+{% load ae %}
+{% block title %}Nisha · AutoExplainer{% endblock %}
+{% block content %}
+<div class="page-head">
+  <div><h1>🎯 Nisha: {{ niche.name }}</h1><p>{{ niche.description }}</p></div>
+</div>
+
+<div class="grid grid-4">
+  <div class="tile violet"><div class="stat">{{ stats.projects }}</div><small>loyiha</small></div>
+  <div class="tile green"><div class="stat">{{ stats.done }}</div><small>tayyor video</small></div>
+  <div class="tile orange"><div class="stat">{{ stats.channels }}</div><small>namuna kanal</small></div>
+  <div class="tile sky"><div class="stat">{{ stats.suggestions }}</div><small>kutilayotgan mavzu taklifi</small></div>
+</div>
+
+<div class="banner violet mt">Bu sozlamalar <strong>har bir</strong> Gemini so'roviga qo'shiladi: ssenariy, mavzu takliflari, rasm uslubi va tekshiruv. Hozircha tizimda bitta nisha bor.</div>
+
+<form method="post" enctype="multipart/form-data" class="grid grid-main mt" id="niche-form">
+  {% csrf_token %}
+  <section class="card card-accent">
+    <h3>📌 Yo'nalish</h3>
+    <div class="grid grid-2">
+      <div class="field"><label>{{ form.name.label }}</label>{{ form.name }}</div>
+      <div class="field"><label>{{ form.name_en.label }}</label>{{ form.name_en }}</div>
+    </div>
+    <div class="field"><label>{{ form.description.label }}</label>{{ form.description }}</div>
+    <div class="field"><label>{{ form.audience.label }}</label>{{ form.audience }}</div>
+    <div class="field"><label>{{ form.tone.label }}</label>{{ form.tone }}</div>
+    <div class="field"><label>{{ form.title_formula.label }}</label>{{ form.title_formula }}</div>
+    <div class="grid grid-2">
+      <div class="field"><label>✅ {{ form.content_pillars.label }}</label>{{ form.content_pillars }}</div>
+      <div class="field"><label>⛔ {{ form.avoid_topics.label }}</label>{{ form.avoid_topics }}</div>
+    </div>
+    <div class="field"><label>🌟 {{ form.originality_rules.label }}</label>{{ form.originality_rules }}
+      <div class="help">YouTube AI-ovozli faceless kanallarni "inauthentic content" uchun tekshiradi — bu qoidalar har ssenariyga o'z fikr va qo'shimcha qiymat qo'shishni majburlaydi.</div></div>
+  </section>
+  <aside class="stack">
+    <div class="card">
+      <h3>🎨 Vizual uslub</h3>
+      <div class="field"><label>{{ form.style_guide.label }}</label>{{ form.style_guide }}</div>
+      <div class="field"><label>{{ form.character_description.label }}</label>{{ form.character_description }}
+        <div class="help">Har rasm so'roviga to'liq qo'shiladi — bosh qahramon sahnadan sahnaga bir xil ko'rinishi uchun. Bosh shakli, soch, soqol bor/yo'qligi, kiyim va uning rangini aniq yozing.</div></div>
+    </div>
+    <div class="card">
+      <h3>🧍 Personaj namunasi</h3>
+      {% if niche.character_reference %}
+        <img src="{{ niche.character_reference.url }}" alt="Personaj namunasi" style="width:100%;border-radius:12px;border:1px solid var(--line)">
+      {% else %}
+        <p class="muted" style="margin-top:0">Hali namuna yo'q. Namuna bo'lsa, har chizilgan rasm unga solishtiriladi va qahramon boshqacha chiqsa avtomatik qayta chiziladi.</p>
+      {% endif %}
+      <div class="field"><label>Rasm yuklash (ixtiyoriy)</label><input type="file" name="character_reference" accept="image/*"></div>
+      <div class="row" style="gap:8px;flex-wrap:wrap">
+        <button class="btn" form="ref-generate">🎨 {% if niche.character_reference %}Qayta chizish{% else %}AI bilan chizish{% endif %}</button>
+        {% if niche.character_reference %}<button class="btn ghost" form="ref-delete">🗑️ O'chirish</button>{% endif %}
+      </div>
+      <div class="help">AI bilan chizish 1 ta rasm limitini sarflaydi (Cloudflare).</div>
+    </div>
+    <div class="card">
+      <h3>⏱️ Standart qiymatlar</h3>
+      <div class="grid grid-2">
+        <div class="field"><label>{{ form.default_minutes.label }}</label>{{ form.default_minutes }}</div>
+        <div class="field"><label>{{ form.default_seconds_per_image.label }}</label>{{ form.default_seconds_per_image }}</div>
+      </div>
+      <div class="field"><label>{{ form.default_mood.label }}</label>{{ form.default_mood }}</div>
+    </div>
+    <div class="card">
+      <h3>📺 Namuna kanallar</h3>
+      {% for c in channels %}<div class="list-item"><a href="{% url 'videos:channel_detail' c.pk %}">{{ c.name }}</a> <small>{{ c.subscriber_count|compact }} obunachi</small></div>
+      {% empty %}<p class="muted" style="margin:0">Hali yo'q. <a href="{% url 'videos:channels' %}">Kanal qo'shish →</a></p>{% endfor %}
+    </div>
+    <button class="btn primary" style="width:100%;justify-content:center">💾 Nishani saqlash</button>
+  </aside>
+</form>
+<form id="ref-generate" method="post" action="{% url 'videos:niche_reference_generate' %}">{% csrf_token %}</form>
+<form id="ref-delete" method="post" action="{% url 'videos:niche_reference_delete' %}">{% csrf_token %}</form>
+{% endblock %}

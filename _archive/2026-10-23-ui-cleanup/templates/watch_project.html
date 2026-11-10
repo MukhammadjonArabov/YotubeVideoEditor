@@ -1,0 +1,34 @@
+{% extends "videos/base.html" %}
+{% load ae %}
+{% block title %}{{ project.title|default:project.topic }} · Tomosha{% endblock %}
+{% block content %}
+<a href="{% url 'videos:watch' %}" class="btn ghost sm">← Tomosha</a>
+<div class="grid grid-main mt-s">
+  <section>
+    <div class="player">
+      {% if project.final_video %}<video src="{{ project.final_video.url }}" controls autoplay preload="metadata"></video>
+      {% elif project.preview_video %}<video src="{{ project.preview_video.url }}" controls preload="metadata"></video>
+      {% else %}<div class="empty">Bu loyihada hali video yo'q.</div>{% endif %}
+    </div>
+    <h1 class="mt-s" style="margin-top:14px">{{ project.title|default:project.topic }}</h1>
+    <div class="row">
+      {% if project.actual_duration_sec %}<span class="pill">⏱ {{ project.actual_duration_sec|mmss }}</span>{% endif %}
+      <span class="pill {{ project.status }}">{{ project.get_status_display }}</span>
+      {% for t in project.tags %}<span class="tag {{ t|tagclass }}">{{ t }}</span>{% endfor %}
+    </div>
+    <div class="row mt-s">
+      <a class="btn violet" href="{% url 'videos:project_detail' project.pk %}">✏️ Studiyada tahrirlash</a>
+      {% if project.final_video %}<a class="btn" href="{{ project.final_video.url }}" download>⬇️ MP4 yuklab olish</a>{% endif %}
+    </div>
+    {% if project.description %}<div class="card mt"><h3>📝 Tavsif</h3><pre class="note">{{ project.description }}</pre></div>{% endif %}
+  </section>
+  <aside>
+    <h3>Boshqa videolar</h3>
+    <div class="stack">
+    {% for p in others %}
+      <a class="vcard" href="{% url 'videos:watch_project' p.pk %}"><div class="thumb">▶</div><div class="t">{{ p.title|default:p.topic }}</div></a>
+    {% empty %}<p class="muted">Boshqa tayyor video yo'q.</p>{% endfor %}
+    </div>
+  </aside>
+</div>
+{% endblock %}

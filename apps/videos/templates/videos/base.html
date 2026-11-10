@@ -1,0 +1,32 @@
+{% load static %}<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}AutoExplainer{% endblock %}</title>
+  <link rel="stylesheet" href="{% static 'css/app.css' %}?v=5">
+  {% block head %}{% endblock %}
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="{% url 'videos:home' %}">🎬 Auto<span>Explainer</span></a>
+    <nav class="nav"><a href="{% url 'videos:home' %}" class="active">🧭 Yo'nalishlar</a></nav>
+  </div>
+</header>
+<main class="wrap">
+  {% if messages %}{% for m in messages %}<div class="banner {{ m.tags }}" style="margin:10px 0;padding:10px 14px;border-radius:10px;background:#eef6ff;border:1px solid #b9d6f5">{{ m }}</div>{% endfor %}{% endif %}
+  {% block content %}{% endblock %}
+</main>
+<script>
+  function copyText(id, btn) {
+    var el = document.getElementById(id);
+    var text = el.value !== undefined ? el.value : el.innerText;
+    navigator.clipboard.writeText(text).then(function () {
+      var old = btn.textContent; btn.textContent = "✅ Nusxalandi";
+      setTimeout(function () { btn.textContent = old; }, 1600);
+    });
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,1090 @@
+{
+ "title": "What Did Ancient Humans Do All NIGHT?",
+ "title_alternatives": [
+  "How Did Ancient Humans Survive 12 Hours of DARKNESS?",
+  "What Ancient Humans Really Did After Sunset",
+  "Why Ancient Humans Never Slept at the Same Time",
+  "The Secret Night Life of Ancient Humans",
+  "How Ancient Humans Spent Half Their Lives in the DARK"
+ ],
+ "description": "For most of human history, the sun went down and twelve hours of darkness began. No lamps, no phones, and predators that could see far better than we could. So what did our ancestors actually do all night? From the first controlled fires a million years ago to 200,000-year-old grass beds, fireside storytelling and star-watching, this is the story of the ancient human night.\n\nWe also look at what modern science says about how people without electricity really sleep, why a whole camp of Hadza hunter-gatherers was almost never asleep at the same time, and what all this means for your own sleep today.\n\nSources:",
+ "tags": [
+  "ancient humans",
+  "human evolution",
+  "prehistoric life",
+  "sleep science",
+  "hunter gatherers",
+  "history of fire",
+  "ancient history",
+  "anthropology",
+  "how humans slept",
+  "stone age",
+  "night time"
+ ],
+ "mood": "mysterious",
+ "sources": [
+  "Wiessner, P. (2014). Embers of society: Firelight talk among the Ju/'hoansi Bushmen. PNAS 111(39).",
+  "Yetish, G. et al. (2015). Natural sleep and its seasonal variations in three pre-industrial societies. Current Biology 25(21).",
+  "Samson, D. R. et al. (2017). Chronotype variation drives night-time sentinel-like behaviour in hunter-gatherers. Proc. R. Soc. B 284.",
+  "Wadley, L. et al. (2020). Fire and grass-bedding construction 200 thousand years ago at Border Cave, South Africa. Science 369.",
+  "Wadley, L. et al. (2011). Middle Stone Age bedding construction and settlement patterns at Sibudu, South Africa. Science 334.",
+  "Berna, F. et al. (2012). Microstratigraphic evidence of in situ fire in the Acheulean strata of Wonderwerk Cave. PNAS 109(20).",
+  "Casiraghi, L. et al. (2021). Moonstruck sleep: Synchronization of human sleep with the moon cycle under field conditions. Science Advances 7(5).",
+  "Ekirch, A. R. (2005). At Day's Close: Night in Times Past. W. W. Norton.",
+  "Tamaki, M. et al. (2016). Night watch in one brain hemisphere during sleep associated with the first-night effect in humans. Current Biology 26(9).",
+  "Falchi, F. et al. (2016). The new world atlas of artificial night sky brightness. Science Advances 2(6).",
+  "Bainbridge, C. M. et al. (2021). Infants relax in response to unfamiliar foreign lullabies. Nature Human Behaviour 5."
+ ],
+ "scenes": [
+  {
+   "narration": "Imagine the sun drops behind the hills, and for the next twelve hours there is no light switch, no phone, no streetlight. Just darkness.",
+   "image_prompt": "The main character standing on a hill at sunset, staring nervously as the last orange light disappears behind distant hills",
+   "beat_type": "hook",
+   "sfx_cue": "riser",
+   "scene_kind": "hero"
+  },
+  {
+   "narration": "And somewhere out there, a leopard can see you perfectly. It needs only about a sixth of the light your eyes need.",
+   "image_prompt": "Two glowing leopard eyes staring out of pitch-black tall grass at night",
+   "beat_type": "hook",
+   "sfx_cue": null,
+   "scene_kind": "fact"
+  },
+  {
+   "narration": "Today you fight the night with a glowing screen until one a.m., then wonder why your brain won't switch off. That problem is ancient.",
+   "image_prompt": "The main character lying awake in a modern bed at night, face lit blue by a smartphone, eyes wide open",
+   "beat_type": "hook",
+   "sfx_cue": null,
+   "scene_kind": "hero"
+  },
+  {
+   "narration": "So tonight we'll walk through an ancient night, hour by hour. And stay for the strangest part: a camp where scientists found everyone asleep at once for just eighteen minutes.",
+   "image_prompt": "A small group of ancient people sleeping around a dim campfire under a starry sky, one figure sitting up awake watching the dark",
+   "beat_type": "hook",
+   "sfx_cue": null,
+   "scene_kind": "fact"
+  },
+  {
+   "narration": "Let's start at sunset. Our guy has maybe twenty minutes of fading light left, and a to-do list that suddenly matters a lot.",
+   "image_prompt": "The main character hurrying across a grassy plain at dusk, carrying a bundle of sticks, glancing back at the sinking sun",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "hero"
+  },
+  {
+   "narration": "Near the equator, where our species began, night lasts about twelve hours every single day of the year. There are no long summer evenings.",
+   "image_prompt": "A wide African savanna at dusk with acacia trees silhouetted against a deep orange and purple sky",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact"
+  },
+  {
+   "narration": "Twelve hours. That's longer than a full workday plus your commute, spent in a kind of dark you've probably never actually experienced.",
+   "image_prompt": "The main character standing in deep darkness, holding his hand in front of his face, squinting, unable to see it",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "hero"
+  },
+  {
+   "narration": "Further north it got even worse. In ice age Europe, winter nights stretched past fifteen hours. Darkness was most of the day.",
+   "image_prompt": "A snowy ice age valley under a long dark winter night sky with faint stars and a thin crescent moon",
+   "beat_type": "build",
+   "sfx_cue": null,
+   "scene_kind": "fact"
+  },
+  {
+   "narration": "And real darkness is shocking. On a cloudy, moonless night, you can't see the ground under your own feet. Every step is a guess.",
+   "image_prompt": "The main character feeling his way forward with both arms stretched out in front of him in a pitch-black landscape",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "hero"
+  },
+  {
+   "narration": "Human eyes take around twenty to thirty minutes to fully adjust to the dark. And even then, we mostly see blurry shades of grey.",
+   "image_prompt": "A large simple drawing of a human eye with a wide dark pupil, surrounded by blurry grey shapes of trees",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact"
+  },
+  {
+   "narration": "Meanwhile, the night shift was waking up. Lions, hyenas and leopards, animals built for exactly the conditions where we're nearly blind.",
+   "image_prompt": "The main character frozen in tall grass at night, eyes wide, as dark shapes of big cats move in the background",
+   "beat_type": "build",
+   "sfx_cue": null,
+   "scene_kind": "hero"
+  },
+  {
+   "narration": "Cats see so well at night partly because of a mirror-like layer behind their eyes. It bounces light back through the eye a second time.",
+   "image_prompt": "Close view of a leopard's face at night with its eyes glowing bright green from reflected light",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact"
+  },
+  {
+   "narration": "So picture being a small, slow, tasty primate in that world. At night, our ancestors weren't the top predator. They were the snack.",
+   "image_prompt": "The main character looking up worriedly at a leopard lounging on a tree branch above him, licking its lips",
+   "beat_type": "punchline",
+   "sfx_cue": "boing",
+   "scene_kind": "hero"
+  },
+  {
+   "narration": "In a South African cave called Swartkrans, researchers found the skull of a young human relative, more than a million years old, with two neat holes in it.",
+   "image_prompt": "An ancient skull fragment resting on a rock, with two small round holes in the back of it",
+   "beat_type": "build",
+   "sfx_cue": null,
+   "scene_kind": "fact"
+  },
+  {
+   "narration": "Those holes match the spacing of a leopard's lower fangs. Scientists think a leopard dragged its meal up into a tree near the cave.",
+   "image_prompt": "The main character crouching at a cave entrance at night, gulping nervously as he peers into the dark",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "hero"
+  },
+  {
+   "narration": "And it wasn't rare. Bones of early human relatives show marks from big cats, hyenas, and even huge eagles that hunted children.",
+   "image_prompt": "A large crowned eagle perched on a dead tree at dusk, looking down over the grassland",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact"
+  },
+  {
+   "narration": "So the first question of every ancient night wasn't, what's for dinner? It was, how do I not become dinner?",
+   "image_prompt": "The main character sitting on a rock at dusk, glancing around nervously with one eyebrow raised",
+   "beat_type": "punchline",
+   "sfx_cue": null,
+   "scene_kind": "hero"
+  },
+  {
+   "narration": "Long before anyone controlled fire, the answer was probably the one chimpanzees still use today: get off the ground.",
+   "image_prompt": "A chimpanzee building a leafy nest high in a tree at dusk, bending branches into a round bowl",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact"
+  },
+  {
+   "narration": "Chimps build a fresh sleeping nest in the treetops almost every night, and it only takes them a few minutes.",
+   "image_prompt": "The main character clumsily trying to bend branches into a nest high in a tree, leaves falling everywhere",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "hero"
+  },
+  {
+   "narration": "Many researchers think our earliest ancestors slept in trees the same way. Some even suspect that's why you sometimes jolt awake feeling like you're falling.",
+   "image_prompt": "Several early human ancestors curled up asleep in leafy nests among the branches of a tall tree under the moon",
+   "beat_type": "punchline",
+   "sfx_cue": null,
+   "scene_kind": "fact"
+  },
+  {
+   "narration": "But at some point, our ancestors became too big, and too committed to walking, to sleep comfortably in trees. They had to come down.",
+   "image_prompt": "The main character climbing down a tree trunk awkwardly, looking at the dark ground below",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "hero"
+  },
+  {
+   "narration": "Homo erectus, nearly two million years ago, had a body a lot like ours. Long legs, shorter arms. Built for walking, not climbing.",
+   "image_prompt": "A tall early human with long legs and short arms walking across open grassland at dusk",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact"
+  },
+  {
+   "narration": "Sleeping on open ground with leopards around sounds like a terrible plan. So what changed? A few things, and the first one was teamwork.",
+   "image_prompt": "The main character lying on the ground with one eye open, surrounded by darkness and rustling grass",
+   "beat_type": "build",
+   "sfx_cue": null,
+   "scene_kind": "hero"
+  },
+  {
+   "narration": "Animals that sleep in bigger groups are harder to ambush. More eyes, more ears, and more chances that someone wakes up and screams.",
+   "image_prompt": "A group of ancient people sleeping close together in a circle on the ground, one person sitting up and pointing into the darkness",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact"
+  },
+  {
+   "narration": "Basically, the oldest security system on Earth was your loudest friend.",
+   "image_prompt": "The main character jolted awake as a friend next to him yells into the night, both of them with their hair standing up",
+   "beat_type": "punchline",
+   "sfx_cue": "pop",
+   "scene_kind": "hero"
+  },
+  {
+   "narration": "Rock shelters and cave mouths helped too. With a wall at your back, danger can only come from one direction.",
+   "image_prompt": "A shallow rock shelter under a cliff at night, with sleeping figures pressed against the back wall",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact"
+  },
+  {
+   "narration": "But the real game changer, the thing that rewrote every human night forever, was a small, crackling, dangerous little flame.",
+   "image_prompt": "The main character staring in amazement at a tiny flame on a pile of dry grass, his face lit orange",
+   "beat_type": "build",
+   "sfx_cue": "riser",
+   "scene_kind": "hero"
+  },
+  {
+   "narration": "Deep inside Wonderwerk Cave in South Africa, scientists found burned bone and plant ash about a million years old.",
+   "image_prompt": "The inside of a deep cave with a small patch of black ash and charred bone fragments on the rocky floor",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact"
+  },
+  {
+   "narration": "A million years. That's how long humans have been staring into fires. No wonder we still find it impossible to look away.",
+   "image_prompt": "The main character sitting cross-legged, completely hypnotized by a campfire, mouth slightly open",
+   "beat_type": "punchline",
+   "sfx_cue": null,
+   "scene_kind": "hero"
+  },
+  {
+   "narration": "By around four hundred thousand years ago, regular fire use shows up at many sites, like Qesem Cave in Israel, with hearths used again and again.",
+   "image_prompt": "A stone ring hearth inside a cave, layered with old ash, with stone tools lying nearby",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact"
+  },
+  {
+   "narration": "Once you have fire, the night stops being a wall. It becomes a room. A warm, glowing room with a door that predators won't walk through.",
+   "image_prompt": "The main character relaxing beside a big campfire while, beyond the circle of light, glowing eyes keep their distance",
+   "beat_type": "build",
+   "sfx_cue": null,
+   "scene_kind": "hero"
+  },
+  {
+   "narration": "Most wild animals avoid flames and smoke. A fire at the cave mouth was a guard that never got sleepy.",
+   "image_prompt": "A cave entrance at night with a bright fire at the opening and a hyena turning away in the darkness outside",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact"
+  },
+  {
+   "narration": "Fire also meant warmth. On a cold night, a hearth could be the difference between a bad night's sleep and not waking up at all.",
+   "image_prompt": "The main character shivering under a thin fur, then scooting closer to a fire with a look of relief",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "hero"
+  },
+  {
+   "narration": "And it meant cooking. Cooked food is softer and easier to digest, and some scientists argue it helped fuel our big, hungry brains.",
+   "image_prompt": "Chunks of meat and roots roasting on sticks over glowing red embers",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact"
+  },
+  {
+   "narration": "Put it all together, and fire gave our ancestors something incredible: a second day, squeezed into the night.",
+   "image_prompt": "The main character stretching happily beside the fire under a starry sky, as if it were morning",
+   "beat_type": "punchline",
+   "sfx_cue": "ding",
+   "scene_kind": "hero"
+  },
+  {
+   "narration": "So what did they actually do with those extra hours? Luckily, we can learn a lot from people who lived without electric light until recently.",
+   "image_prompt": "A hunter-gatherer camp in the dry Kalahari at dusk, small grass huts and a fire being lit",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact"
+  },
+  {
+   "narration": "And the answer is so human it's almost funny. During the day, people talked about work. At night, they told stories.",
+   "image_prompt": "The main character waving his arms dramatically, telling a story to a small group around the fire",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "hero"
+  },
+  {
+   "narration": "In the nineteen seventies, anthropologist Polly Wiessner recorded conversations among the Ju'hoansi people of the Kalahari, by day and by night.",
+   "image_prompt": "A group of Kalahari people sitting under a tree in daylight, talking, one person pointing toward the land",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact"
+  },
+  {
+   "narration": "In daytime talk, only about six percent was storytelling. Most of it was practical stuff: food, land, and complaining about who wasn't sharing.",
+   "image_prompt": "The main character standing with arms crossed, grumbling, as another man eats a big piece of fruit by himself",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "hero"
+  },
+  {
+   "narration": "But by firelight, the numbers flipped. Around eighty percent of the conversation was stories.",
+   "image_prompt": "A circle of people around a fire at night, leaning in to listen to an older woman who is gesturing as she speaks",
+   "beat_type": "build",
+   "sfx_cue": null,
+   "scene_kind": "fact"
+  },
+  {
+   "narration": "Stories about funny mistakes, old hunts, marriages, neighbours and spirits. Basically, the original late-night TV.",
+   "image_prompt": "The main character laughing so hard that he falls backwards off his log beside the fire",
+   "beat_type": "punchline",
+   "sfx_cue": "boing",
+   "scene_kind": "hero"
+  },
+  {
+   "narration": "Wiessner argues these fireside stories did real work. They spread knowledge, built trust, and taught people how to live together.",
+   "image_prompt": "An older man by a fire showing children how to hold a spear while others watch",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact"
+  },
+  {
+   "narration": "Think about it. No books, no internet. If you wanted to know which plant could kill you, or how a leopard hunts, someone told you. At night.",
+   "image_prompt": "The main character listening wide-eyed as an elder describes something scary with clawed hand gestures",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "hero"
+  },
+  {
+   "narration": "Some stories may even preserve real events. Researchers think certain Aboriginal Australian stories remember coastlines that flooded more than seven thousand years ago.",
+   "image_prompt": "An ancient coastline with rising waves slowly covering low land and small islands under a cloudy sky",
+   "beat_type": "build",
+   "sfx_cue": null,
+   "scene_kind": "fact"
+  },
+  {
+   "narration": "Seven thousand years of retelling. That's the longest game of telephone in history, and somehow they kept the plot.",
+   "image_prompt": "The main character whispering into another person's ear, who whispers to the next, in a long line around the fire",
+   "beat_type": "punchline",
+   "sfx_cue": null,
+   "scene_kind": "hero"
+  },
+  {
+   "narration": "Firelight also gave hands something to do. Fixing tools, scraping hides and twisting cord could all happen in the glow.",
+   "image_prompt": "Hands sharpening a stone blade by firelight, with flakes of stone scattered on a leather mat",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact"
+  },
+  {
+   "narration": "So picture it. Someone is fixing a spear, someone is feeding a baby, and someone is telling the same story for the tenth time.",
+   "image_prompt": "The main character rolling his eyes and mouthing along as an old man retells a familiar story by the fire",
+   "beat_type": "punchline",
+   "sfx_cue": null,
+   "scene_kind": "hero"
+  },
+  {
+   "narration": "Music probably joined in, too. Flutes carved from bird bone and mammoth ivory, found in caves in Germany, are around forty thousand years old.",
+   "image_prompt": "An ancient bone flute with finger holes lying on a cave floor beside a small stone lamp",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact"
+  },
+  {
+   "narration": "Imagine hearing one of those flutes drifting across a pitch-black valley. Probably the coolest sound anyone heard all week.",
+   "image_prompt": "The main character playing a small bone flute by the fire with his eyes closed while others sway",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "hero"
+  },
+  {
+   "narration": "Fire also lit up the most famous art of the ice age. Painters in caves like Lascaux worked by the light of small stone lamps.",
+   "image_prompt": "A small carved stone lamp burning animal fat with a tiny flame inside a dark cave",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact"
+  },
+  {
+   "narration": "Those lamps burned animal fat with a little wick. The light was dim, smoky and flickering. Basically, the worst flashlight ever.",
+   "image_prompt": "The main character holding up a smoking stone lamp in a cave, coughing and squinting at the wall",
+   "beat_type": "punchline",
+   "sfx_cue": null,
+   "scene_kind": "hero"
+  },
+  {
+   "narration": "Some researchers think the flicker was part of the show. In moving light, painted animals drawn with extra legs can seem to run.",
+   "image_prompt": "Cave paintings of horses and bison on a rock wall, lit unevenly by flickering orange lamplight",
+   "beat_type": "build",
+   "sfx_cue": null,
+   "scene_kind": "fact"
+  },
+  {
+   "narration": "Which means the first animation might not have been a cartoon on a screen. It may have been a horse on a cave wall, at night.",
+   "image_prompt": "The main character staring in awe as painted horses seem to gallop along the cave wall in the lamplight",
+   "beat_type": "punchline",
+   "sfx_cue": "ding",
+   "scene_kind": "hero"
+  },
+  {
+   "narration": "Of course, staying up late had a cost. Firewood had to be collected in daylight, and a big fire eats through a lot of it.",
+   "image_prompt": "A large pile of dry branches stacked beside a grass hut in late afternoon light",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact"
+  },
+  {
+   "narration": "So someone had the glamorous job of collecting wood all afternoon, and then getting yelled at when the fire went out.",
+   "image_prompt": "The main character struggling under a giant bundle of sticks, sweating, while others point at a dying fire",
+   "beat_type": "punchline",
+   "sfx_cue": null,
+   "scene_kind": "hero"
+  },
+  {
+   "narration": "When the fire burned low, people looked up. And an ancient night sky looked nothing like the one you see today.",
+   "image_prompt": "A brilliant ancient night sky full of stars, the bright band of the Milky Way arching over dark hills",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact"
+  },
+  {
+   "narration": "With no light pollution, thousands of stars were visible. The Milky Way stretched across the sky like a glowing river.",
+   "image_prompt": "The main character lying on his back on a rock, jaw dropped, staring up at a sky packed with stars",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "hero"
+  },
+  {
+   "narration": "Today, more than a third of humanity can't see the Milky Way at all, because of artificial light.",
+   "image_prompt": "A modern city at night glowing orange, with an empty grey starless sky above it",
+   "beat_type": "build",
+   "sfx_cue": null,
+   "scene_kind": "fact"
+  },
+  {
+   "narration": "So in one weird way, our ancestors were richer than us. Every clear night, they got a show that most of us have never seen.",
+   "image_prompt": "The main character in a modern city looking up sadly at a blank orange sky, holding a smartphone",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "hero"
+  },
+  {
+   "narration": "The moon mattered even more. Its light changed what was possible at night, and its cycle worked like a natural calendar.",
+   "image_prompt": "A bright full moon rising over a savanna, casting long silver shadows from the acacia trees",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact"
+  },
+  {
+   "narration": "On bright moonlit nights, you could walk, gather and visit the neighbours. On dark nights, you stayed close to the fire.",
+   "image_prompt": "The main character walking confidently along a moonlit path carrying a basket, his shadow beside him",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "hero"
+  },
+  {
+   "narration": "A twenty twenty-one study of communities in Argentina and the United States found people slept later, and less, in the nights before a full moon.",
+   "image_prompt": "Small rural houses under a bright full moon, with a few people still sitting outside, talking",
+   "beat_type": "build",
+   "sfx_cue": null,
+   "scene_kind": "fact"
+  },
+  {
+   "narration": "Even with electricity, their sleep seemed to shift with the moon. The researchers suspect it's an old habit of using bright nights.",
+   "image_prompt": "The main character tossing in bed by a window as bright moonlight streams across his face",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "hero"
+  },
+  {
+   "narration": "Some ancient objects may even be early moon records. A carved bone from France, around thirty thousand years old, is covered in a winding trail of tiny marks.",
+   "image_prompt": "An ancient flat bone plaque carved with a winding pattern of tiny dots and notches",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact"
+  },
+  {
+   "narration": "Some researchers think it tracks the phases of the moon. Others say it's just decoration. Either way, someone sat by a fire and carved it.",
+   "image_prompt": "The main character carefully notching marks into a bone by firelight, glancing up at the moon",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "hero"
+  },
+  {
+   "narration": "Stars were practical, too. Many traditional peoples watched for certain stars rising at dawn to time seasons, journeys and harvests.",
+   "image_prompt": "A group of people on a hill at dawn pointing at a bright star rising above the horizon",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact"
+  },
+  {
+   "narration": "So the night sky was a clock, a calendar and a giant storybook, all in one. No subscription required.",
+   "image_prompt": "The main character pointing up at the stars and then down at a pile of nuts, as if planning the season",
+   "beat_type": "punchline",
+   "sfx_cue": null,
+   "scene_kind": "hero"
+  },
+  {
+   "narration": "And the darkness itself shaped belief. Across cultures, the night became the home of spirits, ancestors and monsters.",
+   "image_prompt": "Shadowy shapes of trees at night that look like creatures, with a small campfire glowing in the distance",
+   "beat_type": "build",
+   "sfx_cue": null,
+   "scene_kind": "fact"
+  },
+  {
+   "narration": "Which makes sense. If a strange noise outside could be a leopard, it paid to imagine the scary thing first and ask questions later.",
+   "image_prompt": "The main character jumping in fright at a noise in the bushes, which turns out to be a tiny rabbit",
+   "beat_type": "punchline",
+   "sfx_cue": "boing",
+   "scene_kind": "hero"
+  },
+  {
+   "narration": "Psychologists compare this to a smoke detector. Better a hundred false alarms than missing the one real fire.",
+   "image_prompt": "A group of ancient people startled awake by a rustle, all looking toward the same dark bush",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact"
+  },
+  {
+   "narration": "Spirits were scary. But some of the real dangers of the night were much, much smaller. And they buzzed.",
+   "image_prompt": "The main character swatting at the air around his head by the fire, looking annoyed",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "hero"
+  },
+  {
+   "narration": "Most malaria-carrying mosquitoes bite between dusk and dawn. For people living near water, night was their feeding time.",
+   "image_prompt": "A swarm of mosquitoes over a dark marsh at night, lit by moonlight",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact"
+  },
+  {
+   "narration": "Malaria has shaped humans so deeply that it left marks in our DNA. The sickle cell trait spread partly because it protects against it.",
+   "image_prompt": "The main character sitting very still while a mosquito lands on his arm, his eyes crossing as he stares at it",
+   "beat_type": "build",
+   "sfx_cue": null,
+   "scene_kind": "hero"
+  },
+  {
+   "narration": "Smoke may have helped. Many traditional groups sleep near smoky fires, and some of the plants they burn have insect-repelling scents.",
+   "image_prompt": "Thick white smoke drifting from a fire over sleeping people inside a grass hut",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact"
+  },
+  {
+   "narration": "So your choice was: get bitten all night, or sleep in a cloud of smoke and wake up smelling like a barbecue.",
+   "image_prompt": "The main character waking up coughing in a smoky hut, his face covered in soot",
+   "beat_type": "punchline",
+   "sfx_cue": "pop",
+   "scene_kind": "hero"
+  },
+  {
+   "narration": "Cold was another silent danger. In deserts like the Kalahari, winter nights can drop below freezing, even after a hot day.",
+   "image_prompt": "A desert landscape at night with frost on the sand and dry bushes under a clear starry sky",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact"
+  },
+  {
+   "narration": "A still, sleeping body loses heat steadily. And you can't exactly wander off to find more firewood in the dark.",
+   "image_prompt": "The main character hugging his knees and shivering, staring at a small fire with only one stick left",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "hero"
+  },
+  {
+   "narration": "That's why firewood was gathered before sunset, and why many groups kept a fire going through the whole night.",
+   "image_prompt": "A pile of firewood beside a hut with a fire glowing low at night",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact"
+  },
+  {
+   "narration": "And then there was the scariest walk of all: going to the toilet at night.",
+   "image_prompt": "The main character tiptoeing away from the fire into dark bushes, clutching a stick, looking terrified",
+   "beat_type": "punchline",
+   "sfx_cue": "boing",
+   "scene_kind": "hero"
+  },
+  {
+   "narration": "Leaving the light meant leaving safety. The edge of the firelight was the riskiest place in camp.",
+   "image_prompt": "The dark edge of a circle of firelight, with tall grass and faint glowing eyes beyond it",
+   "beat_type": "build",
+   "sfx_cue": null,
+   "scene_kind": "fact"
+  },
+  {
+   "narration": "So ancient people probably went in pairs, stayed close, and finished very, very quickly.",
+   "image_prompt": "The main character and a friend sprinting back toward the fire, looking over their shoulders",
+   "beat_type": "punchline",
+   "sfx_cue": null,
+   "scene_kind": "hero"
+  },
+  {
+   "narration": "Rain made everything harder. A wet night meant a smoky, sputtering fire, soaked bedding, and nowhere dry to go.",
+   "image_prompt": "Heavy rain falling past a rock shelter at night, with a weak fire hissing under the overhang",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact"
+  },
+  {
+   "narration": "On those nights, a dry cave wasn't just shelter. It was the best real estate on the planet.",
+   "image_prompt": "The main character squeezing into a crowded dry cave, grinning while rain pours down outside",
+   "beat_type": "punchline",
+   "sfx_cue": null,
+   "scene_kind": "hero"
+  },
+  {
+   "narration": "Some caves were used again and again for thousands of years. Good shelters were remembered, and people came back to them.",
+   "image_prompt": "A large cave mouth with a ceiling blackened by ancient fires and thick layers of ash on the floor",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact"
+  },
+  {
+   "narration": "Another reason stories mattered. Knowing where the dry cave was, and which one had a bear inside, was life or death.",
+   "image_prompt": "The main character peeking into a cave and backing away fast as a huge bear opens its eyes",
+   "beat_type": "punchline",
+   "sfx_cue": "impact",
+   "scene_kind": "hero"
+  },
+  {
+   "narration": "In ice age Europe, cave bears hibernated in caves, and in some caves their bones have been found by the thousands.",
+   "image_prompt": "Large cave bear skulls and bones scattered across a dark cave floor",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact"
+  },
+  {
+   "narration": "Now, if the night was hard for adults, imagine being a baby. No crib, no nursery, no baby monitor.",
+   "image_prompt": "The main character holding a tiny baby by the fire, looking unsure what to do",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "hero"
+  },
+  {
+   "narration": "For almost all of human history, babies slept right next to their mothers. In many cultures, they still do.",
+   "image_prompt": "A mother sleeping on a fur with a baby curled up beside her near a warm fire",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact"
+  },
+  {
+   "narration": "Babies wake up a lot to feed. Sleeping close meant a quick feed and back to sleep, with nobody walking anywhere in the dark.",
+   "image_prompt": "The main character half asleep while a baby next to him wakes and is quickly comforted by its mother",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "hero"
+  },
+  {
+   "narration": "And to calm them, people sang. Studies of music around the world find lullabies in every culture researchers have looked at.",
+   "image_prompt": "A woman gently rocking a baby by the fire, softly singing, while other people sleep nearby",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact"
+  },
+  {
+   "narration": "Even stranger, babies tend to relax to lullabies from cultures they've never heard. Something in those slow, soft songs is universal.",
+   "image_prompt": "The main character singing badly to a crying baby, who stops crying and smiles anyway",
+   "beat_type": "punchline",
+   "sfx_cue": null,
+   "scene_kind": "hero"
+  },
+  {
+   "narration": "Fear of the dark is also very common in young children all over the world. Some scientists think it was once a useful instinct.",
+   "image_prompt": "A small child peeking out from under a fur blanket at the dark doorway of a hut",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact"
+  },
+  {
+   "narration": "A toddler who screams when left alone in the dark is annoying. But a toddler who wanders off quietly at night might never come back.",
+   "image_prompt": "The main character catching a toddler crawling toward the dark edge of camp and pulling him back to the fire",
+   "beat_type": "build",
+   "sfx_cue": null,
+   "scene_kind": "hero"
+  },
+  {
+   "narration": "So that bedtime fear your kids have? It may be one of the oldest safety features in the human brain.",
+   "image_prompt": "Two children sleeping close to their parents in the warm glow of the embers",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact"
+  },
+  {
+   "narration": "Eventually, though, everyone has to sleep. So let's talk about something ancient humans cared about more than you'd think: beds.",
+   "image_prompt": "The main character yawning hugely beside a dying fire, rubbing his eyes",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "hero"
+  },
+  {
+   "narration": "In Border Cave, South Africa, archaeologists found layers of grass bedding at least two hundred thousand years old.",
+   "image_prompt": "A cross-section of a cave floor showing layers of flattened dry grass and pale grey ash",
+   "beat_type": "build",
+   "sfx_cue": null,
+   "scene_kind": "fact"
+  },
+  {
+   "narration": "Two hundred thousand years ago, someone was already fluffing a mattress. Grass, laid down near the fire, against the cave wall.",
+   "image_prompt": "The main character happily patting down a pile of soft grass into a bed near a cave wall",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "hero"
+  },
+  {
+   "narration": "And here's the clever part. The grass was laid on top of ash, which may have helped keep crawling insects away from sleepers.",
+   "image_prompt": "A close view of dry grass bedding laid over a layer of grey ash, with a beetle crawling away from it",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact"
+  },
+  {
+   "narration": "So humans invented the bug-proof mattress long before they invented writing. Priorities.",
+   "image_prompt": "The main character lying smugly on his grass bed while ants march around it without climbing on",
+   "beat_type": "punchline",
+   "sfx_cue": "pop",
+   "scene_kind": "hero"
+  },
+  {
+   "narration": "At Sibudu Cave, beds around seventy-seven thousand years old included leaves from a tree with natural insect-repelling chemicals.",
+   "image_prompt": "Green aromatic leaves layered over sedge stems as a sleeping mat on a cave floor",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact"
+  },
+  {
+   "narration": "There's also evidence that old bedding was burned now and then. Probably to clean it, and to kill whatever had moved in.",
+   "image_prompt": "The main character carrying an armful of old grass toward the fire while holding his nose",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "hero"
+  },
+  {
+   "narration": "Beds were shared, too. Sleeping close together kept people warm, and warmth was precious on cold nights.",
+   "image_prompt": "A family of ancient people sleeping huddled together under furs near warm embers",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact"
+  },
+  {
+   "narration": "Personal space? Not really a thing. You slept with your family, your neighbour's elbows, and probably a few fleas.",
+   "image_prompt": "The main character squeezed between two snoring people, trying to find room, scratching a flea bite",
+   "beat_type": "punchline",
+   "sfx_cue": null,
+   "scene_kind": "hero"
+  },
+  {
+   "narration": "Furs and hides made the best blankets. Bone needles with eyes appear at least forty thousand years ago, a sign of sewn, fitted clothing.",
+   "image_prompt": "An ancient bone needle with a small eye lying on a soft fur hide",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact"
+  },
+  {
+   "narration": "So by the ice age, a good night in the north meant layers of fur, a crackling hearth, and a pile of warm bodies.",
+   "image_prompt": "The main character bundled in thick furs by a fire, looking cozy while snow falls outside the cave",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "hero"
+  },
+  {
+   "narration": "Eventually, dogs may have joined the pile. Genetic and fossil evidence suggests dogs were domesticated at least fifteen thousand years ago.",
+   "image_prompt": "A wolf-like dog curled up asleep beside a sleeping ancient person near a fire",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact"
+  },
+  {
+   "narration": "A dog by the fire is warm, alert, and has far better ears than you. Honestly, a better guard than your loudest friend.",
+   "image_prompt": "The main character sleeping peacefully while a dog beside him pricks up its ears at the dark",
+   "beat_type": "punchline",
+   "sfx_cue": null,
+   "scene_kind": "hero"
+  },
+  {
+   "narration": "But even with fire, beds and dogs, ancient people didn't sleep the way we imagine. And this is where it gets really interesting.",
+   "image_prompt": "A dim camp at night with the fire burning low and several dark sleeping shapes around it",
+   "beat_type": "build",
+   "sfx_cue": "riser",
+   "scene_kind": "fact"
+  },
+  {
+   "narration": "A lot of people believe our ancestors slept ten or twelve hours a night and woke up fresh with the sun. Scientists decided to check.",
+   "image_prompt": "The main character sleeping blissfully with a huge smile under a giant glowing moon",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "hero"
+  },
+  {
+   "narration": "In twenty fifteen, researchers tracked the sleep of three groups who live without electricity: the Hadza of Tanzania, the San of Namibia and the Tsimane of Bolivia.",
+   "image_prompt": "Three small traditional villages side by side: one in dry bushland, one in desert, one in green forest",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact"
+  },
+  {
+   "narration": "Surprise. They didn't sleep more than us. On average, they slept roughly six to seven hours a night.",
+   "image_prompt": "The main character waking up in the dark before dawn, stretching, looking surprisingly wide awake",
+   "beat_type": "punchline",
+   "sfx_cue": "ding",
+   "scene_kind": "hero"
+  },
+  {
+   "narration": "That's about the same as people in industrial countries. So short sleep isn't only a modern problem.",
+   "image_prompt": "A modern office worker asleep at a desk beside an ancient person asleep by a fire",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact"
+  },
+  {
+   "narration": "But here's the twist. They didn't go to bed at sunset. On average, they fell asleep about three hours after dark.",
+   "image_prompt": "The main character sitting wide awake by the fire long after sunset, chatting and laughing",
+   "beat_type": "build",
+   "sfx_cue": null,
+   "scene_kind": "hero"
+  },
+  {
+   "narration": "Those first hours of the night were for fire, food and stories. Exactly the evening we just walked through.",
+   "image_prompt": "People eating around a fire in the early night, passing pieces of roasted root to one another",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact"
+  },
+  {
+   "narration": "And they usually woke up before sunrise, around the coldest part of the night, as the temperature dropped.",
+   "image_prompt": "The main character waking up shivering in the grey light before dawn, pulling his fur tighter",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "hero"
+  },
+  {
+   "narration": "Researchers think falling night temperatures acted like a natural sleep timer. Something our heated bedrooms have switched off.",
+   "image_prompt": "Frost forming on the grass outside a grass hut in the cold blue light before dawn",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact"
+  },
+  {
+   "narration": "Which may be why sleep experts tell you to keep your bedroom cool. Your body still expects a chilly night.",
+   "image_prompt": "The main character in a modern bedroom opening a window and letting cool air in with relief",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "hero"
+  },
+  {
+   "narration": "One of the most striking details: insomnia was rare. The researchers noted that the San and Tsimane languages don't even have a word for it.",
+   "image_prompt": "A person in a traditional village sleeping soundly on a mat while birds sit on the hut roof",
+   "beat_type": "build",
+   "sfx_cue": null,
+   "scene_kind": "fact"
+  },
+  {
+   "narration": "No word for insomnia. Meanwhile, you're lying awake at two a.m. thinking about something embarrassing you said in twenty fourteen.",
+   "image_prompt": "The main character in a modern bed at night staring at the ceiling, cringing at a memory",
+   "beat_type": "punchline",
+   "sfx_cue": "boing",
+   "scene_kind": "hero"
+  },
+  {
+   "narration": "Historians describe a different pattern in pre-industrial Europe: a first sleep and a second sleep, with a waking hour in between.",
+   "image_prompt": "A small old stone cottage at midnight with a single candle glowing in the window",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact"
+  },
+  {
+   "narration": "People would wake around midnight, pray, chat, tend the fire, then fall asleep again. Historian Roger Ekirch found hundreds of written references to it.",
+   "image_prompt": "The main character awake in the middle of the night, poking the fire, then lying back down",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "hero"
+  },
+  {
+   "narration": "But the twenty fifteen study found little sign of that split sleep among hunter-gatherers. It may have been a local habit, not a universal one.",
+   "image_prompt": "Sleeping people around a low fire, all lying still, with one ember glowing",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact"
+  },
+  {
+   "narration": "Which is good news if you wake up at three a.m. You're not broken. Humans have slept in more than one way.",
+   "image_prompt": "The main character waking up in the night and shrugging calmly instead of panicking",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "hero"
+  },
+  {
+   "narration": "Now, remember that strange camp from the beginning, where everyone was asleep at the same time for only eighteen minutes?",
+   "image_prompt": "A Hadza camp at night under the stars, with small grass huts and a low fire",
+   "beat_type": "build",
+   "sfx_cue": null,
+   "scene_kind": "fact"
+  },
+  {
+   "narration": "In twenty seventeen, researchers put motion trackers on thirty-three Hadza adults for twenty nights, and measured who was awake, minute by minute.",
+   "image_prompt": "The main character curiously examining a small band strapped to his wrist as he sits by the fire",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "hero"
+  },
+  {
+   "narration": "Across all those nights, there were only eighteen minutes when every single adult was asleep at once.",
+   "image_prompt": "A starry night over sleeping huts, with one silhouette quietly sitting up by the embers",
+   "beat_type": "punchline",
+   "sfx_cue": "ding",
+   "scene_kind": "fact"
+  },
+  {
+   "narration": "Eighteen minutes in twenty nights. The rest of the time, at least one person was awake, or sleeping lightly enough to notice danger.",
+   "image_prompt": "The main character dozing lightly with one eye open, his ears twitching at a sound",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "hero"
+  },
+  {
+   "narration": "A big reason was age. Older people tended to go to sleep and wake up early, while younger adults stayed up late.",
+   "image_prompt": "An old woman awake before dawn tending a fire while young adults sleep nearby",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact"
+  },
+  {
+   "narration": "So grandma's four a.m. wake-up, and the teenager's midnight scrolling? They might be ancient features, not bugs.",
+   "image_prompt": "The main character as a sleepy teenager awake late while an old man is already up at dawn, both by the same fire",
+   "beat_type": "punchline",
+   "sfx_cue": null,
+   "scene_kind": "hero"
+  },
+  {
+   "narration": "Scientists call this the sentinel idea. A group with mixed sleep schedules always has someone on watch, without anyone being assigned.",
+   "image_prompt": "A circle of sleeping people with a different single figure awake at each stage of the night, shown under three moon positions",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact"
+  },
+  {
+   "narration": "Nobody planned the night shift. Evolution did. Your family's annoying sleep differences may have kept your ancestors alive.",
+   "image_prompt": "The main character waking his snoring friend to point at glowing eyes outside the camp",
+   "beat_type": "build",
+   "sfx_cue": null,
+   "scene_kind": "hero"
+  },
+  {
+   "narration": "Our brains still carry this. In a twenty sixteen study, one half of the brain stayed more alert during the first night in an unfamiliar place.",
+   "image_prompt": "A simple drawing of a sleeping human head with one side of the brain glowing brighter than the other",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact"
+  },
+  {
+   "narration": "Which is why you sleep badly on the first night in a hotel. Part of your brain is still checking for leopards.",
+   "image_prompt": "The main character lying stiffly in a hotel bed with one eye open, glancing at the door",
+   "beat_type": "punchline",
+   "sfx_cue": "pop",
+   "scene_kind": "hero"
+  },
+  {
+   "narration": "Light at night affects us more than we think. Bright, bluish light tells the brain it's still daytime, and delays the hormone that makes us sleepy.",
+   "image_prompt": "A glowing phone screen in a dark bedroom casting cold blue light across a pillow",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact"
+  },
+  {
+   "narration": "Firelight is different. It's dim, warm and orange. Studies suggest dim, warm light disturbs that sleep hormone far less than bright screens.",
+   "image_prompt": "The main character holding a glowing smartphone in one hand and looking longingly at a warm little fire on the other side",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "hero"
+  },
+  {
+   "narration": "So for hundreds of thousands of years, the last light our ancestors saw before sleep was a gentle orange glow. Not a ceiling light. Not a screen.",
+   "image_prompt": "A dying campfire glowing soft orange in the darkness, with sleeping figures around it",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact"
+  },
+  {
+   "narration": "Our bodies were tuned for that glow. Then, in a little over a century, we lit up the night. Our brains haven't caught up.",
+   "image_prompt": "The main character in a modern room squinting under a harsh ceiling light, looking tired and confused",
+   "beat_type": "build",
+   "sfx_cue": null,
+   "scene_kind": "hero"
+  },
+  {
+   "narration": "Electric light only became common in homes a little over a hundred years ago. In our species' history, that's a blink.",
+   "image_prompt": "An old-fashioned light bulb glowing in a dark room beside an ancient stone lamp",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact"
+  },
+  {
+   "narration": "If all of human history were squeezed into one day, the light bulb would switch on less than a minute before midnight.",
+   "image_prompt": "The main character sitting peacefully by a fire as dozens of light bulbs suddenly switch on in the trees around him, startling him",
+   "beat_type": "punchline",
+   "sfx_cue": null,
+   "scene_kind": "hero"
+  },
+  {
+   "narration": "Back at the ancient camp, the night is ending. The coldest hour passes, birds start calling, and the sky turns grey in the east.",
+   "image_prompt": "The grey-blue light of dawn rising over a savanna camp, with birds flying over the trees",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact"
+  },
+  {
+   "narration": "The early risers blow the embers back to life. The night shift is over. Nobody got eaten. That's a good night.",
+   "image_prompt": "The main character blowing on glowing embers as a small flame comes back, smiling in the dawn light",
+   "beat_type": "punchline",
+   "sfx_cue": null,
+   "scene_kind": "hero"
+  },
+  {
+   "narration": "So, what did ancient humans do all night? They gathered wood, built fires, told stories, made art, watched the sky, guarded each other, and slept in shifts.",
+   "image_prompt": "A wide view of a camp at night: people telling stories, one person carving, a child asleep, one person keeping watch, stars overhead",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact"
+  },
+  {
+   "narration": "And here's my personal take. The night didn't just happen to us. In a real way, the night made us.",
+   "image_prompt": "The main character sitting by the fire, looking thoughtfully at the faces of his group",
+   "beat_type": "build",
+   "sfx_cue": null,
+   "scene_kind": "hero"
+  },
+  {
+   "narration": "The hours after dark are when knowledge was passed on, when music and art were made, and when strangers became friends.",
+   "image_prompt": "Close view of hands passing a carved bone flute from an older person to a child by firelight",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact"
+  },
+  {
+   "narration": "Daytime kept us fed. Night-time kept us human.",
+   "image_prompt": "The main character smiling warmly as his whole group laughs together around the fire",
+   "beat_type": "punchline",
+   "sfx_cue": "ding",
+   "scene_kind": "hero"
+  },
+  {
+   "narration": "Today, most of us spend those same hours alone, under bright lights, watching stories made by strangers on a screen.",
+   "image_prompt": "A row of modern apartment windows at night, each with one person alone lit by a blue screen",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact"
+  },
+  {
+   "narration": "I'm not saying throw away your phone. I'm definitely not throwing away mine. But maybe borrow a few tricks from the campfire.",
+   "image_prompt": "The main character holding his phone, then putting it down on a table and looking at a candle",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "hero"
+  },
+  {
+   "narration": "Dim, warm light in the evening. A cool bedroom. Real conversation before bed. And no panic if you wake up at three a.m.",
+   "image_prompt": "A cozy modern room at night lit by one warm lamp, two people talking quietly on a sofa",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact"
+  },
+  {
+   "narration": "Your brain has hundreds of thousands of campfire nights behind it. It still knows exactly what to do with them.",
+   "image_prompt": "The main character in a modern room sitting by a warm lamp, relaxed, eyes slowly closing",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "hero"
+  },
+  {
+   "narration": "So next time you sit by a fire and can't stop staring into the flames, you'll know why. You're doing what your ancestors did, every single night.",
+   "image_prompt": "A group of modern friends around a campfire under the stars, faces glowing orange, like an ancient camp",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact"
+  }
+ ]
+}

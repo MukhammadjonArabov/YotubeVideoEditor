@@ -1,0 +1,139 @@
+{% extends "videos/base.html" %}
+{% block title %}{{ mv.title }} · AutoExplainer{% endblock %}
+{% block head %}{% if refresh %}<meta http-equiv="refresh" content="8">{% endif %}{% endblock %}
+{% block content %}
+<a href="{% if niche %}{% url 'videos:niche' niche.slug|default:'musiqa' %}{% else %}{% url 'videos:home' %}{% endif %}" class="btn ghost sm">← Musiqa videolari</a>
+<div class="page-head" style="margin:8px 0 6px"><div><h1>🎵 {{ mv.title }}</h1>
+  <p class="muted">{{ mv.get_status_display }}{% if mv.progress_message %} · {{ mv.progress_message }}{% endif %}{% if mv.is_working %} ⏳{% endif %}</p></div></div>
+{% if mv.error_message %}<div class="banner warn" style="padding:10px 14px;border-radius:10px;background:#fff4e5;border:1px solid #f5c98a;margin-bottom:10px">⚠️ {{ mv.error_message }}</div>{% endif %}
+
+<form method="post" action="{% url 'videos:music_save' mv.pk %}" class="card" style="margin-bottom:12px">{% csrf_token %}
+  <h3>1. Musiqa va video sozlamalari</h3>
+  <label>Nomi</label><input name="title" value="{{ mv.title }}" style="width:100%">
+  <label>Musiqa tavsifi (ElevenLabs uchun, inglizcha)</label>
+  <textarea name="music_prompt" rows="5" style="width:100%">{{ mv.music_prompt }}</textarea>
+  <div class="row" style="gap:12px;margin-top:6px;flex-wrap:wrap">
+    <div><label>Bitta variant uzunligi (soniya, 60–300)</label><input type="number" name="music_seconds" min="60" max="300" value="{{ mv.music_seconds }}"></div>
+    <div><label>Tayyor video uzunligi (daqiqa, 5–180)</label><input type="number" name="target_minutes" min="5" max="180" value="{{ mv.target_minutes }}"></div>
+    <div><label>Animatsiya har necha daqiqada</label><input type="number" name="cta_every_min" min="1" max="60" value="{{ mv.cta_every_min }}"></div>
+  </div>
+  <div class="row" style="gap:16px;margin-top:8px;flex-wrap:wrap">
+    <label><input type="checkbox" name="vocals" {% if mv.vocals %}checked{% endif %}> 👩 Ayol ovozi (so'zsiz vokaliz)</label>
+    <label><input type="checkbox" name="add_subscribe" {% if mv.add_subscribe %}checked{% endif %}> 🔔 Subscribe animatsiyasi</label>
+    <label><input type="checkbox" name="add_like" {% if mv.add_like %}checked{% endif %}> 👍 Like animatsiyasi</label>
+  </div>
+  <p class="muted" style="margin-bottom:0">
+    {% if loop %}Musiqa <b>{{ loop.passes }}</b> marta takrorlanadi (ulanish {{ loop.crossfade }} s), jami <b>{{ mv.target_minutes }}</b> daqiqa.{% endif %}
+    {% if mv.add_subscribe or mv.add_like %}Taxminan {{ ctas }} marta animatsiya chiqadi.{% endif %}</p>
+  <button class="btn" style="margin-top:8px">Saqlash</button>
+</form>
+
+<div class="card" style="margin-bottom:12px">
+  <h3>2. Musiqa variantlari: tinglang va eng yaxshisini tanlang</h3>
+  <div class="row" style="gap:8px;flex-wrap:wrap;align-items:center">
+    <form method="post" action="{% url 'videos:music_generate' mv.pk %}" class="row" style="gap:6px">{% csrf_token %}
+      <select name="count"><option value="1">1 ta variant</option><option value="2">2 ta variant</option><option value="3">3 ta variant</option></select>
+      <button class="btn primary" {% if mv.is_working %}disabled{% endif %}>🎵 Yaratish (ElevenLabs)</button></form>
+    <form method="post" action="{% url 'videos:music_upload_audio' mv.pk %}" enctype="multipart/form-data" class="row" style="gap:6px">{% csrf_token %}
+      <input type="file" name="audio" accept="audio/*" required><button class="btn">⬆️ Tayyor musiqani yuklash</button></form>
+  </div>
+  <small class="muted">ElevenLabs musiqa API <strong>pullik rejada</strong> ishlaydi. Faqat qisqa trek yaratiladi, qolgani takrorlanadi (kredit tejaladi). Har bir variant avtomatik tekshiriladi.</small>
+
+  {% for t in takes %}
+  <div class="list-item" style="margin-top:10px;padding:10px;border:1px solid {% if t.is_selected %}#4caf50{% else %}#ddd{% endif %};border-radius:10px">
+    <div class="row" style="gap:10px;align-items:center;flex-wrap:wrap">
+      <strong>{% if t.is_selected %}✅ Tanlangan{% else %}Variant{% endif %}</strong>
+      <span class="pill {% if t.score >= 85 %}done{% elif t.score >= 70 %}rendering{% else %}failed{% endif %}">Sifat: {{ t.score }}/100</span>
+      <span class="muted">{{ t.duration|floatformat:0 }} s · {% if t.source == "upload" %}yuklangan{% elif t.source == "mix" %}birlashtirilgan{% else %}ElevenLabs{% endif %} · {{ t.created_at|date:"d.m H:i" }}</span>
+    </div>
+    <audio controls preload="none" src="{{ t.file.url }}" style="width:100%;margin-top:6px"></audio>
+    <div class="muted" style="font-size:13px;margin-top:4px">{{ t.qc.verdict }}
+      {% if t.qc.metrics.lufs %} · {{ t.qc.metrics.lufs }} LUFS{% endif %}{% if t.qc.metrics.lra %} · LRA {{ t.qc.metrics.lra }}{% endif %}{% if t.qc.metrics.seam_db != None %} · ulanish {{ t.qc.metrics.seam_db }} dB{% endif %}</div>
+    {% for i in t.qc.issues %}<div style="font-size:13px">{% if i.level == "bad" %}❌{% else %}⚠️{% endif %} {{ i.text }}</div>{% endfor %}
+    <div class="row" style="gap:6px;margin-top:6px">
+      {% if not t.is_selected %}<form method="post" action="{% url 'videos:music_take_select' t.pk %}">{% csrf_token %}<button class="btn sm">Shuni tanlash</button></form>{% endif %}
+      <form method="post" action="{% url 'videos:music_take_delete' t.pk %}" onsubmit="return confirm('Variant o\'chirilsinmi?')">{% csrf_token %}<button class="btn sm ghost">✖ O'chirish</button></form>
+    </div>
+  </div>
+  {% empty %}
+  <p class="muted" style="margin-top:10px">Hali musiqa yo'q.</p>
+  {% endfor %}
+
+  {% if takes|length > 1 %}
+  <form method="post" action="{% url 'videos:music_combine' mv.pk %}" style="margin-top:10px">{% csrf_token %}
+    <button class="btn sm">🔀 Barcha variantlarni navbatma-navbat qo'yish (1 → 2 → ...)</button></form>
+  {% endif %}
+  {% if mv.music_file %}
+  <div style="margin-top:12px">
+    <form method="post" action="{% url 'videos:music_loop_preview' mv.pk %}">{% csrf_token %}
+      <button class="btn sm">🔁 Takrorlanish joyini tinglash (20 s)</button></form>
+    {% if preview_url %}<audio controls src="{{ preview_url }}" style="width:100%;margin-top:6px"></audio>{% endif %}
+  </div>
+  {% endif %}
+</div>
+
+<div class="card" style="margin-bottom:12px">
+  <h3>3. Google Flow video promptlari ({{ flow_prompts|length }} ta)</h3>
+  <p class="muted" style="margin-top:0">Har prompt bilan Flow'da ~20 soniyalik tinch, sokin klip yarating. Tahrirlab saqlashingiz mumkin. Bo'sh qoldirilgan prompt o'chiriladi.</p>
+  <form method="post" action="{% url 'videos:music_flow_save' mv.pk %}">{% csrf_token %}
+    {% for f in flow_prompts %}
+    <div style="margin-bottom:8px">
+      <div class="row" style="gap:8px;align-items:center"><strong>{{ forloop.counter }}.</strong>
+        <input name="flowtitle{{ forloop.counter }}" value="{{ f.title }}" style="flex:1">
+        <button type="button" class="btn sm" onclick="copyText('fp{{ forloop.counter }}', this)">📋 Nusxa</button></div>
+      <textarea id="fp{{ forloop.counter }}" name="flow{{ forloop.counter }}" rows="4" style="width:100%">{{ f.prompt }}</textarea>
+    </div>
+    {% endfor %}
+    <label>Yangi prompt qo'shish</label>
+    <textarea name="flow_new" rows="3" style="width:100%" placeholder="Inglizcha prompt"></textarea>
+    <button class="btn" style="margin-top:6px">Promptlarni saqlash</button>
+  </form>
+</div>
+
+<div class="card" style="margin-bottom:12px">
+  <h3>4. Klip(lar)ni yuklash ({{ clips|length }}/{{ max_clips }})</h3>
+  <form method="post" action="{% url 'videos:music_upload_clips' mv.pk %}" enctype="multipart/form-data" class="row" style="gap:6px">{% csrf_token %}
+    <input type="file" name="clips" accept="video/*" multiple required><button class="btn primary">⬆️ Yuklash</button></form>
+  {% for c in clips %}
+  <div class="list-item" style="display:flex;gap:10px;align-items:center;margin-top:8px">
+    <video src="{{ c.file.url }}" style="width:180px;border-radius:8px" muted controls preload="metadata"></video>
+    <span>{{ c.order }}-klip · {{ c.duration|floatformat:0 }} s</span>
+    <form method="post" action="{% url 'videos:music_clip_delete' c.pk %}">{% csrf_token %}<button class="btn sm ghost">✖ O'chirish</button></form>
+  </div>
+  {% endfor %}
+</div>
+
+<div class="card" style="margin-bottom:12px">
+  <h3>5. Montaj</h3>
+  <p class="muted" style="margin-top:0">Musiqa va klip(lar) {{ mv.target_minutes }} daqiqaga takrorlanadi.</p>
+  <form method="post" action="{% url 'videos:music_render' mv.pk %}">{% csrf_token %}
+    <button class="btn primary" {% if not can_render %}disabled title="Musiqa va kamida 1 klip kerak"{% endif %}>🎬 Videoni yaratish</button></form>
+  {% if mv.final_video %}
+  <div style="margin-top:10px"><video src="{{ mv.final_video.url }}" controls preload="metadata" style="width:100%;border-radius:10px"></video>
+    <a class="btn" href="{{ mv.final_video.url }}" download>⬇️ MP4 yuklab olish</a>
+    {% if final_min %}<small class="muted"> Davomiyligi: {{ final_min }}</small>{% endif %}</div>
+  {% endif %}
+</div>
+
+{% if titles or kit.description %}
+<div class="card" style="margin-bottom:12px">
+  <h3>6. Nashr to'plami</h3>
+  {% for t in titles %}<div class="row" style="gap:8px;margin-bottom:4px"><input id="kt{{ forloop.counter }}" value="{{ t }}" readonly style="flex:1"><button type="button" class="btn sm" onclick="copyText('kt{{ forloop.counter }}', this)">📋</button></div>{% endfor %}
+  {% if kit.description %}<label>Tavsif</label><textarea id="kdesc" rows="8" readonly style="width:100%">{{ kit.description }}</textarea><button type="button" class="btn sm" onclick="copyText('kdesc', this)">📋 Nusxa</button>{% endif %}
+  {% if tags_text %}<label>Teglar</label><textarea id="ktags" rows="2" readonly style="width:100%">{{ tags_text }}</textarea><button type="button" class="btn sm" onclick="copyText('ktags', this)">📋 Nusxa</button>{% endif %}
+  {% if kit.thumbnail_prompts %}<label>Preview uchun Flow promptlari</label>
+    {% for t in kit.thumbnail_prompts %}<div style="margin-bottom:6px"><b>{{ t.text }}</b><textarea id="kth{{ forloop.counter }}" rows="3" readonly style="width:100%">{{ t.prompt }}</textarea><button type="button" class="btn sm" onclick="copyText('kth{{ forloop.counter }}', this)">📋 Nusxa</button></div>{% endfor %}{% endif %}
+</div>
+{% endif %}
+
+{% if mon %}
+<div class="card" style="margin-bottom:12px">
+  <h3>7. Monetizatsiya tekshiruvi: {% if mon.status == "pass" %}✅ O'tdi{% elif mon.status == "warning" %}⚠️ Ogohlantirish{% else %}❌ O'tmadi{% endif %}</h3>
+  <p class="muted">Qoidalar yangilangan: {{ mon.rules_updated }}</p>
+  {% for f in mon.findings %}<div>{% if f.status == "pass" %}✅{% elif f.status == "warning" %}⚠️{% else %}❌{% endif %} <b>{{ f.category }}</b>: {{ f.message }}</div>{% endfor %}
+</div>
+{% endif %}
+
+<form method="post" action="{% url 'videos:music_delete' mv.pk %}" style="margin-top:14px" onsubmit="return confirm('Butunlay o\'chirilsinmi?')">{% csrf_token %}
+  <button class="btn ghost danger sm">Loyihani o'chirish</button></form>
+{% endblock %}

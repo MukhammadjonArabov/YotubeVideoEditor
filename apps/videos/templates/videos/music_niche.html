@@ -1,0 +1,33 @@
+{% extends "videos/base.html" %}
+{% block title %}{{ niche.name }} · AutoExplainer{% endblock %}
+{% block head %}{% if refresh %}<meta http-equiv="refresh" content="15">{% endif %}{% endblock %}
+{% block content %}
+<div class="page-head">
+  <div><h1>{{ niche.emoji }} {{ niche.name }}</h1><p>Tinchlantiruvchi musiqa: bitta trek takrorlanib 20–30 daqiqalik video bo'ladi.</p></div>
+  <a class="btn" href="{% url 'videos:home' %}">← Yo'nalishlar</a>
+</div>
+
+<div class="stats">
+  {% for label, value, unit in stats %}
+  <div class="stat"><span>{{ label }}</span><b>{{ value }}</b><small>{{ unit }}</small></div>
+  {% endfor %}
+</div>
+
+<div class="section-title"><h2>🎵 Musiqa videolari</h2>
+  <form method="post" action="{% url 'videos:music_create' %}" class="row" style="gap:6px">{% csrf_token %}
+    <input name="title" placeholder="Yangi video nomi" style="min-width:240px"><button class="btn primary">+ Yangi</button></form>
+</div>
+{% if items %}
+<div class="card flat"><table><tbody>
+  {% for m in items %}
+  <tr class="clickable" onclick="location.href='{% url 'videos:music_detail' m.pk %}'">
+    <td><strong>#{{ m.pk }} {{ m.title }}</strong><br>
+      <small class="muted">{{ m.takes.count }} ta variant · {{ m.clips.count }} ta klip · {{ m.target_minutes }} daqiqa{% if m.progress_message %} · {{ m.progress_message }}{% endif %}</small></td>
+    <td style="width:1%"><span class="pill {{ m.status }}">{{ m.get_status_display }}{% if m.is_working %} ⏳{% endif %}</span></td>
+  </tr>
+  {% endfor %}
+</tbody></table></div>
+{% else %}
+<p class="muted">Hozircha musiqa videosi yo'q.</p>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,84 @@
+{% extends "videos/base.html" %}
+{% block title %}Promptlar · {{ project.title|default:project.topic }}{% endblock %}
+{% block content %}
+<a href="{% url 'videos:project_detail' project.pk %}" class="btn ghost sm">← Loyihaga qaytish</a>
+<div class="page-head" style="margin:8px 0 6px">
+  <div><h1>🖐️ Rasmlarni o'zim chizaman</h1>
+    <p class="muted">{{ project.title|default:project.topic }} · {{ rows|length }} ta prompt · {{ done }} ta sahnada rasm bor</p></div>
+</div>
+
+<div class="grid grid-main">
+  <section class="stack">
+    <form method="get" class="card">
+      <h3>🧍 Flow'dagi personaj nomi (ixtiyoriy)</h3>
+      <p class="muted" style="margin-top:0">Flow'ning <strong>Characters</strong> bo'limida qahramonni shu nom bilan yarating, kengaytmada <strong>Character consistency</strong> yoqilgan bo'lsin — shunda har rasmga o'sha qahramon rasmi namuna sifatida qo'shiladi.</p>
+      <div class="row"><input name="ism" value="{{ char_name }}" placeholder="main_hero" style="max-width:220px">
+        <button class="btn">Promptlarni yangilash</button>
+        {% if char_name %}<small>✅ Promptlarda <code>{{ char_name }}</code> ishlatilmoqda</small>{% endif %}</div>
+    </form>
+
+    <div class="card card-accent">
+      <h3>1. Promptlarni oling</h3>
+      <p class="muted" style="margin-top:0">Har prompt orasida bo'sh qator bor, shuning uchun ajralib turadi. Bulk-prompt kengaytmasi har qatorda bitta prompt kutsa, "zich" faylni oling. Qahramon tavsifi va uslub har promptga qo'shilgan.</p>
+      <textarea id="all-prompts" rows="14" readonly style="width:100%;font-size:12px;line-height:1.5">{{ all_text }}</textarea>
+      <div class="row mt-s">
+        <button type="button" class="btn primary" onclick="copyText('all-prompts', this)">📋 Hammasini nusxalash</button>
+        <a class="btn" href="?format=txt&ism={{ char_name }}">⬇️ .txt (promptlar orasida bo'sh qator)</a>
+        <a class="btn" href="?format=numbered&ism={{ char_name }}">⬇️ .txt (raqamli: 001 | ...)</a>
+        <a class="btn" href="?format=compact&ism={{ char_name }}" title="Bulk-prompt kengaytmalari uchun: bo'sh qatorsiz">⬇️ .txt (zich, kengaytma uchun)</a>
+      </div>
+    </div>
+
+    {% if hook_rows %}
+    <div class="card card-accent">
+      <h3>🎬 Hook uchun video ({{ hook_rows|length }} ta sahna · {{ hook_done }} tasida video bor)</h3>
+      <p class="muted" style="margin-top:0">Hook — tomoshabinni ushlab qoladigan birinchi ~35 soniya, shuning uchun u haqiqiy harakatli klip bo'lsin. Avval yuqoridagi rasm promptlari bilan hook rasmlarini yarating, so'ng Flow'da <strong>Frames to video</strong> rejimida har rasmni boshlang'ich kadr qilib, quyidagi promptni bering. Qolgan qismi rasm + effektlar bilan qoladi.</p>
+      <textarea id="hook-prompts" rows="6" readonly style="width:100%;font-size:12px">{{ hook_text }}</textarea>
+      <div class="row mt-s">
+        <button type="button" class="btn primary" onclick="copyText('hook-prompts', this)">📋 Nusxalash</button>
+        <a class="btn" href="?format=video">⬇️ .txt</a>
+        <a class="btn" href="?format=video_numbered">⬇️ .txt (raqamli)</a>
+      </div>
+    </div>
+    {% endif %}
+
+    <div class="card">
+      <h3>Sahnalar bo'yicha</h3>
+      {% for order, prompt, scene in rows %}
+        <div class="list-item" style="display:flex;gap:12px;align-items:flex-start">
+          <strong style="min-width:38px">{{ order|stringformat:"03d" }}</strong>
+          {% if scene.image %}<img src="{{ scene.image.url }}" alt="" style="width:96px;border-radius:8px">{% endif %}
+          <div style="flex:1">
+            <small class="muted">{{ scene.narration|truncatewords:18 }}</small>
+            <div id="p{{ order }}" style="font-size:12px;margin-top:4px">{{ prompt }}</div>
+          </div>
+          <button type="button" class="btn sm" onclick="copyText('p{{ order }}', this)">📋</button>
+        </div>
+      {% empty %}
+        <p class="muted">Sahnalarda rasm tavsifi (image prompt) yo'q. Avval ssenariy yozing yoki sahnalarni tahrirlab rasm tavsifini kiriting.</p>
+      {% endfor %}
+    </div>
+  </section>
+
+  <aside class="stack">
+    <div class="card">
+      <h3>2. Flow'da chizing</h3>
+      <ol style="padding-left:18px;margin:0">
+        <li>Flow'da rasm o'lchamini <strong>16:9</strong> qiling.</li>
+        <li>Qahramon bir xil chiqishi uchun <a href="{% url 'videos:niche' %}">Nisha</a> sahifasidagi personaj namunasini Flow'ga <strong>ingredient / reference</strong> sifatida qo'shing.</li>
+        <li>Kengaytma ishlatsangiz: promptlarni qatorma-qator qo'ying, yuklab olingan fayllar <strong>tartib raqami</strong> bilan saqlansin (001, 002 …).</li>
+        <li>Qo'lda saqlasangiz: fayl nomini sahna raqami bilan qo'ying: <code>001.png</code>, <code>002.png</code> …</li>
+      </ol>
+    </div>
+    {% include "videos/partials/upload_images.html" with next="prompts" %}
+    {% if hook_rows %}{% include "videos/partials/upload_hook_videos.html" %}{% endif %}
+  </aside>
+</div>
+<script>
+function copyText(id, btn) {
+  const el = document.getElementById(id);
+  const text = el.value !== undefined ? el.value : el.innerText;
+  navigator.clipboard.writeText(text).then(() => { const t = btn.innerText; btn.innerText = "✅"; setTimeout(() => btn.innerText = t, 1200); });
+}
+</script>
+{% endblock %}

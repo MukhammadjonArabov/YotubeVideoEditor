@@ -1,0 +1,167 @@
+{% extends "videos/base.html" %}
+{% block title %}{{ project.title|default:project.topic }} · AutoExplainer{% endblock %}
+{% block content %}
+<a href="{% url 'videos:project_list' %}" class="btn ghost sm">← Videolar</a>
+<div class="page-head" style="margin:8px 0 6px">
+  <h1>{{ project.title|default:project.topic }}</h1>
+  {% if project.final_video %}<a class="btn violet" href="{% url 'videos:watch_project' project.pk %}">▶ Tomosha qilish</a>{% endif %}
+  {% if srt_url %}<a class="btn ghost" href="{{ srt_url }}" download title="YouTube Studio → Subtitles bo'limiga yuklang">⬇ Subtitr (.srt)</a>{% endif %}
+</div>
+<p class="muted">🎯 {{ project.niche.name|default:"nisha yo'q" }} · #{{ project.pk }} · ~{{ project.target_minutes }} daqiqa · har rasm {{ project.seconds_per_image }} s · ovoz: {{ project.get_tts_provider_display }}
+  {% if project.source_suggestion %} · {% if project.source_suggestion.channel %}kanal: {{ project.source_suggestion.channel.name }}{% else %}✍️ qo'lda qo'shilgan mavzu{% endif %}{% endif %}</p>
+
+{% if project.idea or project.concept %}
+<details class="card mt-s concept-box"{% if project.status == 'script_ready' %} open{% endif %}>
+  <summary><strong>💡 G'oya va konsepsiya</strong>{% if project.script_author == 'claude' %} <span class="pill">✍️ ssenariy: Claude</span>{% endif %}</summary>
+  {% if project.idea %}<p class="muted mt-s"><strong>Sizning g'oyangiz:</strong> {{ project.idea|linebreaksbr }}</p>{% endif %}
+  {% if project.concept %}<div class="concept-text">{{ project.concept|linebreaks }}</div>{% endif %}
+</details>
+{% endif %}
+<div class="card mt-s">{% include "videos/partials/project_status.html" %}</div>
+{% include "videos/partials/script_panel.html" %}
+
+{% if project.status == 'done' %}
+  <div class="banner violet mt">🤖 Bu videoda AI ovoz va AI rasmlar ishlatilgan. YouTube Studio'da yuklashdan oldin <strong>"Altered or synthetic content"</strong> bo'limini ko'rib chiqing (YouTube buni asosan realistik ko'rinadigan kontent uchun talab qiladi) va videolarni ommaviy emas, me'yorida yuklang.</div>
+{% endif %}
+{% if project.has_unrendered_changes and project.scenes.exists %}
+  <div class="banner warn mt">Sahnalar o'zgartirildi. Yangi variantni ko'rish uchun videoni qayta montaj qiling.</div>
+{% endif %}
+
+<div class="grid grid-main mt">
+  <section class="stack">
+    <div class="player">
+      {% if project.final_video %}
+        <video src="{{ project.final_video.url }}?v={{ project.updated_at|date:'U' }}" controls preload="metadata"></video>
+      {% elif project.preview_video %}
+        <video src="{{ project.preview_video.url }}?v={{ project.updated_at|date:'U' }}" controls preload="metadata"></video>
+      {% else %}
+        <div class="empty">Video hali tayyor emas.<br><small>Ssenariy → rasmlar va ovoz → montajdan keyin shu yerda ko'rinadi.</small></div>
+      {% endif %}
+    </div>
+    <div class="row">
+      <form method="post" action="{% url 'videos:project_produce' project.pk %}" class="inline">{% csrf_token %}
+        <input type="hidden" name="quality" value="final">
+        <label class="inline" style="font-size:12px;margin-right:6px" title="Gapirilgan so'zlar yozuvi"><select name="captions" style="padding:4px"><option value="1">Subtitr bilan</option><option value="0">Subtitrsiz</option></select></label>
+        <button class="btn primary" {% if not produce_ok or project.is_busy %}disabled title="Avval ssenariyni tasdiqlang"{% endif %}>🔁 Qayta montaj qilish</button></form>
+      {% if project.preview_video %}<a class="btn" href="{{ project.preview_video.url }}?v={{ project.updated_at|date:'U' }}" target="_blank">👀 720p ko'rinish</a>{% endif %}
+      {% if project.final_video %}<a class="btn" href="{{ project.final_video.url }}" download>MP4 yuklab olish</a>{% endif %}
+      {% if project.actual_duration_sec %}
+        <small>Uzunligi: {{ project.actual_duration_sec|floatformat:0 }} s
+        {% if project.duration_off_pct and project.duration_off_pct|floatformat:0 != "0" %}({{ project.duration_off_pct }}% maqsaddan farq){% endif %}</small>
+      {% endif %}
+    </div>
+    <small>O'tishlar (xfade), hook "punch-zoom" va thumbnail keyingi yangilanishda qo'shiladi.</small>
+  </section>
+
+  <aside>
+    <form method="post" action="{% url 'videos:project_meta_save' project.pk %}" class="card">
+      {% csrf_token %}
+      <h3>📝 YouTube ma'lumotlari</h3>
+      <div class="field"><label>{{ meta_form.title.label }}</label>{{ meta_form.title }}</div>
+      <div class="field"><label>{{ meta_form.description.label }}</label>{{ meta_form.description }}</div>
+      <div class="field"><label>{{ meta_form.tags_text.label }}</label>{{ meta_form.tags_text }}</div>
+      <button class="btn violet">Saqlash</button>
+    </form>
+  </aside>
+</div>
+
+<div class="section-title">
+  <h2>🎞️ Sahnalar <span class="muted">({{ scenes|length }})</span></h2>
+  <small>Taxminan {{ estimated_images }} ta rasm kerak (chegara: {{ max_images }})</small>
+</div>
+<form method="post" action="{% url 'videos:project_image_model' project.pk %}" class="card" style="margin-bottom:12px">
+  {% csrf_token %}
+  {% if project.status == "approved" and missing_images %}<div class="banner violet" style="margin-bottom:8px;display:flex;gap:12px;align-items:center;flex-wrap:wrap">
+    <span>✅ Ssenariy tasdiqlandi. Modelni tanlang, so'ng rasmlarni yarating ({{ missing_images }} ta sahna).</span>
+    <button class="btn primary" type="submit" form="img-generate-form" {% if not images_ready or project.is_busy %}disabled{% endif %}>🎨 Rasmlarni yaratish ({{ missing_images }})</button></div>{% endif %}
+  <strong>🎨 Rasm modeli (Runware)</strong>
+  <div class="row" style="margin-top:6px;gap:8px;flex-wrap:wrap">
+    <select name="model" id="img-model" style="min-width:260px" onchange="showModelPrice()">
+      <option value="" data-price="{{ default_model_price|default:'' }}" {% if not project.image_model %}selected{% endif %}>Standart (.env dagi model)</option>
+      {% for mid, label, price, note in model_presets %}
+        <option value="{{ mid }}" data-price="{{ price }}" data-note="{{ note }}" {% if project.image_model == mid %}selected{% endif %}>{{ label }} — ${{ price }}</option>
+      {% endfor %}
+    </select>
+    <span id="img-model-price" style="font-weight:600;padding:6px 10px;border-radius:8px;background:var(--surface-2,#f3f4f6)"></span>
+    <input name="custom" placeholder="yoki o'z model ID'ngiz: ideogram:4.5@0" value="{% if project.image_model and not model_known %}{{ project.image_model }}{% endif %}" style="min-width:240px">
+    <button class="btn">Saqlash</button>
+  </div>
+  <div style="margin:6px 0">💵 Shu loyiha rasmlariga sarflangan: <strong>${{ project.image_cost|floatformat:3 }}</strong>
+    ({{ project.image_cost_count }} ta rasm, Runware hisobi bo'yicha){% if project.is_busy %} · chizish paytida joriy summa yuqoridagi holat qatorida ko'rinadi{% endif %}</div>
+  <small class="muted">Tanlangan model shu loyihaning keyingi rasmlarini chizadi. Boshqa kompaniyalarning modellari uchun Runware balansida kamida $5 bo'lishi kerak.</small>
+</form>
+<script>
+function showModelPrice() {
+  const opt = document.getElementById("img-model").selectedOptions[0];
+  const el = document.getElementById("img-model-price");
+  const price = parseFloat(opt.dataset.price || "");
+  const n = {{ scenes|length }};
+  if (isNaN(price)) { el.textContent = "Narx: noma'lum"; return; }
+  el.textContent = `$${price} / rasm · ≈ $${(price * n).toFixed(2)} butun video (${n} rasm)` + (opt.dataset.note ? ` · ${opt.dataset.note}` : "");
+}
+showModelPrice();
+</script>
+<div class="row spread" style="margin-bottom:12px">
+  <small>Rasm manbai: {% if images_ready %}{{ images_provider }}{% else %}<span style="color:var(--err)">{{ images_provider }}</span>{% endif %}</small>
+  <form method="post" action="{% url 'videos:project_images_generate' project.pk %}" class="inline" id="img-generate-form">
+    {% csrf_token %}
+    <button class="btn" {% if not images_ready or not missing_images or project.is_busy %}disabled{% endif %}>
+      Yetishmayotgan rasmlarni chizish{% if missing_images %} ({{ missing_images }}){% endif %}</button>
+  </form>
+  <form method="post" action="{% url 'videos:project_images_generate' project.pk %}" class="inline"
+        title="Bosh qahramon bor sahnalarni yangi personaj tavsifi bilan qayta chizadi (qo'lda yuklangan rasmlarga tegmaydi)">
+    {% csrf_token %}<input type="hidden" name="mode" value="hero">
+    <button class="btn" {% if not images_ready or project.is_busy %}disabled{% endif %}>🧍 Qahramonli rasmlarni qayta chizish</button>
+  </form>
+  {% if scenes %}<form method="post" action="{% url 'videos:project_direct' project.pk %}" class="inline"
+        title="Gemini har sahnaga his-tuyg'u, kamera, o'tish, SFX, musiqa va ekran yozuvini qo'yadi (qo'lda o'zgartirganlaringiz yangilanadi)">
+    {% csrf_token %}<button class="btn" {% if project.is_busy %}disabled{% endif %}>🎬 Rejissyor{% if direction.directed %}: qayta belgilash{% endif %}</button>
+  </form>{% endif %}
+  {% if scenes %}<a class="btn violet" href="{% url 'videos:project_flow_prompts' project.pk %}">🖐️ O'zim chizaman (Flow promptlari)</a>{% endif %}
+</div>
+{% if scenes %}<div class="card mt-s" id="rasm-promptlari">
+  <h3>📝 Rasm promptlari ({{ prompt_count }} ta sahna)</h3>
+  <p class="muted" style="margin-top:0">Har sahnaning prompti, orasida bo'sh qator bilan. Nusxalab rasm yaratadigan joyga qo'ying. Fayl nomini <code>image001.png</code>, <code>image002.png</code> … (sahna raqami bilan) qo'yib, pastdagi "Rasmlarni yuklash" orqali tashlang: dastur har rasmni o'z sahnasiga o'zi joylaydi.</p>
+  <textarea id="prompts-box" rows="10" readonly style="width:100%;font-size:12px;line-height:1.5">{{ prompts_text }}</textarea>
+  <div class="row mt-s">
+    <button type="button" class="btn primary" onclick="navigator.clipboard.writeText(document.getElementById('prompts-box').value).then(()=>{this.innerText='✅ Nusxalandi';setTimeout(()=>this.innerText='📋 Hammasini nusxalash',1500)})">📋 Hammasini nusxalash</button>
+    <a class="btn" href="{% url 'videos:project_flow_prompts' project.pk %}?format=txt">⬇️ .txt (orasida bo'sh qator)</a>
+    <a class="btn" href="{% url 'videos:project_flow_prompts' project.pk %}?format=numbered">⬇️ .txt (raqamli: 001 | ...)</a>
+    <a class="btn" href="{% url 'videos:project_flow_prompts' project.pk %}">Sahnalar bo'yicha ko'rish</a>
+  </div>
+</div>{% endif %}
+{% if scenes %}<details class="mt-s" {% if missing_images %}open{% endif %}><summary><strong>📥 O'zingiz chizgan rasmlarni yuklash</strong></summary>
+  {% include "videos/partials/upload_images.html" %}</details>{% endif %}
+{% if direction.directed %}<p class="muted" style="margin:8px 0">🎭 His-tuyg'ular: {% for e, pct in direction.emotions %}{{ e }} {{ pct }}%{% if not forloop.last %} · {% endif %}{% endfor %}
+  · 🔊 SFX: {{ direction.sfx }} · 🅰 Yozuvlar: {{ direction.texts }}</p>{% endif %}
+{% include "videos/partials/scene_list.html" %}
+
+<details class="card mt">
+  <summary>⚙️ Loyiha sozlamalari</summary>
+  <form method="post" action="{% url 'videos:project_settings_save' project.pk %}" style="margin-top:16px">
+    {% csrf_token %}
+    <div class="field"><label>{{ settings_form.topic.label }}</label>{{ settings_form.topic }}</div>
+    <div class="grid grid-2">
+      <div class="field"><label>{{ settings_form.target_minutes.label }}</label>{{ settings_form.target_minutes }}</div>
+      <div class="field"><label>{{ settings_form.seconds_per_image.label }}</label>{{ settings_form.seconds_per_image }}</div>
+    </div>
+    <div class="field"><label>{{ settings_form.tts_provider.label }}</label>{{ settings_form.tts_provider }}</div>
+    <div class="field"><label>{{ settings_form.style_guide.label }}</label>{{ settings_form.style_guide }}</div>
+    <div class="field"><label class="check">{{ settings_form.auto_approve }} {{ settings_form.auto_approve.label }}</label></div>
+    <button class="btn">Sozlamalarni saqlash</button>
+  </form>
+</details>
+
+<details class="card mt">
+  <summary>🧪 Tizimni sinash</summary>
+  <p class="muted" style="margin-top:12px">Fon ishchisi ishlayotganini tekshiradi: holat ~15 soniyada "Tayyor"gacha o'tadi. Hech narsa yaratmaydi.</p>
+  <form method="post" action="{% url 'videos:project_run_demo' project.pk %}" class="inline">
+    {% csrf_token %}<button class="btn" {% if project.is_busy %}disabled{% endif %}>Sinov vazifasini ishga tushirish</button>
+  </form>
+</details>
+
+<form method="post" action="{% url 'videos:project_delete' project.pk %}" class="mt"
+      onsubmit="return confirm('Loyiha va uning barcha fayllari butunlay o\'chirilsinmi?')">
+  {% csrf_token %}<button class="btn ghost danger">Loyihani o'chirish</button>
+</form>
+{% endblock %}

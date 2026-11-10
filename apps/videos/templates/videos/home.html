@@ -1,0 +1,34 @@
+{% extends "videos/base.html" %}
+{% block title %}Yo'nalishlar · AutoExplainer{% endblock %}
+{% block head %}{% if refresh %}<meta http-equiv="refresh" content="30">{% endif %}{% endblock %}
+{% block content %}
+<div class="page-head">
+  <div><h1>🧭 Yo'nalishlar</h1><p>Har yo'nalishning videolari va statistikasi ichida. Hamma jarayonni Claude boshqaradi.</p></div>
+</div>
+
+<div class="stats">
+  {% for label, value, unit in totals %}
+  <div class="stat"><span>{{ label }}</span><b>{{ value }}</b><small>{{ unit }}</small></div>
+  {% endfor %}
+</div>
+
+<div class="section-title"><h2>📚 Yo'nalishni tanlang</h2></div>
+<div class="ngrid">
+  {% for c in cards %}
+  <a class="ncard" href="{% url 'videos:niche' c.slug %}">
+    <div class="nthumb">{% if c.cover %}<img src="{{ c.cover }}" alt="">{% endif %}<span class="nemoji">{{ c.emoji }}</span><span class="nlang">{{ c.language }}</span></div>
+    <div class="nbody">
+      <strong>{{ c.name }}</strong>
+      {% if c.description %}<small class="muted">{{ c.description|truncatechars:110 }}</small>{% endif %}
+      <div class="nstats">
+        <span><b>{{ c.done }}</b> video</span>
+        <span><b>{{ c.length }}</b> daqiqa</span>
+        {% if c.working %}<span><b>{{ c.working }}</b> jarayonda</span>{% endif %}
+      </div>
+    </div>
+  </a>
+  {% empty %}
+  <p class="muted">Yo'nalish yo'q.</p>
+  {% endfor %}
+</div>
+{% endblock %}

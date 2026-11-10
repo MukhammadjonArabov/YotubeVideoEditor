@@ -1,0 +1,46 @@
+<form class="scene-form" id="scene-{{ scene.pk }}"
+      hx-post="{% url 'videos:scene_edit' scene.pk %}" hx-encoding="multipart/form-data"
+      hx-target="this" hx-swap="outerHTML">
+  <h3>{{ scene.order }}-sahnani tahrirlash</h3>
+  <div class="field"><label>{{ form.narration.label }}</label>{{ form.narration }}{{ form.narration.errors }}</div>
+  <div class="field"><label>{{ form.image_prompt.label }}</label>{{ form.image_prompt }}</div>
+  <div class="field"><label>{{ form.fact_source.label }}</label>{{ form.fact_source }}</div>
+
+  <h4 class="form-sub">🎭 Ovoz va his-tuyg'u</h4>
+  <div class="grid grid-3">
+    <div class="field"><label>{{ form.emotion.label }}</label>{{ form.emotion }}</div>
+    <div class="field"><label>{{ form.intensity.label }}</label>{{ form.intensity }}</div>
+    <div class="field"><label>{{ form.pace.label }}</label>{{ form.pace }}</div>
+    <div class="field"><label>{{ form.pause_after_ms.label }}</label>{{ form.pause_after_ms }}{{ form.pause_after_ms.errors }}</div>
+    <div class="field"><label>{{ form.beat_type.label }}</label>{{ form.beat_type }}</div>
+  </div>
+
+  <h4 class="form-sub">🎬 Montaj</h4>
+  <div class="grid grid-3">
+    <div class="field"><label>{{ form.camera_move.label }}</label>{{ form.camera_move }}</div>
+    <div class="field"><label>{{ form.transition_in.label }}</label>{{ form.transition_in }}</div>
+    <div class="field"><label>{{ form.music_cue.label }}</label>{{ form.music_cue }}</div>
+  </div>
+  <div class="field"><label>{{ form.on_screen_text.label }}</label>{{ form.on_screen_text }}{{ form.on_screen_text.errors }}</div>
+
+  <h4 class="form-sub">🔊 Ovoz effektlari</h4>
+  <div class="sfx-rows">
+    {% for tag, offset, gain in form.sfx_rows %}
+    <div class="grid grid-3 sfx-row">
+      <div class="field">{% if forloop.first %}<label>{{ tag.label }}</label>{% endif %}{{ tag }}</div>
+      <div class="field">{% if forloop.first %}<label>{{ offset.label }}</label>{% endif %}{{ offset }}{{ offset.errors }}</div>
+      <div class="field">{% if forloop.first %}<label>{{ gain.label }}</label>{% endif %}{{ gain }}{{ gain.errors }}</div>
+    </div>
+    {% endfor %}
+  </div>
+  <small class="muted">Vaqt sahna boshidan millisekundda. Balandlik: 0 dB = to'liq, -8 dB = standart (diktordan pastroq).</small>
+
+  <div class="field mt-s"><label>{{ form.new_image.label }}</label>{{ form.new_image }}{{ form.new_image.errors }}
+    <small>Rasm avtomatik 1920×1080 ga moslanadi. Qo'lda yuklangan rasmni AI qayta chizmaydi.</small></div>
+  {% if scene.image_locked %}<div class="field"><label class="check">{{ form.unlock_image }} {{ form.unlock_image.label }}</label></div>{% endif %}
+  <small class="muted">Matnni o'zgartirsangiz, bu sahna ovozi qaytadan yaratiladi. Rasm tavsifini o'zgartirsangiz, rasm qayta chiziladi (qo'lda yuklangan bo'lmasa).</small>
+  <div class="row" style="margin-top:12px">
+    <button type="submit" class="btn primary">Saqlash</button>
+    <button type="button" class="btn ghost" hx-get="{% url 'videos:scene_row' scene.pk %}" hx-target="#scene-{{ scene.pk }}" hx-swap="outerHTML">Bekor qilish</button>
+  </div>
+</form>

@@ -1,0 +1,16 @@
+{% extends "videos/base.html" %}
+{% block title %}Musiqa videolari{% endblock %}
+{% block content %}
+<div class="page-head" style="margin:8px 0 12px"><div><h1>🎵 Musiqa videolari</h1>
+  <p class="muted">Tinchlantiruvchi tabiat musiqasi: bitta musiqa (bir marta yaratiladi) va 1–4 qisqa animatsion klip 20–30 daqiqagacha takrorlanadi. Subscribe va Like animatsiyasi qo'shiladi.</p></div></div>
+<form method="post" action="{% url 'videos:music_create' %}" class="card row" style="gap:8px;margin-bottom:12px">{% csrf_token %}
+  <input name="title" placeholder="Nomi, masalan: Rainy Forest Piano · Sleep Music" style="flex:1">
+  <button class="btn primary">➕ Yangi musiqa videosi</button>
+</form>
+{% for mv in items %}
+  <a class="card" href="{% url 'videos:music_detail' mv.pk %}" style="display:flex;gap:12px;align-items:center;margin-bottom:8px;text-decoration:none">
+    <strong>{{ mv.title }}</strong>
+    <span class="muted" style="flex:1">{{ mv.get_status_display }}{% if mv.music_file %} · musiqa {{ mv.music_duration|floatformat:0 }} s{% endif %} · {{ mv.clips.count }} klip · {{ mv.target_minutes }} daq.</span>
+  </a>
+{% empty %}<p class="muted">Hali musiqa videosi yo'q.</p>{% endfor %}
+{% endblock %}

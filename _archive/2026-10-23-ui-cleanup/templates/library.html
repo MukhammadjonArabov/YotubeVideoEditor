@@ -1,0 +1,66 @@
+{% extends "videos/base.html" %}
+{% load ae %}
+{% block title %}Kutubxona · AutoExplainer{% endblock %}
+{% block content %}
+<div class="page-head">
+  <div><h1>🎵 Kutubxona</h1><p>Montaj musiqa va ovoz effektlarini shu yerdan kayfiyat va teg bo'yicha avtomatik tanlaydi.</p></div>
+  {% if starter %}<form method="post" action="{% url 'videos:library_starter' %}" class="inline">{% csrf_token %}
+    <button class="btn violet">📦 Boshlang'ich to'plamni yuklash</button></form>{% endif %}
+</div>
+
+<div class="grid grid-4">
+  <div class="tile violet"><div class="stat">{{ counts.music }}</div><small>musiqa</small></div>
+  <div class="tile orange"><div class="stat">{{ total_minutes }}</div><small>daqiqa musiqa</small></div>
+  <div class="tile green"><div class="stat">{{ counts.sfx }}</div><small>ovoz effekti</small></div>
+  <div class="tile {% if missing %}pink{% else %}sky{% endif %}"><div class="stat">{{ missing|length }}</div><small>yetishmayotgan SFX teg</small></div>
+</div>
+{% if missing %}<div class="banner warn mt">Bu teglar uchun ovoz effekti yo'q (montajda o'tkazib yuboriladi): {% for t in missing %}<span class="tag {{ t|tagclass }}">{{ t }}</span>{% endfor %}</div>{% endif %}
+
+<div class="tabs mt">
+  <a href="?tab=music" class="{% if tab == 'music' %}active{% endif %}">🎼 Musiqa <span class="n">{{ counts.music }}</span></a>
+  <a href="?tab=sfx" class="{% if tab == 'sfx' %}active{% endif %}">💥 Ovoz effektlari <span class="n">{{ counts.sfx }}</span></a>
+</div>
+
+<div class="grid grid-main">
+  <section>
+    <div class="row" style="margin-bottom:12px">
+      <small>Filtr:</small>
+      <a class="tag {% if not tag %}t0 on{% else %}off{% endif %}" href="?tab={{ tab }}">hammasi</a>
+      {% if tab == 'music' %}{% for t in moods %}<a class="tag {% if tag == t %}{{ t|tagclass }} on{% else %}{{ t|tagclass }}{% endif %}" href="?tab=music&tag={{ t }}">{{ t }}</a>{% endfor %}
+      {% else %}{% for t in sfx_tags %}<a class="tag {{ t|tagclass }}{% if tag == t %} on{% endif %}" href="?tab=sfx&tag={{ t }}">{{ t }}</a>{% endfor %}{% endif %}
+    </div>
+    <div class="card flat">
+      <table>
+        <thead><tr><th>Nomi va teglar</th><th style="width:38%">Tinglash</th><th style="width:1%"></th></tr></thead>
+        <tbody>
+        {% if tab == 'music' %}
+          {% for item in music %}{% include "videos/partials/library_row.html" with kind="music" %}
+          {% empty %}<tr><td colspan="3" class="empty-state"><div class="big">🎼</div>Musiqa yo'q. Yuklang yoki "Boshlang'ich to'plam"ni bosing.</td></tr>{% endfor %}
+        {% else %}
+          {% for item in sfx %}{% include "videos/partials/library_row.html" with kind="sfx" %}
+          {% empty %}<tr><td colspan="3" class="empty-state"><div class="big">💥</div>Ovoz effekti yo'q.</td></tr>{% endfor %}
+        {% endif %}
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <aside class="stack">
+    <form method="post" enctype="multipart/form-data" class="card card-accent">
+      {% csrf_token %}<input type="hidden" name="tab" value="{{ tab }}">
+      <h3>⬆️ {% if tab == 'sfx' %}Ovoz effekti{% else %}Musiqa{% endif %} yuklash</h3>
+      <div class="field"><label>{{ form.files.label }}</label>{{ form.files }}{{ form.files.errors }}</div>
+      <div class="field"><label>{{ form.title.label }}</label>{{ form.title }}</div>
+      <div class="field"><label>{{ form.tags.label }}</label>{{ form.tags }}
+        <div class="help">Ruxsat etilgan teglar: {% if tab == 'sfx' %}{{ sfx_tags|join:", " }}{% else %}{{ moods|join:", " }}{% endif %}</div></div>
+      {% if tab != 'sfx' %}<div class="field"><label>{{ form.license_note.label }}</label>{{ form.license_note }}</div>{% endif %}
+      <button class="btn primary">Yuklash</button>
+    </form>
+    <div class="card">
+      <h3>📌 Qayerdan olish mumkin</h3>
+      <p class="muted">YouTube Studio → <strong>Audio Library</strong> ("Attribution not required" filtri), FreePD.com, Kenney.nl (CC0). Faylni kompyuterga yuklab olib, shu yerga yuklang. Litsenziya izohini yozib qo'ying.</p>
+      <p class="muted" style="margin:0">Boshlang'ich to'plam: FreePD musiqalari (public domain) + Kenney ovozlari (CC0) + ilova uchun maxsus sintez qilingan whoosh/riser/boing/zarba.</p>
+    </div>
+  </aside>
+</div>
+{% endblock %}

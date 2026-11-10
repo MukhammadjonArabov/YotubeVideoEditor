@@ -1,0 +1,16 @@
+<div id="project-status"
+     {% if project.is_busy %}hx-get="{% url 'videos:project_status' project.pk %}?poll=1" hx-trigger="every 3s" hx-swap="outerHTML"{% endif %}>
+  <div class="steps {% if project.status == 'failed' %}failed{% endif %}">
+    {% for step in project.PIPELINE_STEPS %}<span class="{% if forloop.counter0 < project.step_index %}past{% elif forloop.counter0 == project.step_index %}current{% endif %}"></span>{% endfor %}
+  </div>
+  <div class="step-labels">{% for step in project.PIPELINE_STEPS %}<span>{{ step.label }}</span>{% endfor %}</div>
+  <p style="margin:14px 0 0">
+    <span class="pill {{ project.status }}">{{ project.get_status_display }}</span>
+    {% if project.is_busy %}<span class="spinner"></span>{% endif %}
+    <span class="muted">{{ project.progress_message }}</span>
+  </p>
+  {% if project.status == 'failed' and project.error_message %}
+    <details><summary>Xato tafsilotlari</summary><pre class="err">{{ project.error_message }}</pre></details>
+  {% endif %}
+  {% if not project.is_busy and was_busy %}<script>location.reload()</script>{% endif %}
+</div>

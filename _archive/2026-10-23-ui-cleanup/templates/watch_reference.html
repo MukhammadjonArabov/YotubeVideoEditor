@@ -1,0 +1,34 @@
+{% extends "videos/base.html" %}
+{% load ae %}
+{% block title %}{{ video.title }} · Tomosha{% endblock %}
+{% block content %}
+<a href="{% url 'videos:channel_detail' video.channel_id %}" class="btn ghost sm">← {{ video.channel.name }}</a>
+<div class="grid grid-main mt-s">
+  <section>
+    <div class="player">
+      <iframe src="https://www.youtube-nocookie.com/embed/{{ video.youtube_id }}?rel=0" title="{{ video.title }}"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <h1 style="margin-top:14px">{{ video.title }}</h1>
+    <div class="row">
+      <span class="pill">👁 {{ video.view_count|compact }}</span><span class="pill">👍 {{ video.like_count|compact }}</span>
+      <span class="pill">💬 {{ video.comment_count|compact }}</span><span class="pill">⏱ {{ video.duration_label }}</span>
+      <span class="pill">📅 {{ video.published_at|date:"d.m.Y" }}</span>
+      <a class="btn sm" href="https://www.youtube.com/watch?v={{ video.youtube_id }}" target="_blank" rel="noopener">YouTube'da ochish ↗</a>
+    </div>
+    <div class="banner violet mt">💡 Bu — o'rganish uchun namuna. Formulasidan ilhomlaning, lekin ssenariy, sarlavha va rasmlarni nusxalamang: YouTube buni "reused/inauthentic content" deb baholaydi.</div>
+    {% if video.description %}<details class="card"><summary>Tavsif va manbalar</summary><pre class="note mt-s">{{ video.description }}</pre></details>{% endif %}
+  </section>
+  <aside>
+    <h3>Shu kanaldan</h3>
+    <div class="stack">
+    {% for v in more %}
+      <a class="vcard" href="{% url 'videos:watch_reference' v.pk %}">
+        <div class="thumb">{% if v.thumbnail_url %}<img src="{{ v.thumbnail_url }}" alt="" loading="lazy">{% endif %}<span class="dur">{{ v.duration_label }}</span></div>
+        <div class="t">{{ v.title }}</div><div class="m">{{ v.view_count|compact }} ko'rish</div>
+      </a>
+    {% endfor %}
+    </div>
+  </aside>
+</div>
+{% endblock %}

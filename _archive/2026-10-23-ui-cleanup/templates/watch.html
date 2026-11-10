@@ -1,0 +1,46 @@
+{% extends "videos/base.html" %}
+{% load ae %}
+{% block title %}Tomosha · AutoExplainer{% endblock %}
+{% block content %}
+<div class="page-head">
+  <div><h1>▶️ Tomosha</h1><p>Tayyor videolaringiz va namuna kanallarning eng ko'p ko'rilgan videolari.</p></div>
+</div>
+
+<div class="section-title"><h2>🎬 Mening videolarim</h2><small>{{ mine|length }} ta tayyor</small></div>
+{% if mine %}
+<div class="cards">
+  {% for p in mine %}
+  <a class="vcard" href="{% url 'videos:watch_project' p.pk %}">
+    <div class="thumb">{% with t=p.thumbnails.all|first %}{% if t %}<img src="{{ t.image.url }}" alt="">{% else %}▶{% endif %}{% endwith %}
+      {% if p.actual_duration_sec %}<span class="dur">{{ p.actual_duration_sec|mmss }}</span>{% endif %}</div>
+    <div class="t">{{ p.title|default:p.topic }}</div>
+    <div class="m">{{ p.finished_at|default:p.created_at|date:"d.m.Y" }}</div>
+  </a>
+  {% endfor %}
+</div>
+{% else %}
+<div class="card empty-state"><div class="big">🎞️</div>Hali tayyor video yo'q. Montaj bosqichi qo'shilgach, har bir tayyor video shu yerda ko'rinadi.</div>
+{% endif %}
+
+{% if previews %}
+<div class="section-title"><h2>👀 Ko'rib chiqish uchun (720p)</h2></div>
+<div class="cards">{% for p in previews %}
+  <a class="vcard" href="{% url 'videos:watch_project' p.pk %}"><div class="thumb">▶ preview</div><div class="t">{{ p.title|default:p.topic }}</div></a>
+{% endfor %}</div>
+{% endif %}
+
+<div class="section-title"><h2>📺 Namuna kanallardan</h2><a href="{% url 'videos:channels' %}">Kanallar →</a></div>
+{% if refs %}
+<div class="cards">
+  {% for v in refs %}
+  <a class="vcard" href="{% url 'videos:watch_reference' v.pk %}">
+    <div class="thumb">{% if v.thumbnail_url %}<img src="{{ v.thumbnail_url }}" alt="" loading="lazy">{% endif %}<span class="dur">{{ v.duration_label }}</span></div>
+    <div class="t">{{ v.title }}</div>
+    <div class="m">{{ v.channel.name }} · {{ v.view_count|compact }} ko'rish</div>
+  </a>
+  {% endfor %}
+</div>
+{% else %}
+<div class="card empty-state"><div class="big">📺</div><a href="{% url 'videos:channels' %}">Namuna kanal qo'shing</a> — uning videolari shu yerda ko'rinadi.</div>
+{% endif %}
+{% endblock %}

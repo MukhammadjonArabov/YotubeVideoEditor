@@ -1,0 +1,92 @@
+{% extends "videos/base.html" %}
+{% block title %}Qoidalar · AutoExplainer{% endblock %}
+{% block content %}
+<div class="page-head">
+  <div><h1>🛡️ YouTube qoidalari nazorati</h1><p>Monetizatsiya qoidalari sahifalarini kuzatish va har bir video uchun tekshiruv ro'yxati.</p></div>
+  <form method="post" action="{% url 'videos:policy_check' %}" class="inline">{% csrf_token %}<button class="btn primary">🔍 Hozir tekshirish</button></form>
+</div>
+
+<div class="card disclaimer">
+  <strong>⚠️ Bu yordamchi vosita, kafolat emas.</strong> Sahifalar tuzilishi o'zgaradi, ba'zilari JavaScript bilan chiziladi va to'g'ri o'qilmasligi mumkin, YouTube esa rasmiy o'zgarishlar ro'yxatini chiqarmaydi. Tekshiruv muvaffaqiyatsiz bo'lsa, bu "o'zgarish yo'q" degani <strong>emas</strong>.
+  Muntazam ravishda o'zingiz ham o'qing: <a href="https://support.google.com/youtube/answer/1311392" target="_blank" rel="noopener">YouTube'ning rasmiy qoidalar sahifalari ↗</a>
+</div>
+
+<div class="grid grid-3 mt">
+  <div class="tile violet"><div class="stat">{{ docs|length }}</div><small>kuzatilayotgan sahifa</small></div>
+  <div class="tile orange"><div class="stat">{{ interval }}</div><small>kunda bir avtomatik tekshiruv{% if next_run %} · keyingisi {{ next_run|date:"d.m H:i" }}{% endif %}</small></div>
+  <div class="tile green"><div class="stat">{{ rules|length }}</div><small>video tekshiruv bandi</small></div>
+</div>
+{% if not gemini_ok %}<div class="banner warn mt">Gemini ulanmagan: o'zgarishlar aniqlanadi, lekin oddiy tilda xulosa o'rniga faqat qo'shilgan/olib tashlangan qatorlar ko'rsatiladi.</div>{% endif %}
+
+<div class="section-title"><h2>📄 Kuzatilayotgan sahifalar</h2></div>
+<div class="card flat">
+  <table>
+    <thead><tr><th>Sahifa</th><th>Oxirgi tekshiruv</th><th>Holat</th><th>Oxirgi o'zgarish</th><th></th></tr></thead>
+    <tbody>
+    {% for d in docs %}
+      <tr{% if not d.enabled %} style="opacity:.5"{% endif %}>
+        <td><strong>{{ d.label }}</strong><br><a href="{{ d.url }}" target="_blank" rel="noopener"><small>{{ d.url|truncatechars:60 }} ↗</small></a></td>
+        <td>{% if d.last_checked_at %}{{ d.last_checked_at|date:"d.m.Y H:i" }}{% else %}<small>hali tekshirilmagan</small>{% endif %}</td>
+        <td>{% if d.last_check_ok is None %}<span class="pill">—</span>{% elif d.last_check_ok %}<span class="pill pass">✓ o'qildi</span>
+            {% else %}<span class="pill fail" title="{{ d.last_error }}">✕ o'qilmadi</span><br><small>{{ d.last_error|truncatechars:70 }}</small>{% endif %}</td>
+        <td>{% if d.last_changed_at %}{{ d.last_changed_at|date:"d.m.Y" }}{% else %}<small>—</small>{% endif %}</td>
+        <td style="width:1%;white-space:nowrap"><div class="row" style="flex-wrap:nowrap;gap:4px">
+          <form method="post" action="{% url 'videos:policy_check' %}" class="inline">{% csrf_token %}<input type="hidden" name="doc" value="{{ d.pk }}"><button class="btn sm">Tekshirish</button></form>
+          <form method="post" action="{% url 'videos:policy_doc_toggle' d.pk %}" class="inline">{% csrf_token %}<button class="btn sm ghost">{% if d.enabled %}⏸ To'xtatish{% else %}▶ Yoqish{% endif %}</button></form>
+          <form method="post" action="{% url 'videos:policy_doc_save' %}" class="inline" onsubmit="return confirm('Ro\'yxatdan olib tashlansinmi?')">{% csrf_token %}<input type="hidden" name="pk" value="{{ d.pk }}"><input type="hidden" name="delete" value="1"><button class="btn sm ghost danger" title="Ro'yxatdan olib tashlash">✕</button></form>
+        </div></td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+</div>
+<details class="card mt-s"><summary>➕ Sahifa qo'shish</summary>
+  <form method="post" action="{% url 'videos:policy_doc_save' %}" class="grid grid-2 mt-s" style="align-items:end">
+    {% csrf_token %}
+    <div><label>{{ doc_form.label.label }}</label>{{ doc_form.label }}</div>
+    <div><label>{{ doc_form.url.label }}</label>{{ doc_form.url }}</div>
+    <div><button class="btn violet">Qo'shish</button></div>
+  </form>
+</details>
+
+<div class="section-title"><h2>🔔 O'zgarishlar</h2>
+  {% if notes %}<form method="post" action="{% url 'videos:policy_notes_review_all' %}" class="inline">{% csrf_token %}<button class="btn sm">Hammasini ko'rildi deb belgilash</button></form>{% endif %}</div>
+{% for n in notes %}
+  <div class="card note-card{% if n.reviewed %} reviewed{% endif %} mt-s">
+    <div class="row spread"><strong>{{ n.policy_document.label }}</strong><small>{{ n.detected_at|date:"d.m.Y H:i" }}</small></div>
+    <pre class="note mt-s">{{ n.plain_summary }}</pre>
+    <div class="row mt-s">
+      <form method="post" action="{% url 'videos:policy_note_review' n.pk %}" class="inline">{% csrf_token %}
+        <button class="btn sm {% if not n.reviewed %}violet{% endif %}">{% if n.reviewed %}↩ Ko'rilmagan qilish{% else %}✓ Ko'rib chiqdim{% endif %}</button></form>
+      <a class="btn sm ghost" href="{{ n.policy_document.url }}" target="_blank" rel="noopener">Sahifani ochish ↗</a>
+    </div>
+  </div>
+{% empty %}
+  <div class="card empty-state">Hozircha o'zgarish aniqlanmagan. Birinchi tekshiruv sahifalarning hozirgi holatini eslab qoladi; keyingilari farqni topadi.</div>
+{% endfor %}
+
+<div class="section-title"><h2>✅ Har bir video uchun tekshiruv ro'yxati</h2><small>ssenariy yozilgach Gemini har bandni pass / warning / fail deb baholaydi</small></div>
+<div class="card flat">
+  {% for r in rules %}
+  <details class="list-item" style="padding:14px 18px">
+    <summary>{% if not r.enabled %}<span class="pill">o'chiq</span> {% endif %}{{ forloop.counter }}. {{ r.title }}</summary>
+    <form method="post" action="{% url 'videos:policy_rule_save' %}" class="mt-s">
+      {% csrf_token %}<input type="hidden" name="pk" value="{{ r.pk }}">
+      <div class="field"><label>Nomi</label><input type="text" name="rule-title" value="{{ r.title }}"></div>
+      <div class="field"><label>Gemini uchun ko'rsatma (inglizcha)</label><textarea name="rule-instruction" rows="3">{{ r.instruction }}</textarea></div>
+      <label class="check"><input type="checkbox" name="rule-enabled" {% if r.enabled %}checked{% endif %}> Yoqilgan</label>
+      <div class="row mt-s"><button class="btn sm violet">Saqlash</button>
+        <button class="btn sm ghost danger" name="delete" value="1" onclick="return confirm('Band o\'chirilsinmi?')">O'chirish</button></div>
+    </form>
+  </details>
+  {% endfor %}
+  <details class="list-item" style="padding:14px 18px"><summary>➕ Yangi band qo'shish</summary>
+    <form method="post" action="{% url 'videos:policy_rule_save' %}" class="mt-s">
+      {% csrf_token %}
+      <div class="field"><label>Nomi</label>{{ rule_form.title }}</div>
+      <div class="field"><label>Gemini uchun ko'rsatma (inglizcha)</label>{{ rule_form.instruction }}</div>
+      <input type="hidden" name="rule-enabled" value="on"><button class="btn sm violet">Qo'shish</button>
+    </form>
+  </details>
+</div>
+{% endblock %}

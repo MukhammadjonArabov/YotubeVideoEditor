@@ -1,0 +1,7 @@
+venv/
+media/
+_archive/
+tmp/
+models/
+staticfiles/
+node_modules/

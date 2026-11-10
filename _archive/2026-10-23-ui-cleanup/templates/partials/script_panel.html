@@ -1,0 +1,106 @@
+{% load ae %}
+{% if not scenes %}
+  <div class="card card-accent mt" style="text-align:center;padding:30px">
+    <div style="font-size:2.2rem">✍️</div>
+    <h2>1-qadam: ssenariy yaratish</h2>
+    <p class="muted">Gemini "{{ project.topic }}" mavzusida ~{{ word_budget }} so'zli, {{ scene_target }} sahnali inglizcha ssenariy yozadi:
+      hook, rasm tavsiflari, ovoz effektlari, sarlavha, tavsif va teglar bilan. 30–90 soniya oladi.</p>
+    {% if gemini_ok %}
+      <form method="post" action="{% url 'videos:project_script_generate' project.pk %}">{% csrf_token %}
+        <button class="btn primary" {% if project.is_busy %}disabled{% endif %}>✍️ Ssenariy yaratish</button></form>
+    {% else %}
+      <div class="banner err" style="text-align:left">.env faylida <code>GEMINI_API_KEY</code> va <code>GEMINI_TEXT_MODEL=gemini-3.8-flash</code> yo'q. Qo'shing va <code>python manage.py dev</code> ni qayta ishga tushiring.</div>
+    {% endif %}
+    <p class="help">Yoki pastdagi "+ Sahna qo'shish" bilan sahnalarni qo'lda yozishingiz mumkin.</p>
+    <details class="mt-s" style="text-align:left"><summary>📥 Tayyor ssenariyni JSON fayldan yuklash (masalan, Claude yozgan)</summary>
+  <form method="post" action="{% url 'videos:project_script_import' project.pk %}" enctype="multipart/form-data" class="mt-s"
+        onsubmit="return confirm('Hozirgi sahnalar (bo\'lsa) yangi ssenariy bilan almashtiriladi. Davom etasizmi?')">
+    {% csrf_token %}
+    <div class="field"><label>JSON fayl</label><input type="file" name="script_file" accept=".json,application/json"></div>
+    <div class="field"><label>...yoki JSON matnini shu yerga qo'ying</label><textarea name="script_text" rows="4" placeholder='{"title": "...", "scenes": [...]}'></textarea></div>
+    <button class="btn violet">📥 Yuklash</button>
+  </form>
+</details>
+  </div>
+{% else %}
+  <div class="card mt">
+    <div class="row spread">
+      <h3 style="margin:0">✍️ Ssenariy</h3>
+      <div class="row">
+        {% if project.status == 'draft' or project.status == 'script_ready' or project.status == 'failed' %}
+          <form method="post" action="{% url 'videos:project_approve' project.pk %}" class="inline"
+                {% if compliance and compliance.status == 'fail' %}onsubmit="return confirm('Tekshiruvda jiddiy muammo bor. Baribir tasdiqlaysizmi?')"{% endif %}>
+            {% csrf_token %}<button class="btn primary" {% if project.is_busy %}disabled{% endif %}>✅ Tasdiqlash</button></form>
+        {% endif %}
+        <form method="post" action="{% url 'videos:project_compliance' project.pk %}" class="inline">{% csrf_token %}
+          <button class="btn" {% if project.is_busy or not gemini_ok %}disabled{% endif %}>🛡️ Qayta tekshirish</button></form>
+        <form method="post" action="{% url 'videos:project_script_generate' project.pk %}" class="inline"
+              onsubmit="return confirm('Hozirgi barcha sahnalar (rasmlar bilan) o\'chirilib, yangi ssenariy yoziladi. Davom etasizmi?')">
+          {% csrf_token %}<button class="btn ghost" {% if project.is_busy or not gemini_ok %}disabled{% endif %}>🔄 Qayta yozish</button></form>
+      </div>
+    </div>
+    <div class="grid grid-4 mt-s">
+      <div class="tile violet"><div class="stat">{{ scenes|length }}</div><small>sahna (maqsad {{ scene_target }})</small></div>
+      <div class="tile orange"><div class="stat">{{ word_total }}</div><small>so'z (maqsad ~{{ word_budget }})</small></div>
+      <div class="tile sky"><div class="stat">~{% widthratio word_total 150 1 %}</div><small>daqiqa ovoz</small></div>
+      <div class="tile green"><div class="stat" style="font-size:1.3rem;padding:6px 0">{{ script.mood|default:"—" }}</div><small>musiqa kayfiyati</small></div>
+    </div>
+
+    {% if produce_ok %}
+      <div class="card mt" style="background:linear-gradient(135deg,#fff1e6,#f1ebff);border:none">
+        <div class="row spread">
+          <div><h3 style="margin:0">🎬 2-qadam: videoni yaratish</h3>
+            <small>Rasmlar {{ imaged }}/{{ scenes|length }} · ovoz {{ voiced }}/{{ scenes|length }} · yetishmaganlari avtomatik yaratiladi, keyin ffmpeg montaj qiladi.</small></div>
+          <div class="row">
+            <form method="post" action="{% url 'videos:project_produce' project.pk %}" class="inline">{% csrf_token %}
+              <input type="hidden" name="quality" value="preview">
+              <label class="inline" style="font-size:12px;margin-right:6px" title="Gapirilgan so'zlar yozuvi"><select name="captions" style="padding:4px"><option value="1">Subtitr bilan</option><option value="0">Subtitrsiz</option></select></label>
+              <button class="btn" {% if project.is_busy %}disabled{% endif %} title="Tez, 1280x720 — tekshirish uchun">👀 Tez ko'rish (720p)</button></form>
+            <form method="post" action="{% url 'videos:project_produce' project.pk %}" class="inline">{% csrf_token %}
+              <input type="hidden" name="quality" value="final">
+              <label class="inline" style="font-size:12px;margin-right:6px" title="Gapirilgan so'zlar yozuvi"><select name="captions" style="padding:4px"><option value="1">Subtitr bilan</option><option value="0">Subtitrsiz</option></select></label>
+              <button class="btn primary" {% if project.is_busy %}disabled{% endif %}>🎬 Videoni yaratish (1080p)</button></form>
+          </div>
+        </div>
+        <div class="help">Birinchi marta: rasmlar ~{{ scenes|length }}×6 s, ovoz ~{{ scenes|length }}×2 s, montaj i3 kompyuterda 1080p uchun 10–25 daqiqa. Keyingi safar faqat o'zgargan sahnalar qayta ishlanadi.</div>
+      </div>
+    {% endif %}
+
+    {% if compliance %}
+      <div class="banner {% if compliance.status == 'pass' %}ok{% elif compliance.status == 'warning' %}warn{% else %}err{% endif %} mt">
+        <strong>🛡️ Qoidalar tekshiruvi: {{ compliance.get_status_display }}</strong>
+        <small>({{ compliance.created_at|date:"d.m H:i" }})</small>
+        <ul>{% for f in compliance.findings %}
+          <li><span class="pill {{ f.status }}">{{ f.status }}</span> <strong>{{ f.category }}</strong> — {{ f.message }}</li>
+        {% endfor %}</ul>
+      </div>
+    {% elif project.status == 'script_ready' %}
+      <div class="banner warn mt">Tekshiruv hali o'tkazilmagan. "🛡️ Qayta tekshirish" ni bosing.</div>
+    {% endif %}
+
+    <div class="grid grid-2 mt-s">
+      {% if script.title_alternatives %}
+      <div><label>Boshqa sarlavha variantlari</label>
+        {% for t in script.title_alternatives %}
+          <form method="post" action="{% url 'videos:project_use_title' project.pk %}" class="list-item row spread" style="flex-wrap:nowrap">
+            {% csrf_token %}<input type="hidden" name="title" value="{{ t }}"><span>{{ t }}</span>
+            <button class="btn sm ghost" {% if t == project.title %}disabled{% endif %}>Tanlash</button></form>
+        {% endfor %}</div>
+      {% endif %}
+      {% if script.sources %}
+      <div><label>📚 Manbalar (tekshirib, tavsifga qo'shing)</label>
+        {% for s in script.sources %}<div class="list-item"><small>{{ s }}</small></div>{% endfor %}
+        <div class="help">AI manbalarni noto'g'ri eslashi mumkin — har birini Google'da tekshiring.</div></div>
+      {% endif %}
+    </div>
+    <details class="mt-s" style="text-align:left"><summary>📥 Tayyor ssenariyni JSON fayldan yuklash (masalan, Claude yozgan)</summary>
+  <form method="post" action="{% url 'videos:project_script_import' project.pk %}" enctype="multipart/form-data" class="mt-s"
+        onsubmit="return confirm('Hozirgi sahnalar (bo\'lsa) yangi ssenariy bilan almashtiriladi. Davom etasizmi?')">
+    {% csrf_token %}
+    <div class="field"><label>JSON fayl</label><input type="file" name="script_file" accept=".json,application/json"></div>
+    <div class="field"><label>...yoki JSON matnini shu yerga qo'ying</label><textarea name="script_text" rows="4" placeholder='{"title": "...", "scenes": [...]}'></textarea></div>
+    <button class="btn violet">📥 Yuklash</button>
+  </form>
+</details>
+  </div>
+{% endif %}

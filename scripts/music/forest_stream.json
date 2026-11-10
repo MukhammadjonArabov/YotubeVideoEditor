@@ -1,0 +1,25 @@
+{
+  "title": "Forest Stream Lullaby",
+  "music_prompt": "Calm, soothing nature music for deep sleep and relaxation: a soft, breathy wordless female vocalise, slow airy humming and gentle 'aaah' harmonies floating over warm analog pads, sparse soft felt piano notes and a low cello drone. Natural ambience underneath: a clear forest stream flowing over stones, distant birdsong, light wind in the leaves. About 55 BPM, key of D major, no drums, no percussion, no lyrics, no spoken words, no sudden changes, the same gentle energy from start to end so it loops seamlessly, meditative and warm.",
+  "music_seconds": 210,
+  "target_minutes": 30,
+  "vocals": true,
+  "flow_prompts": [
+    {"title": "Moss stream", "prompt": "Slow cinematic shot of a clear forest stream flowing gently over mossy stones, soft golden morning light through tall pine trees, tiny drifting particles in the air, ferns moving slightly in the breeze, calm and peaceful, static camera with a very slow push in, seamless loop, no people, no text."},
+    {"title": "Misty lake", "prompt": "A quiet mountain lake at dawn covered by thin drifting mist, mirror-like water with soft ripples, pale pink and blue sky, distant dark pine forest, a single bird gliding slowly far away, calm and dreamy atmosphere, locked-off camera, seamless loop, no people, no text."},
+    {"title": "Rain leaves", "prompt": "Close-up of large green leaves in a rainforest with slow raindrops falling and sliding off, soft diffused light, shallow depth of field, gentle mist in the background, everything moves slowly and softly, relaxing mood, static camera, seamless loop, no people, no text."},
+    {"title": "Night meadow", "prompt": "A peaceful meadow at night under a starry sky with a soft full moon, fireflies glowing and floating slowly over tall grass, a calm river reflecting moonlight in the distance, deep blue tones, gentle slow movement, static wide shot, seamless loop, no people, no text."}
+  ],
+  "titles": [
+    "Forest Stream & Soft Female Voice for DEEP Sleep",
+    "Calm Forest Lullaby: Stop OVERTHINKING and Sleep",
+    "30 Minutes of Gentle Nature Music to RELAX"
+  ],
+  "description": "Thirty minutes of calm forest music: a soft, wordless female voice, warm piano and a clear stream flowing over stones.\nUse it to fall asleep, study, meditate or simply breathe out after a long day.\n\nMusic created with AI (ElevenLabs) and arranged for this channel. Visuals created with Google Flow.\n\n#sleepmusic #relaxingmusic #naturesounds",
+  "tags": ["sleep music", "relaxing music", "forest stream sounds", "female voice relaxing", "deep sleep music", "calm music", "meditation music", "nature sounds", "study music", "stress relief music", "lullaby for adults"],
+  "thumbnail_prompts": [
+    {"text": "DEEP SLEEP", "prompt": "Wide 16:9 photoreal scene of a glowing forest stream at dusk, mossy stones, soft mist, warm golden light between pine trees, peaceful mood; the words DEEP SLEEP drawn large in soft white rounded capitals with a gentle glow in the upper left, spelled exactly."},
+    {"text": "CALM MIND", "prompt": "Wide 16:9 photoreal misty mountain lake at dawn, pastel pink and blue sky, mirror water, dark pine silhouettes; the words CALM MIND in large soft white rounded capitals with a subtle shadow, centred in the sky, spelled exactly."},
+    {"text": "RELAX", "prompt": "Wide 16:9 photoreal night meadow with fireflies and a full moon over a calm river, deep blue tones, soft glow; the word RELAX in huge soft yellow-white rounded capitals with a gentle glow, upper third, spelled exactly."}
+  ]
+}

@@ -1,0 +1,67 @@
+{
+ "title": "you left before the leaves fell",
+ "music_prompt": "A slow, calm, soothing autumn lo-fi instrumental for a rainy late-November night, bittersweet and warm, like quietly remembering someone. Soft felt piano melody, a warm nylon-string guitar, mellow Rhodes chords, light tape hiss and vinyl crackle, steady soft rain with a little wind and rustling dry leaves in the background, a very soft dusty lo-fi beat at 66 BPM, gentle sub bass. Key of E minor turning warm. Fully instrumental: no vocals, no humming, no singing, no spoken words. No build-up, no drops, no sudden changes, no loud parts, no fade-in or fade-out: it starts and ends at the same soft level and stays perfectly even so it loops seamlessly. Feeling: peaceful, nostalgic, safe.",
+ "music_seconds": 210,
+ "target_minutes": 91,
+ "vocals": false,
+ "flow_prompts": [
+  {
+   "title": "Girl in a 3AM autumn convenience store",
+   "prompt": "Anime style, soft cinematic lighting. Inside a small Japanese convenience store at three in the morning in late autumn, a young anime girl with short brown hair, a beige coat and a red scarf stands by the big front window holding a warm can of tea. Outside, rain falls on an empty street covered with orange maple leaves, neon reflections shimmer on the wet road. She breathes slowly. Locked-off camera, quiet and lonely, seamless loop. Silent video, no audio, no music, no speech, no text."
+  },
+  {
+   "title": "Man on an autumn night train",
+   "prompt": "Anime style, warm amber and deep blue light. A young anime man with dark hair in a long grey coat sits alone on an almost empty night train, his head resting lightly against the rainy window. Outside, autumn trees with orange and red leaves glide slowly past under street lamps, rain streaks run across the glass. He closes his eyes slowly. Locked-off camera, calm and melancholic, seamless loop. Silent video, no audio, no music, no speech, no text."
+  },
+  {
+   "title": "Empty bench under falling leaves",
+   "prompt": "Anime style, soft overcast evening light. An empty wooden park bench under a large maple tree in light rain, orange and yellow leaves falling slowly and gathering in puddles, a single forgotten transparent umbrella leaning against the bench, warm street lamp glowing nearby. Very slow movement of leaves and rain only. Locked-off camera, seamless loop. Silent video, no audio, no music, no speech, no text, no people."
+  },
+  {
+   "title": "Man walking an autumn street in the rain",
+   "prompt": "Anime style, cinematic dusk light. A young anime man in a dark jacket walks slowly along a quiet rainy street lined with golden ginkgo trees, holding a black umbrella, fallen yellow leaves floating in the puddles at his feet, shop windows glowing warmly. Slow gentle movement, locked-off wide shot, melancholic and calm, seamless loop. Silent video, no audio, no music, no speech, no text."
+  },
+  {
+   "title": "Girl at a rainy autumn bus stop",
+   "prompt": "Anime style, soft cold blue light with warm lamp glow. A young anime girl with long dark hair in a cream sweater and a red scarf waits alone at a small bus stop at night in the rain, red maple leaves blowing gently across the wet pavement, a street lamp glowing above. The end of her scarf moves in the breeze, she looks down the empty road. Locked-off camera, peaceful and sad, seamless loop. Silent video, no audio, no music, no speech, no text."
+  },
+  {
+   "title": "Two cups and a leaf on the window",
+   "prompt": "Anime style, close warm interior light. A small wooden table by a rainy window at night, two cups of tea with slow rising steam, one untouched, a single orange maple leaf stuck to the wet glass, blurred city lights and falling leaves outside. Only the steam, rain and leaves move slowly. Locked-off camera, seamless loop. Silent video, no audio, no music, no speech, no text, no people."
+  }
+ ],
+ "titles": [
+  "\"you left before the leaves fell\" 📼 Sad Autumn Lofi for Rainy NIGHTS",
+  "\"i'm still here, under the same tree\" 📼 Sad Autumn Lofi Playlist",
+  "Sad Autumn Lofi for When You MISS Someone 🍂 1.5 Hours of Rainy Night Songs"
+ ],
+ "description": "For the ones who left before autumn, and for the nights you still count the leaves.\nAn hour and a half of soft rain, falling leaves, quiet piano and a gentle duet between two people in two different cities, late on a November night.\n\nPart of the \"why didn't you say goodbye?\" series.\n\nMusic created with AI (ElevenLabs), original lyrics written for this channel. Visuals created with Google Flow.\n\n#sadlofi #autumnlofi #rainynight",
+ "tags": [
+  "sad lofi",
+  "sad autumn lofi",
+  "autumn lofi",
+  "you left before the leaves fell",
+  "lofi for missing someone",
+  "rainy night lofi",
+  "3am lofi",
+  "heartbreak lofi",
+  "anime lofi",
+  "november lofi",
+  "night train lofi",
+  "soft duet"
+ ],
+ "thumbnail_prompts": [
+  {
+   "text": "you left before the leaves fell",
+   "prompt": "Wide 16:9 anime illustration of a young girl in a beige coat and red scarf inside a small Japanese convenience store at night, looking out of the rainy window at an empty street covered with orange maple leaves; the words you left before the leaves fell in soft white lowercase handwriting with a gentle glow in the lower third, spelled exactly."
+  },
+  {
+   "text": "STILL HERE",
+   "prompt": "Wide 16:9 anime illustration of an empty park bench under a maple tree in the rain at night, orange leaves falling, a transparent umbrella leaning on the bench, warm street lamp; the words STILL HERE in large soft white rounded capitals with a subtle shadow, upper third, spelled exactly."
+  },
+  {
+   "text": "3AM",
+   "prompt": "Wide 16:9 anime illustration of a young man resting his head on a rainy night-train window, autumn trees with orange leaves blurred outside; the word 3AM in huge soft yellow-white rounded capitals with a gentle glow, upper left, spelled exactly."
+  }
+ ]
+}

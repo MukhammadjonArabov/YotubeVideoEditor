@@ -1,0 +1,443 @@
+{
+ "title": "Why Do We Still Have Ancient NIGHTMARES?",
+ "title_alternatives": [
+  "Why Your Nightmares Are 100,000 Years Old",
+  "Why Do We Dream About Being CHASED?",
+  "What Were Ancient Humans' Nightmares About?",
+  "Your Brain Still Thinks Lions Are Hunting You",
+  "The Ancient Reason You Have Bad Dreams"
+ ],
+ "description": "Why do so many of us dream about being chased, falling or hiding in the dark - even though most of us have never met a wild predator? In this video we look at the threat simulation theory of dreaming, what happens in the brain during REM sleep, how hunter-gatherer groups share the night watch, and why a stressful week can end with an ancient-looking nightmare.\n\nThis is an animated explainer, not medical advice. If nightmares are affecting your sleep often, please talk to a doctor.\n\nSources:",
+ "tags": [
+  "ancient humans",
+  "nightmares",
+  "why do we dream",
+  "threat simulation theory",
+  "evolution of dreams",
+  "REM sleep",
+  "being chased dream",
+  "human evolution",
+  "sleep science",
+  "psychology",
+  "hunter gatherers"
+ ],
+ "mood": "mysterious",
+ "sources": [
+  "Revonsuo, A. (2000). The reinterpretation of dreams: An evolutionary hypothesis of the function of dreaming. Behavioral and Brain Sciences, 23(6).",
+  "Nielsen, T. A. et al. (2003). The Typical Dreams of Canadian University Students. Dreaming, 13(4).",
+  "Valli, K. et al. (2005). The threat simulation theory of the evolutionary function of dreaming: Evidence from dreams of traumatized children. Consciousness and Cognition, 14(1).",
+  "Samson, D. R. et al. (2017). Chronotype variation drives night-time sentinel-like behaviour in hunter-gatherers. Proceedings of the Royal Society B, 284.",
+  "Walker, M. P. & van der Helm, E. (2009). Overnight therapy? The role of sleep in emotional brain processing. Psychological Bulletin, 135(5).",
+  "Krakow, B. et al. (2001). Imagery rehearsal therapy for chronic nightmares in sexual assault survivors with PTSD. JAMA, 286(5)."
+ ],
+ "scenes": [
+  {
+   "narration": "It's 3 a.m. You're running, but your legs feel like wet sand. Something is right behind you. And then you wake up.",
+   "image_prompt": "the main character running in slow motion through a dark forest at night, terrified face, glowing eyes in the bushes behind him",
+   "beat_type": "hook",
+   "sfx_cue": "riser"
+  },
+  {
+   "narration": "Here's the weird part: whatever chased you probably wasn't a boss or a tax bill. It was something with teeth. Why?",
+   "image_prompt": "the main character sitting up in a modern bed, sweating, a thought bubble above him showing a shadowy creature with big teeth",
+   "beat_type": "hook",
+   "sfx_cue": "whoosh"
+  },
+  {
+   "narration": "Your brain lives in a world of Wi-Fi and pizza delivery, but at night it still seems to rehearse a much older world.",
+   "image_prompt": "split scene: left side a cozy modern bedroom with a phone charging, right side a dark prehistoric cave with a campfire",
+   "beat_type": "build",
+   "sfx_cue": null
+  },
+  {
+   "narration": "To understand why, we have to go back, way back, to the people who slept on the ground with nothing between them and the dark.",
+   "image_prompt": "a group of stick-figure ancient humans lying on grass around a small fire under a huge starry sky",
+   "beat_type": "normal",
+   "sfx_cue": "whoosh"
+  },
+  {
+   "narration": "First, a quick fact. Being chased is one of the most common dream themes ever recorded, across countries and age groups.",
+   "image_prompt": "a big world map with little stick figures in different countries all running from shadows, arrows pointing everywhere",
+   "beat_type": "normal",
+   "sfx_cue": null
+  },
+  {
+   "narration": "In one large survey of university students, being chased or pursued came out near the very top of the list.",
+   "image_prompt": "a classroom of stick-figure students raising hands, a bar chart on the board with the tallest bar showing a running figure",
+   "beat_type": "normal",
+   "sfx_cue": null
+  },
+  {
+   "narration": "Falling, being late, losing teeth, being attacked. Different lives, weirdly similar nightmares.",
+   "image_prompt": "four small panels: a figure falling off a cliff, a figure running for a clock, a figure holding a tooth, a figure hiding from a shadow",
+   "beat_type": "normal",
+   "sfx_cue": null
+  },
+  {
+   "narration": "So is your brain just random at night? Some scientists think it's doing something surprisingly useful.",
+   "image_prompt": "the main character tapping his head, a cartoon brain with a tiny hard hat working at a desk inside it",
+   "beat_type": "build",
+   "sfx_cue": null
+  },
+  {
+   "narration": "In 2000, a Finnish researcher named Antti Revonsuo proposed an idea called the threat simulation theory.",
+   "image_prompt": "a friendly stick-figure scientist with glasses standing next to a chalkboard that shows a drawing of a figure dodging a lion",
+   "beat_type": "normal",
+   "sfx_cue": null
+  },
+  {
+   "narration": "The idea is simple: dreams may work like a flight simulator for danger.",
+   "image_prompt": "the main character sitting in a wooden cockpit-style simulator made of sticks, a screen showing a charging mammoth",
+   "beat_type": "punchline",
+   "sfx_cue": "boing"
+  },
+  {
+   "narration": "A pilot practices engine failures in a simulator so a real emergency feels a little familiar. Your brain may do the same with threats.",
+   "image_prompt": "side by side: a pilot in a simulator and the main character dreaming, both calmly pressing buttons while alarms flash",
+   "beat_type": "normal",
+   "sfx_cue": null
+  },
+  {
+   "narration": "For our ancestors, the threats were very real. Big cats, wolves, snakes, falling from rocks, and sometimes other humans.",
+   "image_prompt": "a prehistoric landscape with a big cat on a rock, a snake in the grass, a wolf pack in the distance, the main character looking worried",
+   "beat_type": "build",
+   "sfx_cue": null
+  },
+  {
+   "narration": "A person who had already rehearsed running, hiding or climbing, even only in a dream, might react a split second faster.",
+   "image_prompt": "the main character quickly climbing a tree while a big cat looks up disappointed",
+   "beat_type": "normal",
+   "sfx_cue": "whoosh"
+  },
+  {
+   "narration": "And in the wild, a split second could decide who became an ancestor and who became dinner.",
+   "image_prompt": "two stick figures: one safely up in a tree waving, the other sitting inside a comically large cat's shadow outline",
+   "beat_type": "punchline",
+   "sfx_cue": "boing"
+  },
+  {
+   "narration": "Now, this is a theory, not a proven fact. But there are some interesting clues that fit it.",
+   "image_prompt": "the main character as a detective with a magnifying glass looking at footprints labeled only with question marks shapes",
+   "beat_type": "normal",
+   "sfx_cue": null
+  },
+  {
+   "narration": "Clue number one: when researchers collect children's dreams, animals show up much more often than in adult dreams.",
+   "image_prompt": "a small stick-figure child sleeping with a thought bubble full of cartoon animals: bear, wolf, snake, big cat",
+   "beat_type": "normal",
+   "sfx_cue": null
+  },
+  {
+   "narration": "Many of those dream animals are not the cat or dog at home. They're wild, big and often threatening.",
+   "image_prompt": "the child's dream bubble zooms in: a huge bear towering over a tiny house cat that looks confused",
+   "beat_type": "normal",
+   "sfx_cue": null
+  },
+  {
+   "narration": "It's a bit strange. Most kids today have never met a wolf, yet wolves still find their way into bedtime nightmares.",
+   "image_prompt": "a modern child's bedroom with posters and toys, a cartoon wolf peeking from under the bed",
+   "beat_type": "normal",
+   "sfx_cue": null
+  },
+  {
+   "narration": "Clue number two comes from children who grew up in genuinely dangerous places.",
+   "image_prompt": "a serious scene: a small village at dusk with smoke in the distance, a child looking up at the sky",
+   "beat_type": "build",
+   "sfx_cue": null
+  },
+  {
+   "narration": "A study of children living through war found they reported more threatening dreams than children living in peaceful areas.",
+   "image_prompt": "two groups of stick-figure children sleeping, one group with many dark dream bubbles, the other with calmer dream bubbles",
+   "beat_type": "normal",
+   "sfx_cue": null
+  },
+  {
+   "narration": "That fits the idea that the dream simulator switches on more often when the real world feels dangerous.",
+   "image_prompt": "a big cartoon switch on a brain labeled with a lightning bolt icon being flipped up, warning lights turning on",
+   "beat_type": "normal",
+   "sfx_cue": null
+  },
+  {
+   "narration": "Clue number three is about how dreams are built inside the brain during REM sleep.",
+   "image_prompt": "a cartoon brain lying in a tiny bed under a blanket, eyes darting left and right under closed eyelids",
+   "beat_type": "normal",
+   "sfx_cue": null
+  },
+  {
+   "narration": "During REM sleep, the amygdala, a brain area strongly linked to fear and emotion, is very active.",
+   "image_prompt": "a cartoon brain with one small almond-shaped area glowing bright red like an alarm bell",
+   "beat_type": "normal",
+   "sfx_cue": null
+  },
+  {
+   "narration": "Meanwhile, parts of the front of the brain that normally say 'calm down, that makes no sense' are much quieter.",
+   "image_prompt": "a tiny sleepy stick figure at the front of the brain wearing a nightcap, snoring, while an alarm rings behind him",
+   "beat_type": "punchline",
+   "sfx_cue": null
+  },
+  {
+   "narration": "Alarm on, fact-checker asleep. No wonder a normal hallway can turn into a monster chase.",
+   "image_prompt": "the main character in a long glowing hallway at night, doors turning into mouths with teeth, a comic sweat drop on his head",
+   "beat_type": "punchline",
+   "sfx_cue": "boing"
+  },
+  {
+   "narration": "But why would evolution keep such an uncomfortable feature? To answer that, let's look at how ancient people actually slept.",
+   "image_prompt": "the main character scratching his head next to a big question mark made of sticks, a moon in the sky",
+   "beat_type": "build",
+   "sfx_cue": "whoosh"
+  },
+  {
+   "narration": "Researchers have studied modern hunter-gatherer and small farming groups, like the Hadza in Tanzania, to learn about natural sleep.",
+   "image_prompt": "a small camp of grass huts under acacia trees at night, a few stick figures sleeping, one sitting by a fire",
+   "beat_type": "normal",
+   "sfx_cue": null
+  },
+  {
+   "narration": "They found something surprising: in one Hadza study, over about three weeks, everyone was asleep at the same time for only around eighteen minutes.",
+   "image_prompt": "a camp at night with many sleeping figures and always one figure awake by the fire, a small clock icon showing a short time",
+   "beat_type": "punchline",
+   "sfx_cue": "ding"
+  },
+  {
+   "narration": "Someone was almost always awake. Night owls, early birds and light sleepers took turns without planning it.",
+   "image_prompt": "a row of stick figures: an owl-hatted one awake late, a rooster-hatted one awake early, one tossing and turning",
+   "beat_type": "normal",
+   "sfx_cue": null
+  },
+  {
+   "narration": "Scientists call this the sentinel idea. A group with mixed sleep habits has a built-in night watch.",
+   "image_prompt": "a stick-figure guard with a spear standing proudly on a rock while the rest of the group sleeps behind him",
+   "beat_type": "normal",
+   "sfx_cue": null
+  },
+  {
+   "narration": "And if you're the one half-awake at 3 a.m., a brain that jumps quickly into alarm mode might actually be helpful.",
+   "image_prompt": "the guard's eyes wide open, a rustle in the bushes shown with motion lines, the guard ready to shout",
+   "beat_type": "build",
+   "sfx_cue": null
+  },
+  {
+   "narration": "Here's my honest take: I don't think nightmares were designed to torture us. They look more like an old smoke alarm that is a little too sensitive.",
+   "image_prompt": "the main character looking straight at the viewer, pointing at a smoke alarm on the ceiling that is beeping at a slice of toast",
+   "beat_type": "punchline",
+   "sfx_cue": "ding"
+  },
+  {
+   "narration": "A smoke alarm that goes off for burnt toast is annoying. A smoke alarm that stays silent during a real fire is deadly.",
+   "image_prompt": "split scene: left a kitchen with burnt toast and a beeping alarm and an annoyed figure, right a silent alarm with flames and a shocked figure",
+   "beat_type": "normal",
+   "sfx_cue": null
+  },
+  {
+   "narration": "Evolution usually prefers the annoying alarm. False alarms cost you sleep. Missed alarms could cost you everything.",
+   "image_prompt": "a balance scale: on one side a pillow, on the other a skull-free cartoon danger sign, the danger side much heavier",
+   "beat_type": "normal",
+   "sfx_cue": null
+  },
+  {
+   "narration": "Now here's the modern twist. The alarm system is still installed, but the threats around us have completely changed.",
+   "image_prompt": "the main character in a modern office surrounded by emails, deadlines and a ringing phone, looking stressed",
+   "beat_type": "build",
+   "sfx_cue": "whoosh"
+  },
+  {
+   "narration": "Most of us will never be chased by a big cat. But we do get chased by exams, deadlines and awkward conversations.",
+   "image_prompt": "the main character running from a giant flying stack of papers and a calendar with teeth",
+   "beat_type": "punchline",
+   "sfx_cue": "boing"
+  },
+  {
+   "narration": "And the old brain seems to translate modern stress into ancient pictures: being chased, falling, hiding, being attacked.",
+   "image_prompt": "a cartoon translation machine: a stressful email goes in one side, a charging mammoth comes out the other side",
+   "beat_type": "normal",
+   "sfx_cue": null
+  },
+  {
+   "narration": "That's why a stressful week can end with a dream about running through a forest you have never seen.",
+   "image_prompt": "the main character asleep at a desk with a laptop, dream bubble showing him running through an ancient forest",
+   "beat_type": "normal",
+   "sfx_cue": null
+  },
+  {
+   "narration": "There's also a second, gentler idea about what dreams do: they may help us process emotions.",
+   "image_prompt": "a warm scene: the main character sitting by a calm river at sunset, thought bubbles floating away like leaves",
+   "beat_type": "build",
+   "sfx_cue": null
+  },
+  {
+   "narration": "Some sleep researchers describe REM sleep as a kind of overnight therapy.",
+   "image_prompt": "a cartoon brain lying on a therapist's couch, a friendly moon in a cardigan taking notes",
+   "beat_type": "normal",
+   "sfx_cue": null
+  },
+  {
+   "narration": "The idea is that we replay emotional memories while stress chemicals in the brain are unusually low, so the sting slowly fades.",
+   "image_prompt": "a memory shown as a spiky red ball being gently washed in a moonlit stream and becoming smooth and blue",
+   "beat_type": "normal",
+   "sfx_cue": null
+  },
+  {
+   "narration": "In that view, a bad dream can be the brain trying to file away something scary, but the process doesn't always go smoothly.",
+   "image_prompt": "a messy filing cabinet in a brain with folders flying out, a tiny stick-figure clerk struggling to close the drawer",
+   "beat_type": "normal",
+   "sfx_cue": null
+  },
+  {
+   "narration": "These two ideas don't fight each other. Dreams might both rehearse danger and help us calm down after it.",
+   "image_prompt": "two cartoon brains shaking hands, one wearing a helmet, the other holding a cup of tea",
+   "beat_type": "normal",
+   "sfx_cue": null
+  },
+  {
+   "narration": "Now, an important reality check. Having nightmares now and then is completely normal.",
+   "image_prompt": "the main character giving a thumbs up, a calendar showing only a few small cloud icons across a month",
+   "beat_type": "normal",
+   "sfx_cue": null
+  },
+  {
+   "narration": "Surveys suggest most adults have an occasional bad dream, and kids tend to have them more often than adults.",
+   "image_prompt": "a group of stick figures of different ages, the smaller ones with slightly more dream clouds above their heads",
+   "beat_type": "normal",
+   "sfx_cue": null
+  },
+  {
+   "narration": "But for a smaller group of people, nightmares happen so often that they wreck sleep and daily life.",
+   "image_prompt": "a tired stick figure with dark circles under the eyes holding a huge coffee mug, many dark clouds above",
+   "beat_type": "build",
+   "sfx_cue": null
+  },
+  {
+   "narration": "That can happen after trauma, during very stressful periods, or with some medicines. And it's something doctors can actually help with.",
+   "image_prompt": "a friendly stick-figure doctor with a stethoscope talking kindly to a tired patient in a bright clinic",
+   "beat_type": "normal",
+   "sfx_cue": null
+  },
+  {
+   "narration": "One well-studied approach is called imagery rehearsal therapy, and it sounds almost too simple.",
+   "image_prompt": "the main character holding a pencil over a notebook with a small drawing of a monster, curious expression",
+   "beat_type": "build",
+   "sfx_cue": "riser"
+  },
+  {
+   "narration": "While awake, you write down a recurring nightmare, change the ending into something less scary, and practice the new version.",
+   "image_prompt": "the main character redrawing a monster in his notebook into a small silly monster wearing a party hat",
+   "beat_type": "normal",
+   "sfx_cue": null
+  },
+  {
+   "narration": "In other words, you give your ancient flight simulator a new script. For many people, that reduces how often the nightmare returns.",
+   "image_prompt": "the wooden simulator from earlier, its screen now showing the mammoth tripping over and everyone laughing",
+   "beat_type": "punchline",
+   "sfx_cue": "ding"
+  },
+  {
+   "narration": "It's kind of beautiful. The same system that learned from rehearsal can be calmed down by rehearsal.",
+   "image_prompt": "the main character smiling peacefully in bed, the moon outside the window smiling back",
+   "beat_type": "normal",
+   "sfx_cue": null
+  },
+  {
+   "narration": "Let's go back to the campfire for a moment.",
+   "image_prompt": "the ancient camp at night again, a warm glowing fire in the center, stars above",
+   "beat_type": "build",
+   "sfx_cue": "whoosh"
+  },
+  {
+   "narration": "Imagine an ancient teenager waking up from a dream about a lion, heart pounding, and moving a little closer to the fire.",
+   "image_prompt": "a young stick figure sitting up suddenly in the grass, then scooting closer to the fire and to the group",
+   "beat_type": "normal",
+   "sfx_cue": null
+  },
+  {
+   "narration": "That small reaction, moving closer to the group, staying alert, listening to the night, might have made a real difference over thousands of years.",
+   "image_prompt": "the young figure sitting near the guard, both listening, the bushes nearby perfectly still",
+   "beat_type": "normal",
+   "sfx_cue": null
+  },
+  {
+   "narration": "Nobody knows exactly how much dreams shaped human survival. But the pattern is hard to ignore.",
+   "image_prompt": "the main character standing in front of a long timeline from caves to cities, shrugging with a thoughtful face",
+   "beat_type": "normal",
+   "sfx_cue": null
+  },
+  {
+   "narration": "The most common nightmares still look like the dangers our ancestors faced every day: being hunted, falling, being alone in the dark.",
+   "image_prompt": "three glowing cave paintings on a rock wall: a figure being chased, a figure falling, a figure alone under the moon",
+   "beat_type": "normal",
+   "sfx_cue": null
+  },
+  {
+   "narration": "So the next time you wake up from a dream about being chased, try a different thought than 'what's wrong with me?'",
+   "image_prompt": "the main character waking up in a modern bed, taking a deep breath, a small thought bubble with a question mark",
+   "beat_type": "build",
+   "sfx_cue": null
+  },
+  {
+   "narration": "Maybe it's just a very old part of you running a fire drill. Loudly. At the worst possible time.",
+   "image_prompt": "a tiny caveman version of the main character inside his head banging on a drum with a fire-drill sign",
+   "beat_type": "punchline",
+   "sfx_cue": "boing"
+  },
+  {
+   "narration": "And here's what I find comforting: that system exists because someone, long ago, survived the night.",
+   "image_prompt": "a warm sunrise over the ancient camp, all the stick figures waking up safely and stretching",
+   "beat_type": "normal",
+   "sfx_cue": null
+  },
+  {
+   "narration": "Every nightmare is a strange little echo of ancestors who were careful enough, lucky enough, or scared enough to make it to morning.",
+   "image_prompt": "a long line of faint ghostly stick-figure ancestors standing behind the main character, all smiling and waving",
+   "beat_type": "punchline",
+   "sfx_cue": "ding"
+  },
+  {
+   "narration": "Of course, you don't live in a camp surrounded by lions. So it's okay to tell your inner alarm: thanks, but I've got this.",
+   "image_prompt": "the main character patting a small nervous cartoon alarm bell on the head, the bell calming down",
+   "beat_type": "normal",
+   "sfx_cue": null
+  },
+  {
+   "narration": "A regular sleep time, less doom-scrolling before bed and a calm routine can make that old alarm a lot less jumpy.",
+   "image_prompt": "a cozy bedroom at night with the phone placed away on a shelf, a book and a warm lamp on the nightstand",
+   "beat_type": "normal",
+   "sfx_cue": null
+  },
+  {
+   "narration": "And if nightmares are wrecking your sleep week after week, talking to a doctor is a smart move, not an overreaction.",
+   "image_prompt": "the friendly doctor from before giving the main character a thumbs up in a bright clinic",
+   "beat_type": "normal",
+   "sfx_cue": null
+  },
+  {
+   "narration": "So, why do we still have ancient nightmares? Because our brains are older than our cities.",
+   "image_prompt": "a modern city skyline at night with a huge faint outline of an ancient cave drawn behind it",
+   "beat_type": "build",
+   "sfx_cue": "riser"
+  },
+  {
+   "narration": "We upgraded our homes, our tools and our phones, but at night we still sleep with a mind shaped by campfires.",
+   "image_prompt": "the main character in modern pajamas lying in bed, his shadow on the wall shaped like a caveman beside a fire",
+   "beat_type": "normal",
+   "sfx_cue": null
+  },
+  {
+   "narration": "If you had to guess, what was the most common thing chasing you in your own dreams? Tell me in the comments.",
+   "image_prompt": "the main character looking at the viewer with a curious smile, holding a small sign with a question mark",
+   "beat_type": "normal",
+   "sfx_cue": null
+  },
+  {
+   "narration": "And if you want to know how ancient humans slept, ate, or survived the cold, there's another story waiting for you right next to this one.",
+   "image_prompt": "the main character walking toward a glowing doorway that shows a snowy prehistoric landscape",
+   "beat_type": "normal",
+   "sfx_cue": "whoosh"
+  },
+  {
+   "narration": "Sleep well. And if something chases you tonight, remember: your ancestors outran it first.",
+   "image_prompt": "the main character sleeping peacefully while a tiny cartoon mammoth tiptoes quietly past the window under the moon",
+   "beat_type": "punchline",
+   "sfx_cue": "ding"
+  }
+ ]
+}

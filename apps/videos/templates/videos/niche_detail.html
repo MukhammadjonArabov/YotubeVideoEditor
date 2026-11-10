@@ -1,0 +1,44 @@
+{% extends "videos/base.html" %}
+{% block title %}{{ title }} · AutoExplainer{% endblock %}
+{% block head %}{% if refresh %}<meta http-equiv="refresh" content="20">{% endif %}{% endblock %}
+{% block content %}
+<div class="page-head">
+  <div><h1>{{ emoji }} {{ title }}</h1><p>{% if niche and niche.description %}{{ niche.description|truncatechars:160 }}{% else %}Bu yo'nalishdagi videolar va statistika.{% endif %}</p></div>
+  <a class="btn" href="{% url 'videos:home' %}">← Yo'nalishlar</a>
+</div>
+
+<div class="stats">
+  {% for label, value, unit in stats %}
+  <div class="stat"><span>{{ label }}</span><b>{{ value }}</b><small>{{ unit }}</small></div>
+  {% endfor %}
+</div>
+
+{% if working %}
+<div class="section-title"><h2>⏳ Jarayonda</h2></div>
+<div class="card flat"><table><tbody>
+  {% for p in working %}
+  <tr class="clickable" onclick="location.href='{% url 'videos:project_detail' p.pk %}'">
+    <td><strong>#{{ p.pk }} {{ p.title|default:p.topic }}</strong><br><small class="muted">{{ p.progress_message|default:"—" }}</small></td>
+    <td style="width:1%"><span class="pill {{ p.status }}">{{ p.get_status_display }}</span></td>
+  </tr>
+  {% endfor %}
+</tbody></table></div>
+{% endif %}
+
+<div class="section-title"><h2>✅ Tayyor videolar</h2></div>
+{% if done %}
+<div class="vgrid">
+  {% for v in done %}
+  <a class="vcard" href="{% url 'videos:project_detail' v.p.pk %}">
+    <div class="vthumb">{% if v.cover %}<img src="{{ v.cover }}" alt="">{% endif %}<span class="vlen">{{ v.length }}</span></div>
+    <div class="vbody">
+      <strong>#{{ v.p.pk }} {{ v.title }}</strong>
+      <small class="muted">{{ v.p.finished_at|date:"d.m.Y" }}{% if v.has_kit %} · nashr to'plami tayyor{% else %} · to'plam kutilmoqda{% endif %}</small>
+    </div>
+  </a>
+  {% endfor %}
+</div>
+{% else %}
+<p class="muted">Hozircha tayyor video yo'q.</p>
+{% endif %}
+{% endblock %}

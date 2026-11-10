@@ -1,0 +1,72 @@
+{% extends "videos/base.html" %}
+{% block title %}{{ mv.title }}{% endblock %}
+{% block content %}
+{% if mv.is_working %}<meta http-equiv="refresh" content="6">{% endif %}
+<a href="{% url 'videos:music_list' %}" class="btn ghost sm">← Musiqa videolari</a>
+<div class="page-head" style="margin:8px 0 6px"><div><h1>🎵 {{ mv.title }}</h1>
+  <p class="muted">{{ mv.get_status_display }}{% if mv.progress_message %} · {{ mv.progress_message }}{% endif %}{% if mv.is_working %} ⏳{% endif %}</p></div></div>
+{% if mv.error_message %}<div class="banner warn">⚠️ {{ mv.error_message }}</div>{% endif %}
+
+<form method="post" action="{% url 'videos:music_save' mv.pk %}" class="card" style="margin-bottom:12px">{% csrf_token %}
+  <h3>1. Musiqa</h3>
+  <label>Nomi</label><input name="title" value="{{ mv.title }}" style="width:100%">
+  <label>Musiqa tavsifi (ElevenLabs uchun)</label>
+  <textarea name="music_prompt" rows="4" style="width:100%">{{ mv.music_prompt }}</textarea>
+  <div class="row" style="gap:12px;margin-top:6px">
+    <div><label>Yaratiladigan musiqa uzunligi (daq., 3–10)</label><input type="number" name="music_minutes" min="3" max="10" value="{{ mv.music_minutes }}"></div>
+    <div><label>Tayyor video uzunligi (daq.)</label><input type="number" name="target_minutes" min="5" max="180" value="{{ mv.target_minutes }}"></div>
+    <div><label>Animatsiya har necha daqiqada</label><input type="number" name="cta_every_min" min="1" max="60" value="{{ mv.cta_every_min }}"></div>
+  </div>
+  <div class="row" style="gap:16px;margin-top:8px">
+    <label><input type="checkbox" name="add_subscribe" {% if mv.add_subscribe %}checked{% endif %}> 🔔 Subscribe animatsiyasi</label>
+    <label><input type="checkbox" name="add_like" {% if mv.add_like %}checked{% endif %}> 👍 Like animatsiyasi</label>
+  </div>
+  <button class="btn" style="margin-top:8px">Saqlash</button>
+</form>
+
+<div class="card" style="margin-bottom:12px">
+  <div class="row" style="gap:8px;flex-wrap:wrap;align-items:center">
+    <form method="post" action="{% url 'videos:music_generate' mv.pk %}">{% csrf_token %}
+      <button class="btn primary" {% if mv.is_working %}disabled{% endif %}>🎵 Musiqa yaratish (ElevenLabs)</button></form>
+    <form method="post" action="{% url 'videos:music_upload_audio' mv.pk %}" enctype="multipart/form-data" class="row" style="gap:6px">{% csrf_token %}
+      <input type="file" name="audio" accept="audio/*" required><button class="btn">⬆️ Tayyor musiqani yuklash</button></form>
+  </div>
+  <small class="muted">ElevenLabs musiqasi <strong>pullik rejada</strong> ishlaydi va faqat bitta qisqa trek yaratadi, qolgani takrorlanadi (kredit tejaladi).</small>
+  {% if mv.music_file %}<div style="margin-top:8px">🎧 Musiqa: {{ mv.music_duration|floatformat:0 }} soniya
+    <audio controls src="{{ mv.music_file.url }}" style="width:100%"></audio></div>{% endif %}
+</div>
+
+<div class="card" style="margin-bottom:12px">
+  <h3>2. Video klip(lar): Flow'da yarating ({{ clips|length }}/{{ max_clips }})</h3>
+  <p class="muted" style="margin-top:0">Har prompt bilan Flow'da ~20 soniyalik animatsion klip yarating (8 soniyalikni "extend" qilib). 1 dan 4 tagacha yuklang: ular uzluksiz ulanib, musiqa tugaguncha takrorlanadi.</p>
+  {% for t in flow_prompts %}
+    <div class="list-item" style="display:flex;gap:8px;align-items:flex-start;margin-bottom:6px">
+      <strong>{{ forloop.counter }}</strong><div id="fp{{ forloop.counter }}" style="flex:1;font-size:12px">{{ t }}</div>
+      <button type="button" class="btn sm" onclick="navigator.clipboard.writeText(document.getElementById('fp{{ forloop.counter }}').innerText).then(()=>{this.innerText='✅';setTimeout(()=>this.innerText='📋',1200)})">📋</button>
+    </div>
+  {% endfor %}
+  <form method="post" action="{% url 'videos:music_upload_clips' mv.pk %}" enctype="multipart/form-data" class="row" style="gap:6px;margin-top:8px">{% csrf_token %}
+    <input type="file" name="clips" accept="video/*" multiple required><button class="btn primary">⬆️ Klip(lar)ni yuklash</button></form>
+  {% for c in clips %}
+    <div class="list-item" style="display:flex;gap:10px;align-items:center;margin-top:8px">
+      <video src="{{ c.file.url }}" style="width:180px;border-radius:8px" muted controls></video>
+      <span>{{ c.order }}-klip · {{ c.duration|floatformat:0 }} s</span>
+      <form method="post" action="{% url 'videos:music_clip_delete' c.pk %}">{% csrf_token %}<button class="btn sm ghost">✖ O'chirish</button></form>
+    </div>
+  {% endfor %}
+</div>
+
+<div class="card">
+  <h3>3. Montaj</h3>
+  <p class="muted" style="margin-top:0">Musiqa {{ mv.target_minutes }} daqiqaga takrorlanadi, klip(lar) ham shuncha takrorlanadi.
+    {% if mv.add_subscribe or mv.add_like %}Taxminan {{ ctas }} marta {% if mv.add_subscribe %}Subscribe{% endif %}{% if mv.add_subscribe and mv.add_like %} + {% endif %}{% if mv.add_like %}Like{% endif %} animatsiyasi chiqadi.{% endif %}</p>
+  <form method="post" action="{% url 'videos:music_render' mv.pk %}">{% csrf_token %}
+    <button class="btn primary" {% if not can_render %}disabled title="Musiqa va kamida 1 klip kerak"{% endif %}>🎬 Videoni yaratish</button></form>
+  {% if mv.final_video %}
+    <div style="margin-top:10px"><video src="{{ mv.final_video.url }}" controls preload="metadata" style="width:100%;border-radius:10px"></video>
+      <a class="btn" href="{{ mv.final_video.url }}" download>⬇️ MP4 yuklab olish</a></div>
+  {% endif %}
+</div>
+<form method="post" action="{% url 'videos:music_delete' mv.pk %}" style="margin-top:14px" onsubmit="return confirm('Butunlay o\'chirilsinmi?')">{% csrf_token %}
+  <button class="btn ghost danger sm">Loyihani o'chirish</button></form>
+{% endblock %}

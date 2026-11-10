@@ -1,0 +1,15 @@
+<form method="post" action="{% url 'videos:project_hook_videos_upload' project.pk %}" enctype="multipart/form-data" class="card upload-box">
+  {% csrf_token %}
+  <h3>🎬 Hook videolarini yuklash</h3>
+  <p class="muted" style="margin-top:0">Flow'dan yuklab olingan klipler faqat <strong>hook</strong> sahnalariga joylanadi. Klipning dastlabki 2-3 soniyasi ishlatiladi, Veo ovozi olib tashlanadi.</p>
+  <div class="field"><input type="file" name="videos" accept="video/*" multiple required></div>
+  <div class="grid grid-2">
+    <div class="field"><label>Qaysi klip qaysi sahnaga?</label>
+      <select name="mode">
+        <option value="auto">Fayl nomidagi raqam bo'yicha (001.mp4 → 1-sahna)</option>
+        <option value="order">Fayl nomlari tartibida, ketma-ket</option>
+      </select></div>
+    <div class="field"><label>Ketma-ket rejimda: nechanchi sahnadan</label><input type="number" name="start" value="1" min="1"></div>
+  </div>
+  <button class="btn primary" {% if project.is_busy %}disabled{% endif %}>⬆️ Yuklash</button>
+</form>

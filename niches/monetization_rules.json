@@ -1,0 +1,73 @@
+{
+  "updated": "2026-11-09",
+  "summary_uz": "YouTube YPP (2026-07 aniqlik kiritilgan 'inauthentic content' siyosati): AI ishlatish o'zi taqiqlanmagan. Monetizatsiyadan chiqariladi: (1) shablon, takroriy, bir xil ko'p yuklangan kontent, ijodiy hissasiz; (2) tomoshabinni bezovta qiladigan, faqat reaksiya uchun qilingan kontent; (3) AI personaning sog'liq, tibbiyot, huquq, moliya bo'yicha maslahati. Realistik sintetik kontent (va AI musiqa) Studio'da 'Altered or synthetic content' belgisi bilan oshkor qilinishi kerak.",
+  "sources": [
+    "https://support.google.com/youtube/answer/1311392 (YPP monetization policies, inauthentic content)",
+    "https://support.google.com/youtube/answer/14328491 (altered or synthetic content disclosure)",
+    "https://techcrunch.com/2026/07/20/youtube-clarifies-policies-around-ai-slop-and-upsetting-videos/"
+  ],
+  "health_claims": [
+    "cure your",
+    "cures your",
+    "heal your",
+    "treat insomnia",
+    "treat your",
+    "boost melatonin",
+    "eliminate stress",
+    "eliminate anxiety",
+    "fix your sleep",
+    "clinically proven",
+    "scientifically proven",
+    "100%",
+    "99%",
+    "instantly fall asleep",
+    "therapy for",
+    "no more insomnia"
+  ],
+  "health_soft": [
+    "anxiety",
+    "insomnia",
+    "depression",
+    "panic",
+    "adhd",
+    "ptsd"
+  ],
+  "distress": [
+    "gore",
+    "graphic",
+    "torture",
+    "suicide",
+    "self-harm",
+    "kill yourself",
+    "blood everywhere",
+    "screaming in pain"
+  ],
+  "advice": [
+    "you should invest",
+    "buy this stock",
+    "take this supplement",
+    "stop taking your",
+    "the right dosage",
+    "you should take",
+    "ask for a prescription"
+  ],
+  "style_copy": [
+    "in the style of",
+    "sounds like",
+    "cover of",
+    "remix of"
+  ],
+  "ai_disclosure_words": [
+    "ai (elevenlabs)",
+    "created with ai",
+    "made with ai",
+    "ai-generated",
+    "ai generated",
+    "google flow"
+  ],
+  "music_max_per_week": 3,
+  "similarity_warn": 0.72,
+  "similarity_fail": 0.9,
+  "min_clips": 3,
+  "explainer_min_minutes": 8
+}

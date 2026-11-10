@@ -1,0 +1,1243 @@
+{
+ "title": "How Did Ancient Humans Invent ROADS?",
+ "title_alternatives": [
+  "How a Deer Path Became a HIGHWAY",
+  "Who Paved the World's First ROAD?",
+  "Why Your Street Started as an ANIMAL Trail",
+  "The Strange Ancient Rules of the First ROADS",
+  "Before Roads, How Did Humans Get ANYWHERE?"
+ ],
+ "description": "You walk on one of humanity's oldest inventions every day, and you probably never think about it. Long before asphalt, roads began as animal trails, footprints in volcanic ash and shortcuts across the grass. This is the story of how a deer path became a highway: from bark blazes on trees and stacked stones to a wooden walkway older than the pyramids and the world's oldest paved road in Egypt.\n\nWe also meet the cursed boundary stones of Babylon, a Roman god of borders, the English villages that bumped boys against stones so they'd never forget a boundary, and the Persian, Roman and Inca roads that held whole empires together.\n\nSources:",
+ "tags": [
+  "ancient humans",
+  "history of roads",
+  "first roads",
+  "ancient history",
+  "human evolution",
+  "inca roads",
+  "roman roads",
+  "archaeology",
+  "stone age",
+  "how roads were invented",
+  "desire paths"
+ ],
+ "mood": "playful",
+ "sources": [
+  "Leakey, M. D. & Hay, R. L. (1979). Pliocene footprints in the Laetolil Beds at Laetoli. Nature 278.",
+  "Raichlen, D. A. et al. (2010). Laetoli footprints preserve earliest direct evidence of human-like bipedal biomechanics. PLoS ONE 5(3).",
+  "Helbing, D., Keltsch, J. & Molnar, P. (1997). Modelling the evolution of human trail systems. Nature 388.",
+  "Soule, R. G. & Goldman, R. F. (1972). Terrain coefficients for energy cost prediction. J. Applied Physiology 32.",
+  "Ganskopp, D., Cruz, R. & Johnson, D. E. (2000). Least-effort pathways? Applied Animal Behaviour Science 68.",
+  "Coles, B. & Coles, J. (1986). Sweet Track to Glastonbury: The Somerset Levels in Prehistory. Thames & Hudson.",
+  "Hillam, J. et al. (1990). Dendrochronology of the English Neolithic. Antiquity 64.",
+  "ASCE Historic Civil Engineering Landmark: Lake Moeris Quarry Road.",
+  "Brain, C. K. (1981). The Hunters or the Hunted? University of Chicago Press.",
+  "Britannica: Kudurru; Roman road system; Chasqui.",
+  "Ovid, Fasti, Book II (Terminalia).",
+  "Herodotus, Histories 5.52-53 and 8.98.",
+  "UNESCO World Heritage List: Qhapaq Nan, Andean Road System (2014); Intangible Heritage: Q'eswachaka (2013).",
+  "Macfarlane, R., Donwood, S. & Richards, D. (2012). Holloway. Faber & Faber."
+ ],
+ "scenes": [
+  {
+   "narration": "Your street may have started as a deer trail.",
+   "image_prompt": "The main character standing on a modern paved street, staring down at a line of deer hoofprints pressed into it",
+   "beat_type": "hook",
+   "sfx_cue": "impact",
+   "scene_kind": "hero",
+   "fact_source": null
+  },
+  {
+   "narration": "In America, bison hooves carved paths that later became roads.",
+   "image_prompt": "A herd of bison walking in single file along a worn dirt path through a forest",
+   "beat_type": "hook",
+   "sfx_cue": null,
+   "scene_kind": "fact",
+   "fact_source": "Natchez Trace: US National Park Service; Wikipedia"
+  },
+  {
+   "narration": "Before paths, every walk home was a gamble.",
+   "image_prompt": "The main character pushing through thick undergrowth, looking around uncertainly, branches everywhere",
+   "beat_type": "hook",
+   "sfx_cue": null,
+   "scene_kind": "hero",
+   "fact_source": null
+  },
+  {
+   "narration": "And leopards were waiting in those woods.",
+   "image_prompt": "A leopard crouched low in dense forest shadows, eyes fixed ahead",
+   "beat_type": "hook",
+   "sfx_cue": null,
+   "scene_kind": "fact",
+   "fact_source": "Brain (1981), The Hunters or the Hunted?"
+  },
+  {
+   "narration": "You walk on this invention every single day.",
+   "image_prompt": "The main character in a modern city crossing a busy road, holding a coffee cup",
+   "beat_type": "hook",
+   "sfx_cue": null,
+   "scene_kind": "hero",
+   "fact_source": null
+  },
+  {
+   "narration": "Yet its story began over three million years ago.",
+   "image_prompt": "Ancient footprints pressed into grey volcanic ash",
+   "beat_type": "hook",
+   "sfx_cue": null,
+   "scene_kind": "fact",
+   "fact_source": "Leakey & Hay (1979), Nature 278; Raichlen et al. (2010), PLoS ONE"
+  },
+  {
+   "narration": "Today you'll see how a footpath became a highway.",
+   "image_prompt": "The main character standing where a narrow dirt path widens into a broad stone road ahead",
+   "beat_type": "hook",
+   "sfx_cue": null,
+   "scene_kind": "hero",
+   "fact_source": null
+  },
+  {
+   "narration": "From cut marks on trees to cursed boundary stones.",
+   "image_prompt": "A carved stone pillar covered in symbols standing at the edge of a field",
+   "beat_type": "hook",
+   "sfx_cue": null,
+   "scene_kind": "fact",
+   "fact_source": "Britannica: kudurru; British Museum Kassite boundary stones"
+  },
+  {
+   "narration": "From a wooden walkway older than the pyramids...",
+   "image_prompt": "The main character carefully walking along a narrow plank walkway over a misty marsh",
+   "beat_type": "hook",
+   "sfx_cue": null,
+   "scene_kind": "hero",
+   "fact_source": null
+  },
+  {
+   "narration": "...to an Inca road over thirty thousand kilometres long.",
+   "image_prompt": "A stone road with steps winding along a steep green Andean mountainside",
+   "beat_type": "hook",
+   "sfx_cue": null,
+   "scene_kind": "fact",
+   "fact_source": "UNESCO World Heritage: Qhapaq Nan, Andean Road System (1459)"
+  },
+  {
+   "narration": "And why English villages once bumped boys against stones.",
+   "image_prompt": "The main character wincing and rubbing his backside next to a large stone in a field",
+   "beat_type": "hook",
+   "sfx_cue": null,
+   "scene_kind": "hero",
+   "fact_source": null
+  },
+  {
+   "narration": "It might be the strangest road rule in history.",
+   "image_prompt": "A worn boundary stone half hidden in long grass beside a country lane",
+   "beat_type": "hook",
+   "sfx_cue": "riser",
+   "scene_kind": "fact",
+   "fact_source": "Beating the bounds: Merton Historical Society; Wiltshire & Swindon History Centre"
+  },
+  {
+   "narration": "Let's go back to a time before any path existed. Our guy needs water, and the river is somewhere over that hill.",
+   "image_prompt": "The main character standing at the edge of a dense forest, holding an empty gourd, looking toward a distant hill",
+   "beat_type": "build",
+   "sfx_cue": null,
+   "scene_kind": "hero",
+   "fact_source": null
+  },
+  {
+   "narration": "Here's the problem. Walking through heavy brush can burn about fifty percent more energy than walking on a smooth road.",
+   "image_prompt": "Thick tangled bushes, thorny branches and fallen logs covering a forest floor",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact",
+   "fact_source": "Soule & Goldman (1972), Terrain coefficients for energy cost prediction, J. Applied Physiology"
+  },
+  {
+   "narration": "So every trip is expensive. And when food is scarce, wasting energy on a bad route is a very real danger.",
+   "image_prompt": "The main character exhausted, sitting on a fallen log and wiping sweat, surrounded by thorny bushes",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "hero",
+   "fact_source": null
+  },
+  {
+   "narration": "Thick plants also hide what's ahead. Ambush hunters like leopards depend on exactly that kind of cover.",
+   "image_prompt": "A leopard half hidden among dense leaves on a forest floor, only its spotted shoulder visible",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact",
+   "fact_source": "Brain (1981), The Hunters or the Hunted?"
+  },
+  {
+   "narration": "Honestly, a path isn't just convenient. It's a long open window where you can see trouble coming.",
+   "image_prompt": "The main character walking through a small clearing, looking relieved because he can see far ahead",
+   "beat_type": "punchline",
+   "sfx_cue": null,
+   "scene_kind": "hero",
+   "fact_source": null
+  },
+  {
+   "narration": "The oldest trace of a walk we know of is a set of footprints at Laetoli, in Tanzania, pressed into volcanic ash about three point six million years ago.",
+   "image_prompt": "A long trail of ancient footprints stretching across hardened grey volcanic ash",
+   "beat_type": "build",
+   "sfx_cue": null,
+   "scene_kind": "fact",
+   "fact_source": "Leakey & Hay (1979), Nature 278; Raichlen et al. (2010), PLoS ONE"
+  },
+  {
+   "narration": "A few early humans walked across wet ash after a volcano puffed, and the ash set like cement behind them.",
+   "image_prompt": "The main character carefully stepping through soft grey ash and looking back at his own footprints",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "hero",
+   "fact_source": null
+  },
+  {
+   "narration": "Those prints show a human-like stride: heel first, then the toes. Walking long distances on two feet was already our thing.",
+   "image_prompt": "A close view of one ancient footprint with a clear heel and big toe impression",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact",
+   "fact_source": "Leakey & Hay (1979), Nature 278; Raichlen et al. (2010), PLoS ONE"
+  },
+  {
+   "narration": "But walking well doesn't help if you don't know where you're going. And there was no trail to follow. Yet.",
+   "image_prompt": "The main character scratching his head at a fork between two equally overgrown directions",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "hero",
+   "fact_source": null
+  },
+  {
+   "narration": "Except, there sort of was. Long before humans built anything, the land was already crossed by roads. People just didn't make them.",
+   "image_prompt": "A narrow dirt path winding through tall grass, with animal hoofprints in the mud",
+   "beat_type": "build",
+   "sfx_cue": null,
+   "scene_kind": "fact",
+   "fact_source": "Helbing, Keltsch & Molnar (1997), Modelling the evolution of human trail systems, Nature 388"
+  },
+  {
+   "narration": "Animals had been commuting for millions of years. Same water hole, same salt lick, same safe river crossing, day after day.",
+   "image_prompt": "The main character hiding behind a bush, watching a line of antelope walk past toward a river",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "hero",
+   "fact_source": null
+  },
+  {
+   "narration": "Repeat a walk thousands of times and the plants give up. The soil gets packed hard, and a bare trail appears.",
+   "image_prompt": "A bare packed-earth trail cutting through green grass toward a distant water hole",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact",
+   "fact_source": "Helbing, Keltsch & Molnar (1997), Modelling the evolution of human trail systems, Nature 388"
+  },
+  {
+   "narration": "So the first road builders on Earth had hooves and paws, and absolutely no idea what they were doing.",
+   "image_prompt": "The main character watching a confused-looking zebra walking along a dirt path",
+   "beat_type": "punchline",
+   "sfx_cue": "boing",
+   "scene_kind": "hero",
+   "fact_source": null
+  },
+  {
+   "narration": "And animals tend to choose easy routes. Studies of cattle trails show them following gentle slopes rather than charging straight uphill.",
+   "image_prompt": "A winding animal trail zigzagging gently up a hillside instead of going straight up",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact",
+   "fact_source": "Ganskopp, Cruz & Johnson (2000), Least-effort pathways, Applied Animal Behaviour Science"
+  },
+  {
+   "narration": "Which means a smart human didn't have to find the best way over a hill. He just had to follow whoever found it first.",
+   "image_prompt": "The main character confidently following a line of hoofprints up a gentle hillside, smiling",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "hero",
+   "fact_source": null
+  },
+  {
+   "narration": "In African forests, elephants trample wide trails between fruit trees and mineral licks, and people have long walked them too.",
+   "image_prompt": "A wide trail through dense tropical forest, with trampled plants and large round footprints",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact",
+   "fact_source": "Blake & Inkamba-Nkulu (2004), Fruit, minerals, and forest elephant trails, J. Mammalogy"
+  },
+  {
+   "narration": "Picture a road crew that weighs four tonnes and eats the construction site as it goes.",
+   "image_prompt": "The main character waving thanks to an elephant pushing through the forest ahead of him",
+   "beat_type": "punchline",
+   "sfx_cue": null,
+   "scene_kind": "hero",
+   "fact_source": null
+  },
+  {
+   "narration": "In North America, bison wore paths between grazing land and salt licks. One of those paths grew into the Natchez Trace.",
+   "image_prompt": "A herd of bison heading toward a salty clearing along a deep worn trail",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact",
+   "fact_source": "Natchez Trace: US National Park Service; Wikipedia"
+  },
+  {
+   "narration": "The Trace runs about four hundred and forty miles. First bison walked it, then Native American peoples, then traders and soldiers.",
+   "image_prompt": "The main character walking along a forest trail behind a bison, keeping a respectful distance",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "hero",
+   "fact_source": null
+  },
+  {
+   "narration": "Today, a national parkway follows much of that old route. Cars now drive close to where bison once walked.",
+   "image_prompt": "A modern two-lane road winding through an autumn forest",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact",
+   "fact_source": "Natchez Trace Parkway, US National Park Service (1938)"
+  },
+  {
+   "narration": "So, in a way, some highways are just very old bison trails with a speed limit.",
+   "image_prompt": "The main character driving a tiny cart down a road, passing a road sign with a bison silhouette on it",
+   "beat_type": "punchline",
+   "sfx_cue": null,
+   "scene_kind": "hero",
+   "fact_source": null
+  },
+  {
+   "narration": "Humans make trails the same way animals do. In nineteen ninety-seven, physicists published a model of how footpaths form across grass.",
+   "image_prompt": "A grassy park with a worn diagonal dirt path cutting across the lawn",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact",
+   "fact_source": "Helbing, Keltsch & Molnar (1997), Modelling the evolution of human trail systems, Nature 388"
+  },
+  {
+   "narration": "The rule is simple. Every walker slightly prefers ground that's already trampled, because it's easier. And every walker tramples it a bit more.",
+   "image_prompt": "The main character choosing a trampled strip of grass instead of stepping into the tall grass beside it",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "hero",
+   "fact_source": null
+  },
+  {
+   "narration": "Over time the shortcuts merge into a few strong paths, and the rest of the grass grows back. Nobody plans it. It just happens.",
+   "image_prompt": "A view from above of a green field where several thin dirt trails join into one main path",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact",
+   "fact_source": "Helbing, Keltsch & Molnar (1997), Modelling the evolution of human trail systems, Nature 388"
+  },
+  {
+   "narration": "Planners call these desire lines. You've made one yourself, cutting across a lawn when the sidewalk took the long way round.",
+   "image_prompt": "The main character in modern clothes cutting across a park lawn while a paved sidewalk curves far away",
+   "beat_type": "punchline",
+   "sfx_cue": null,
+   "scene_kind": "hero",
+   "fact_source": null
+  },
+  {
+   "narration": "Some campus designers have reportedly waited to see where students walked, then paved those worn lines afterwards.",
+   "image_prompt": "A university lawn crisscrossed by freshly paved paths that follow old worn dirt lines",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact",
+   "fact_source": "Often-cited example: walkways of the Ohio State University Oval"
+  },
+  {
+   "narration": "Which is basically how our ancestors did it. Walk first, decide later. The ground keeps count of the votes.",
+   "image_prompt": "The main character walking with a small group along a path, the grass flattened behind them",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "hero",
+   "fact_source": null
+  },
+  {
+   "narration": "Archaeologists can still spot very old paths. In some landscapes, routes walked for centuries are worn into the ground as shallow grooves.",
+   "image_prompt": "A shallow worn groove running across a dry hillside like a faint scar",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact",
+   "fact_source": "Snead, Erickson & Darling (2009), Landscapes of Movement, University of Pennsylvania Press"
+  },
+  {
+   "narration": "Think of generations doing the same commute. Grandparents, kids, visitors, all pressing the same line into the earth.",
+   "image_prompt": "The main character walking a narrow groove of a path behind an old man and in front of a child",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "hero",
+   "fact_source": null
+  },
+  {
+   "narration": "In England, some old lanes sank far below the fields around them, worn down by feet, hooves, wheels and rain. They're called holloways.",
+   "image_prompt": "A deep sunken lane between steep earth banks, with tree roots and branches forming a tunnel overhead",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact",
+   "fact_source": "Macfarlane, Donwood & Richards (2012), Holloway"
+  },
+  {
+   "narration": "That's right. People walked one road so often that they dug a canyon by accident.",
+   "image_prompt": "The main character standing at the bottom of a deep sunken lane, looking up at the high banks in disbelief",
+   "beat_type": "punchline",
+   "sfx_cue": null,
+   "scene_kind": "hero",
+   "fact_source": null
+  },
+  {
+   "narration": "But natural trails had a weakness. They went where animals wanted to go, which wasn't always where people needed to be.",
+   "image_prompt": "A trail ending at a muddy watering hole, with no path leading onward",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact",
+   "fact_source": "Helbing, Keltsch & Molnar (1997), Modelling the evolution of human trail systems, Nature 388"
+  },
+  {
+   "narration": "And trails fade. Leave one alone for a few seasons and the forest quietly swallows it again.",
+   "image_prompt": "The main character pulling aside branches to find a path completely overgrown with young plants",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "hero",
+   "fact_source": null
+  },
+  {
+   "narration": "So people started doing something new. They began marking the way on purpose, for others to follow.",
+   "image_prompt": "A tree trunk with a fresh pale cut in its bark beside a narrow forest path",
+   "beat_type": "build",
+   "sfx_cue": null,
+   "scene_kind": "fact",
+   "fact_source": "Trail blazing: Merriam-Webster, 'blaze' (a trail mark cut in bark)"
+  },
+  {
+   "narration": "And the easiest signboard in any forest was a tree.",
+   "image_prompt": "The main character slicing a patch of bark off a tree with a sharp stone, looking pleased",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "hero",
+   "fact_source": null
+  },
+  {
+   "narration": "Cutting away a patch of bark to mark a trail is called blazing. The pale wood shows up clearly against the dark trunk.",
+   "image_prompt": "A row of trees along a path, each with a pale rectangular mark cut into the bark",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact",
+   "fact_source": "Merriam-Webster, 'blaze'"
+  },
+  {
+   "narration": "Walk from one blaze to the next and you can't get lost. It's a dotted line, drawn with a stone tool.",
+   "image_prompt": "The main character walking confidently from one marked tree to the next, pointing ahead",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "hero",
+   "fact_source": null
+  },
+  {
+   "narration": "Hikers still use the idea. The Appalachian Trail in the United States is marked by small white painted blazes.",
+   "image_prompt": "A forest hiking trail with a small white painted rectangle on a tree trunk",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact",
+   "fact_source": "Appalachian Trail Conservancy"
+  },
+  {
+   "narration": "So a hiker in twenty twenty-six and a hunter from long ago are reading the very same kind of sign.",
+   "image_prompt": "The main character in ancient clothes and a modern hiker both pointing at the same marked tree, smiling",
+   "beat_type": "punchline",
+   "sfx_cue": null,
+   "scene_kind": "hero",
+   "fact_source": null
+  },
+  {
+   "narration": "Some old North American trees have sharp, strange bends, and they're often said to be trail markers bent on purpose.",
+   "image_prompt": "A large old tree whose trunk bends sideways close to the ground and then turns upward again",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact",
+   "fact_source": "Atlas Obscura: Did Native Americans Bend These Trees to Mark Trails?"
+  },
+  {
+   "narration": "The idea is lovely. Tie down a young tree, and over the years it grows into a pointing arrow.",
+   "image_prompt": "The main character tying a young sapling down with a vine so its trunk bends sideways",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "hero",
+   "fact_source": null
+  },
+  {
+   "narration": "But many archaeologists are doubtful. Wind, snow and fallen branches can bend saplings the same way, and records of the practice are thin.",
+   "image_prompt": "A young tree bent sideways under a heavy fallen branch in a snowy forest",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact",
+   "fact_source": "Colorado Sun (2021), Are these trees culturally modified or just bent?"
+  },
+  {
+   "narration": "My personal take? Some probably were markers. Plenty probably weren't. Nature is a very convincing forger.",
+   "image_prompt": "The main character comparing two bent trees with a puzzled expression, rubbing his chin",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "hero",
+   "fact_source": null
+  },
+  {
+   "narration": "Where there were no trees, people stacked stones. Piles of rocks still mark routes across tundra, mountains and deserts.",
+   "image_prompt": "A tall stack of flat stones standing on a bare rocky ridge under a cloudy sky",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact",
+   "fact_source": "Inuksuit and cairns as route markers: Canadian Encyclopedia, 'Inuksuk'"
+  },
+  {
+   "narration": "A rock pile says one thing very clearly. Someone was here, and they thought you should come this way.",
+   "image_prompt": "The main character placing one more stone on top of a small rock pile, nodding with satisfaction",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "hero",
+   "fact_source": null
+  },
+  {
+   "narration": "Routes over high mountains were used surprisingly early. Otzi the iceman died about five thousand three hundred years ago, high in the Alps.",
+   "image_prompt": "A snowy mountain pass between jagged peaks, with a narrow trail crossing it",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact",
+   "fact_source": "South Tyrol Museum of Archaeology: Otzi the Iceman"
+  },
+  {
+   "narration": "He was found above three thousand metres, close to a pass between two valleys that people still cross today.",
+   "image_prompt": "The main character trudging through deep snow on a mountain pass, wrapped in furs",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "hero",
+   "fact_source": null
+  },
+  {
+   "narration": "Every summer, shepherds still drive their sheep over passes in those same mountains, along routes that may be thousands of years old.",
+   "image_prompt": "A long line of sheep walking along a narrow mountain trail with snowy peaks behind",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact",
+   "fact_source": "UNESCO Intangible Heritage (2019): Transhumance, including the Otztal Alps"
+  },
+  {
+   "narration": "That's a commute so reliable it outlived every empire in between.",
+   "image_prompt": "The main character proudly gesturing at a mountain trail as a flock of sheep walks past him",
+   "beat_type": "punchline",
+   "sfx_cue": null,
+   "scene_kind": "hero",
+   "fact_source": null
+  },
+  {
+   "narration": "Paths, blazes and stone piles all failed in one place, though. In bogs and marshes, the ground itself gives way.",
+   "image_prompt": "A wide marsh of dark water and reeds with a single dead tree under a grey sky",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact",
+   "fact_source": "Coles & Coles (1986), Sweet Track to Glastonbury; Historic England list entry 1014438"
+  },
+  {
+   "narration": "And some of the richest places to hunt and fish were exactly those soggy marshes.",
+   "image_prompt": "The main character standing ankle-deep in mud at the edge of a marsh, looking longingly at ducks on the water",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "hero",
+   "fact_source": null
+  },
+  {
+   "narration": "So almost six thousand years ago, people in southwest England did something that changed the story. They built a road.",
+   "image_prompt": "A long narrow wooden walkway of planks crossing a misty reed marsh",
+   "beat_type": "build",
+   "sfx_cue": "riser",
+   "scene_kind": "fact",
+   "fact_source": "Coles & Coles (1986), Sweet Track to Glastonbury; Historic England list entry 1014438"
+  },
+  {
+   "narration": "Not a trail. A built road. Poles pushed into the bog, planks laid on top, and pegs to hold it all in place.",
+   "image_prompt": "The main character hammering a wooden peg into a plank with a stone, standing in a misty marsh",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "hero",
+   "fact_source": null
+  },
+  {
+   "narration": "It's called the Sweet Track, after Ray Sweet, the peat cutter who found it in nineteen seventy.",
+   "image_prompt": "A man in modern clothes kneeling in a dark peat trench, uncovering old wooden planks",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact",
+   "fact_source": "Coles & Coles (1986), Sweet Track to Glastonbury; Historic England list entry 1014438"
+  },
+  {
+   "narration": "Talk about a lucky day at work. Dig some peat, accidentally discover a Stone Age highway.",
+   "image_prompt": "The main character jumping back in surprise as he uncovers an old plank in the mud",
+   "beat_type": "punchline",
+   "sfx_cue": null,
+   "scene_kind": "hero",
+   "fact_source": null
+  },
+  {
+   "narration": "Tree rings show its timber was felled in a single winter, roughly five thousand eight hundred years ago.",
+   "image_prompt": "A cross-section of an old oak log showing many tight tree rings",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact",
+   "fact_source": "Hillam et al. (1990), Dendrochronology of the English Neolithic, Antiquity 64"
+  },
+  {
+   "narration": "That makes it older than the giant stones of Stonehenge, and older than Egypt's pyramids.",
+   "image_prompt": "The main character proudly standing on a plank walkway, with tiny pyramids and a stone circle far in the distance",
+   "beat_type": "punchline",
+   "sfx_cue": null,
+   "scene_kind": "hero",
+   "fact_source": null
+  },
+  {
+   "narration": "It ran for about one point six kilometres across the marsh, built from oak, ash and lime planks held by hazel pegs.",
+   "image_prompt": "Close view of rough wooden planks resting on crossed poles and pegs above dark water",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact",
+   "fact_source": "Coles & Coles (1986), Sweet Track to Glastonbury; Historic England list entry 1014438"
+  },
+  {
+   "narration": "Archaeologists found things people dropped along the way. Pots, tools, and a beautiful jade axe that had come all the way from the Alps.",
+   "image_prompt": "The main character wincing as his stone axe slips off the walkway into the water with a splash",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "hero",
+   "fact_source": null
+  },
+  {
+   "narration": "An even older wooden trackway turned up in two thousand nine, near a prison in east London. Wooden roads were clearly catching on.",
+   "image_prompt": "A muddy excavation trench beside a modern fence, showing a line of old timbers",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact",
+   "fact_source": "Plumstead (Belmarsh) trackway, Museum of London Archaeology, 2009"
+  },
+  {
+   "narration": "Yes. One of Britain's oldest roads was found right next to a prison. Nobody was escaping down that one.",
+   "image_prompt": "The main character peering through a fence at an old wooden track, smiling wryly",
+   "beat_type": "punchline",
+   "sfx_cue": null,
+   "scene_kind": "hero",
+   "fact_source": null
+  },
+  {
+   "narration": "Paths for feet were one thing. Moving very heavy loads needed something much sturdier. Enter ancient Egypt.",
+   "image_prompt": "Workers dragging a huge dark stone block on a wooden sled across desert sand",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact",
+   "fact_source": "ASCE Historic Landmark: Lake Moeris Quarry Road (c. 2600-2200 BC)"
+  },
+  {
+   "narration": "Egyptian builders needed basalt, a heavy black stone, for royal temples at Giza. And the quarry was out in the desert.",
+   "image_prompt": "The main character straining to push a big black stone block across soft sand and getting nowhere",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "hero",
+   "fact_source": null
+  },
+  {
+   "narration": "So they paved a road about eleven and a half kilometres long, from the quarry to the shore of an ancient lake.",
+   "image_prompt": "A straight road of flat stone slabs stretching across a sandy desert toward distant water",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact",
+   "fact_source": "ASCE Historic Landmark: Lake Moeris Quarry Road (c. 2600-2200 BC)"
+  },
+  {
+   "narration": "Sandstone and limestone slabs underneath, chunks of basalt and petrified wood on top, so the heavy sledges wouldn't sink.",
+   "image_prompt": "The main character laying a flat stone slab into the sand and carefully fitting it beside the others",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "hero",
+   "fact_source": null
+  },
+  {
+   "narration": "It's around four and a half thousand years old, and engineers list it as the oldest surviving paved road in the world.",
+   "image_prompt": "Worn ancient stone paving half buried in desert sand under a bright sky",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact",
+   "fact_source": "ASCE Historic Landmark: Lake Moeris Quarry Road (c. 2600-2200 BC)"
+  },
+  {
+   "narration": "So the first paved road wasn't built for travelling. It was built for deliveries. Very slow, very heavy deliveries.",
+   "image_prompt": "The main character riding on top of a stone block being dragged by a team of workers, looking smug",
+   "beat_type": "punchline",
+   "sfx_cue": null,
+   "scene_kind": "hero",
+   "fact_source": null
+  },
+  {
+   "narration": "Around that era, another invention was making better roads more valuable than ever: the wheel.",
+   "image_prompt": "An ancient wooden wheel made of planks lying on marshy ground",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact",
+   "fact_source": "Ljubljana Marshes Wheel, City Museum of Ljubljana"
+  },
+  {
+   "narration": "The oldest known wooden wheel with its axle, found in Slovenia, is about five thousand one hundred and fifty years old.",
+   "image_prompt": "The main character rolling a heavy plank wheel downhill and losing control as it runs away from him",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "hero",
+   "fact_source": null
+  },
+  {
+   "narration": "Wheels are wonderful on hard, flat ground and hopeless in mud, sand or rocks. So wheels and roads grew up together.",
+   "image_prompt": "A wooden cart stuck in deep mud on a dirt track, one wheel sunk to the axle",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact",
+   "fact_source": "Ljubljana Marshes Wheel, City Museum of Ljubljana"
+  },
+  {
+   "narration": "Basically, the wheel showed up and immediately started complaining about the road conditions.",
+   "image_prompt": "The main character pushing a cart stuck in mud while an ox looks at him, unimpressed",
+   "beat_type": "punchline",
+   "sfx_cue": "boing",
+   "scene_kind": "hero",
+   "fact_source": null
+  },
+  {
+   "narration": "Wheels also cut deep ruts. In the stone streets of Pompeii, you can still see grooves worn by carts nearly two thousand years ago.",
+   "image_prompt": "An ancient stone street with two deep parallel grooves worn into the paving stones",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact",
+   "fact_source": "Pompeii Archaeological Park: street ruts"
+  },
+  {
+   "narration": "Which means ancient drivers had the same problem we do. Potholes. Nobody, in any century, escapes potholes.",
+   "image_prompt": "The main character's cart bouncing hard over a rut, his hair flying up",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "hero",
+   "fact_source": null
+  },
+  {
+   "narration": "Better roads meant something bigger, too. Goods, soldiers and messages could move faster than ever before.",
+   "image_prompt": "A line of loaded carts and walkers moving along a wide dirt road between fields",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact",
+   "fact_source": "Britannica: road (history of roads)"
+  },
+  {
+   "narration": "And once a road became valuable, people started arguing about one question. Whose land is it running through?",
+   "image_prompt": "The main character standing on a road between two fields while two farmers point angrily at each other",
+   "beat_type": "build",
+   "sfx_cue": null,
+   "scene_kind": "hero",
+   "fact_source": null
+  },
+  {
+   "narration": "Even before farming, hunter-gatherer groups usually had home ranges they knew well, and sometimes defended.",
+   "image_prompt": "Two groups of ancient people facing each other across a small river, cautiously watching",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact",
+   "fact_source": "Kelly (2013), The Lifeways of Hunter-Gatherers, Cambridge University Press"
+  },
+  {
+   "narration": "But with farming, a field became something you'd worked on for years. Losing a few metres of it really hurt.",
+   "image_prompt": "The main character proudly leaning on a wooden hoe next to his neat green field",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "hero",
+   "fact_source": null
+  },
+  {
+   "narration": "So people marked borders with ditches, hedges, earth banks and, most of all, stones.",
+   "image_prompt": "A low earth bank and ditch separating two farm fields under a pale sky",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact",
+   "fact_source": "Britannica: boundary marker"
+  },
+  {
+   "narration": "And this is where things get wonderfully dramatic.",
+   "image_prompt": "The main character tiptoeing at night toward a boundary stone with a shifty expression",
+   "beat_type": "build",
+   "sfx_cue": null,
+   "scene_kind": "hero",
+   "fact_source": null
+  },
+  {
+   "narration": "In ancient Babylonia, between about the sixteenth and twelfth centuries BC, land grants were recorded on carved stones called kudurrus.",
+   "image_prompt": "A tall carved stone covered in symbols of gods, stars and animals",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact",
+   "fact_source": "Britannica: kudurru; British Museum Kassite boundary stones"
+  },
+  {
+   "narration": "These stones named the land, the owner, the witnesses... and then a long list of curses for anyone who messed with them.",
+   "image_prompt": "The main character reading a carved stone and slowly backing away with wide eyes",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "hero",
+   "fact_source": null
+  },
+  {
+   "narration": "The curses called on the gods to bring disease, ruin and endless trouble on whoever moved or damaged the stone.",
+   "image_prompt": "A close view of carved symbols of a scorpion, a snake and a star on old stone",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact",
+   "fact_source": "Britannica: kudurru; British Museum Kassite boundary stones"
+  },
+  {
+   "narration": "Honestly, that's the most effective property law ever written. Nobody's moving your fence after reading that.",
+   "image_prompt": "The main character nervously pushing a fence post back into place and dusting it off",
+   "beat_type": "punchline",
+   "sfx_cue": null,
+   "scene_kind": "hero",
+   "fact_source": null
+  },
+  {
+   "narration": "The Romans even had a god just for boundary stones. His name was Terminus.",
+   "image_prompt": "A simple stone post standing at the corner of a field with flowers placed at its base",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact",
+   "fact_source": "Ovid, Fasti II (Terminalia, 23 February)"
+  },
+  {
+   "narration": "Every year, on the twenty-third of February, neighbours met at their shared stone for a festival called the Terminalia.",
+   "image_prompt": "The main character and a neighbour shaking hands across a stone post, both holding small cakes",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "hero",
+   "fact_source": null
+  },
+  {
+   "narration": "They decorated the stone, made offerings and shared food. A party to remember exactly where the fence goes.",
+   "image_prompt": "Two families sharing food beside a garlanded boundary stone in a sunny field",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact",
+   "fact_source": "Ovid, Fasti II (Terminalia, 23 February)"
+  },
+  {
+   "narration": "But how do you keep a border alive in everyone's memory for generations, when most people can't read a map?",
+   "image_prompt": "The main character scratching his head while looking at a long line of stones across a hillside",
+   "beat_type": "build",
+   "sfx_cue": null,
+   "scene_kind": "hero",
+   "fact_source": null
+  },
+  {
+   "narration": "English parishes did it with a walk. Once a year the whole village followed the boundary, marker by marker.",
+   "image_prompt": "A crowd of villagers walking along a hedge line through fields, led by a priest",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact",
+   "fact_source": "Beating the bounds: Merton Historical Society; Wiltshire & Swindon History Centre"
+  },
+  {
+   "narration": "The custom is called beating the bounds, and it's mentioned as far back as the laws of Alfred the Great.",
+   "image_prompt": "The main character walking with the crowd through a field, holding a long willow branch",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "hero",
+   "fact_source": null
+  },
+  {
+   "narration": "People struck the boundary markers with sticks of birch or willow, so everyone saw exactly where the line ran.",
+   "image_prompt": "Villagers tapping a stone marker in a hedge with long thin branches",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact",
+   "fact_source": "Beating the bounds: Merton Historical Society; Wiltshire & Swindon History Centre"
+  },
+  {
+   "narration": "And now, the answer to that strange rule from the beginning. They brought the boys along, and sometimes bumped them against the stones.",
+   "image_prompt": "The main character as a young boy being lifted by two grown men and gently bumped against a stone, everyone laughing",
+   "beat_type": "punchline",
+   "sfx_cue": "impact",
+   "scene_kind": "hero",
+   "fact_source": null
+  },
+  {
+   "narration": "The point was memory. A boy who got bumped on a stone remembered that spot for life, and could be a witness decades later.",
+   "image_prompt": "An old man pointing at a weathered boundary stone while younger people listen",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact",
+   "fact_source": "Beating the bounds: Merton Historical Society; Wiltshire & Swindon History Centre"
+  },
+  {
+   "narration": "Painful? A little. Effective? Absolutely. A living map stored in people's heads, with a very memorable bookmark.",
+   "image_prompt": "The main character as an old man rubbing his backside fondly while pointing at the stone where it happened",
+   "beat_type": "punchline",
+   "sfx_cue": null,
+   "scene_kind": "hero",
+   "fact_source": null
+  },
+  {
+   "narration": "Some parishes still beat the bounds today, though these days the boys are usually spared the bumping.",
+   "image_prompt": "A modern group in raincoats walking a field boundary, children tapping a stone with sticks",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact",
+   "fact_source": "Beating the bounds: Merton Historical Society; Wiltshire & Swindon History Centre"
+  },
+  {
+   "narration": "Now we use satellites and land registries. But the idea hasn't changed. A border only exists if people agree where it is.",
+   "image_prompt": "The main character holding a smartphone with a glowing map pin, standing beside an old stone",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "hero",
+   "fact_source": null
+  },
+  {
+   "narration": "Roads and borders grew up side by side. Roads joined places together, and borders decided who controlled them.",
+   "image_prompt": "A road passing between two stone markers toward a distant walled town",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact",
+   "fact_source": "Britannica: road (history of roads)"
+  },
+  {
+   "narration": "And once kingdoms grew into empires, roads stopped being paths between villages. They became the nervous system of whole nations.",
+   "image_prompt": "The main character standing at a crossroads, staring in awe at long roads stretching in four directions",
+   "beat_type": "build",
+   "sfx_cue": null,
+   "scene_kind": "hero",
+   "fact_source": null
+  },
+  {
+   "narration": "Around two and a half thousand years ago, the Persian Empire ran a royal road more than two and a half thousand kilometres long.",
+   "image_prompt": "A long dusty road stretching across dry hills with small rest houses along the way",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact",
+   "fact_source": "Herodotus, Histories 5.52-53 and 8.98"
+  },
+  {
+   "narration": "Herodotus wrote that an ordinary traveller needed about three months to walk it. Ninety days, one way.",
+   "image_prompt": "The main character trudging along a dusty road with a tiny bundle, looking very tired",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "hero",
+   "fact_source": null
+  },
+  {
+   "narration": "Royal messengers were far faster, with fresh riders and horses waiting at stations all along the route.",
+   "image_prompt": "A rider leaping onto a fresh horse at a small roadside station while another rider rests",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact",
+   "fact_source": "Herodotus, Histories 5.52-53 and 8.98"
+  },
+  {
+   "narration": "Herodotus said nothing stopped them. Not snow, not rain, not heat, not the gloom of night.",
+   "image_prompt": "The main character on a horse riding through rain at night, gritting his teeth",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "hero",
+   "fact_source": null
+  },
+  {
+   "narration": "A version of those words is carved today across a famous post office building in New York City.",
+   "image_prompt": "A grand stone building with tall columns at dusk and a long carved band above the columns",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact",
+   "fact_source": "James A. Farley Post Office, New York City (inscription after Herodotus)"
+  },
+  {
+   "narration": "So a New York post office is quoting a review of a Persian road that's two and a half thousand years old.",
+   "image_prompt": "The main character wearing a modern mail carrier cap and holding an old scroll, looking proud",
+   "beat_type": "punchline",
+   "sfx_cue": null,
+   "scene_kind": "hero",
+   "fact_source": null
+  },
+  {
+   "narration": "Then came the Romans, the champions of road building. Their empire laid around eighty thousand kilometres of paved roads.",
+   "image_prompt": "A straight stone-paved road with curbs running across green hills into the distance",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact",
+   "fact_source": "Britannica: Roman road system"
+  },
+  {
+   "narration": "Roman roads were famous for going straight. Up the hill, over the hill, down the hill. Subtle, they were not.",
+   "image_prompt": "The main character panting as he climbs a steep straight road that goes directly over a hill",
+   "beat_type": "punchline",
+   "sfx_cue": null,
+   "scene_kind": "hero",
+   "fact_source": null
+  },
+  {
+   "narration": "Many were built in layers: big stones, gravel and packed material underneath, with fitted paving stones on top.",
+   "image_prompt": "A cross-section of a road showing layers of large stones, gravel and smooth paving on top",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact",
+   "fact_source": "Britannica: Roman road system; Vitruvius, De Architectura VII"
+  },
+  {
+   "narration": "Along the side stood milestones, telling travellers how far they'd come. The original progress bar.",
+   "image_prompt": "The main character resting against a tall stone pillar beside a road, looking relieved",
+   "beat_type": "punchline",
+   "sfx_cue": null,
+   "scene_kind": "hero",
+   "fact_source": null
+  },
+  {
+   "narration": "Armies used these roads to move fast, but merchants, letters and new ideas travelled along them too.",
+   "image_prompt": "Soldiers marching on a paved road while a merchant's cart waits at the side",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact",
+   "fact_source": "Britannica: Roman road system"
+  },
+  {
+   "narration": "Some European roads still follow Roman routes today, about two thousand years later.",
+   "image_prompt": "The main character driving a small modern car along a straight road beside an ancient stone milestone",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "hero",
+   "fact_source": null
+  },
+  {
+   "narration": "But perhaps the most astonishing road network of all was built by people who used no wheeled carts and had no horses.",
+   "image_prompt": "Llamas carrying small packs along a narrow stone road on a steep mountain",
+   "beat_type": "build",
+   "sfx_cue": null,
+   "scene_kind": "fact",
+   "fact_source": "UNESCO World Heritage: Qhapaq Nan, Andean Road System (1459)"
+  },
+  {
+   "narration": "The Inca road system, the Qhapaq Nan, ran for more than thirty thousand kilometres through the Andes.",
+   "image_prompt": "The main character looking out over endless mountain ridges with a stone road snaking across them",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "hero",
+   "fact_source": null
+  },
+  {
+   "narration": "It climbed into snowy mountains, crossed deserts and dropped down to the Pacific coast.",
+   "image_prompt": "A stone stairway road climbing a snowy Andean slope under a blue sky",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact",
+   "fact_source": "UNESCO World Heritage: Qhapaq Nan, Andean Road System (1459)"
+  },
+  {
+   "narration": "Without carts, nobody needed gentle slopes. So Inca roads simply used stairs. Lots and lots of stairs.",
+   "image_prompt": "The main character climbing an endless stone staircase, sweating, while a llama strolls past him easily",
+   "beat_type": "punchline",
+   "sfx_cue": null,
+   "scene_kind": "hero",
+   "fact_source": null
+  },
+  {
+   "narration": "Messages travelled by relay. Runners called chasquis waited at stations along the road and sprinted each message to the next runner.",
+   "image_prompt": "A young runner handing a bundle of knotted strings to another runner outside a small stone hut",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact",
+   "fact_source": "Britannica: chasqui; UNESCO Qhapaq Nan"
+  },
+  {
+   "narration": "Spanish chroniclers claimed this relay could carry fresh fish from the coast up to the capital, Cusco, in about two days.",
+   "image_prompt": "The main character as a runner sprinting up a mountain road holding a fish, looking determined",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "hero",
+   "fact_source": null
+  },
+  {
+   "narration": "Where rivers cut deep gorges, the Inca built suspension bridges woven from grass.",
+   "image_prompt": "A sagging rope bridge woven from grass hanging over a deep river canyon",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact",
+   "fact_source": "UNESCO World Heritage: Qhapaq Nan, Andean Road System (1459)"
+  },
+  {
+   "narration": "One of them, the Q'eswachaka bridge in Peru, is still rebuilt by local communities every single year, by hand.",
+   "image_prompt": "The main character pulling on a thick grass rope together with many villagers on a cliff edge",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "hero",
+   "fact_source": null
+  },
+  {
+   "narration": "That tradition is on UNESCO's list of intangible heritage, and the new bridge goes up in just a few days.",
+   "image_prompt": "Villagers twisting long strands of dry grass into thick ropes beside a river",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact",
+   "fact_source": "UNESCO Intangible Heritage (2013): Q'eswachaka bridge renewal"
+  },
+  {
+   "narration": "Your city council could never. That's community spirit with a deadline.",
+   "image_prompt": "The main character proudly standing on a freshly woven grass bridge, giving a thumbs up",
+   "beat_type": "punchline",
+   "sfx_cue": null,
+   "scene_kind": "hero",
+   "fact_source": null
+  },
+  {
+   "narration": "Persian, Roman and Inca roads looked completely different, but they shared one job: holding an enormous empire together.",
+   "image_prompt": "Three different ancient roads side by side: a dusty desert road, a paved road and a mountain stairway",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact",
+   "fact_source": "Britannica: road (history of roads)"
+  },
+  {
+   "narration": "Which brings us back to the beginning. Every road, even the grandest, started with somebody walking somewhere.",
+   "image_prompt": "The main character walking alone along a faint path through tall grass at sunrise",
+   "beat_type": "build",
+   "sfx_cue": null,
+   "scene_kind": "hero",
+   "fact_source": null
+  },
+  {
+   "narration": "Many routes we use today follow lines first walked by animals, then by hunters, then by traders.",
+   "image_prompt": "A modern highway in a valley with a faint old footpath visible on the hillside above it",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact",
+   "fact_source": "Snead, Erickson & Darling (2009), Landscapes of Movement"
+  },
+  {
+   "narration": "So next time you cut across the grass, you're not being lazy. You're doing a bit of road building.",
+   "image_prompt": "The main character in modern clothes cutting across a park lawn, proudly pointing at the path behind him",
+   "beat_type": "punchline",
+   "sfx_cue": "pop",
+   "scene_kind": "hero",
+   "fact_source": null
+  },
+  {
+   "narration": "Planners now study those desire lines with drones and satellite photos, and some cities pave them on purpose.",
+   "image_prompt": "A view from above of a city park with dirt shortcut paths crossing green lawns",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact",
+   "fact_source": "Helbing, Keltsch & Molnar (1997), Modelling the evolution of human trail systems, Nature 388"
+  },
+  {
+   "narration": "And here's my personal take. Roads might be the most human thing we've ever made.",
+   "image_prompt": "The main character sitting on a stone milestone at the side of a road, looking thoughtful",
+   "beat_type": "build",
+   "sfx_cue": null,
+   "scene_kind": "hero",
+   "fact_source": null
+  },
+  {
+   "narration": "A road exists only because many people agreed, without a single meeting, to walk the same way.",
+   "image_prompt": "A long line of footprints of many different sizes along a dusty path",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact",
+   "fact_source": "Helbing, Keltsch & Molnar (1997), Modelling the evolution of human trail systems, Nature 388"
+  },
+  {
+   "narration": "It's a memory stored in the ground. Every footstep is a small vote that says: this way works.",
+   "image_prompt": "The main character placing his foot carefully into a well-worn footprint on a path",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "hero",
+   "fact_source": null
+  },
+  {
+   "narration": "From the footprints at Laetoli to thirty thousand kilometres of Inca stone, the idea never changed. Follow the people who went before you.",
+   "image_prompt": "Ancient footprints in grey ash on one side and a stone mountain road on the other",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact",
+   "fact_source": "Leakey & Hay (1979), Nature 278; Raichlen et al. (2010), PLoS ONE"
+  },
+  {
+   "narration": "Even the borders were about memory. Stones, curses, festivals, and some very bruised boys.",
+   "image_prompt": "The main character as an old man telling children a story beside a boundary stone, the children giggling",
+   "beat_type": "punchline",
+   "sfx_cue": null,
+   "scene_kind": "hero",
+   "fact_source": null
+  },
+  {
+   "narration": "Today satellites guide us, and we hardly ever get lost the way our ancestors could.",
+   "image_prompt": "A modern car dashboard with a glowing map screen on a road at night",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact",
+   "fact_source": "Helbing, Keltsch & Molnar (1997), Modelling the evolution of human trail systems, Nature 388"
+  },
+  {
+   "narration": "But every map app you use is still drawing its lines over paths that people walked first.",
+   "image_prompt": "The main character looking at a phone map, then looking up at an old footpath that follows the same line",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "hero",
+   "fact_source": null
+  },
+  {
+   "narration": "Some of those paths are thousands of years old, hidden under the asphalt in plain sight.",
+   "image_prompt": "A city street where an old cobbled section peeks out from under worn asphalt",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact",
+   "fact_source": "Snead, Erickson & Darling (2009), Landscapes of Movement"
+  },
+  {
+   "narration": "So tomorrow, when you walk to work or school, look down for a second.",
+   "image_prompt": "The main character walking along a modern sidewalk, glancing down at his feet with curiosity",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "hero",
+   "fact_source": null
+  },
+  {
+   "narration": "That surface under your shoes is the end of a story that may have started with a bison looking for salt.",
+   "image_prompt": "A herd of bison on a faint trail at sunset, with a city skyline glowing far in the distance",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact",
+   "fact_source": "Natchez Trace: US National Park Service"
+  },
+  {
+   "narration": "And honestly? It's a pretty good story to be standing on.",
+   "image_prompt": "The main character smiling, standing on a road with the sunrise ahead of him",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "hero",
+   "fact_source": null
+  },
+  {
+   "narration": "Our ancestors spent millions of years learning where to walk. We simply inherited the shortcut.",
+   "image_prompt": "An ancient trail and a modern road merging into one path that runs toward the horizon",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact",
+   "fact_source": "Leakey & Hay (1979), Nature 278; Raichlen et al. (2010), PLoS ONE"
+  },
+  {
+   "narration": "So walk it proudly. You're the latest in a very long line of road builders.",
+   "image_prompt": "The main character walking confidently down a path, faint ghostly figures of ancestors walking behind him",
+   "beat_type": "punchline",
+   "sfx_cue": "ding",
+   "scene_kind": "hero",
+   "fact_source": null
+  },
+  {
+   "narration": "And to whoever made the very first path, deer, bison or human: thank you. We'd still be stuck in the bushes without you.",
+   "image_prompt": "A deer standing at the start of a narrow forest path, looking back over its shoulder",
+   "beat_type": "normal",
+   "sfx_cue": null,
+   "scene_kind": "fact",
+   "fact_source": "Natchez Trace: US National Park Service"
+  }
+ ]
+}

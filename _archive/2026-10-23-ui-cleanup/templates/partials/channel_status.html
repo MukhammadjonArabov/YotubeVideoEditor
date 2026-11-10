@@ -1,0 +1,10 @@
+<div id="channel-status" {% if ch.state == 'working' %}hx-get="{% url 'videos:channel_status' ch.pk %}?poll=1" hx-trigger="every 3s" hx-swap="outerHTML"{% endif %}>
+  {% if ch.state == 'working' %}
+    <div class="banner violet"><span class="spinner"></span> {{ ch.progress_message|default:"Ishlanmoqda..." }}</div>
+  {% elif ch.state == 'failed' %}
+    <div class="banner err">❌ {{ ch.error_message }}</div>
+  {% elif ch.progress_message %}
+    <div class="banner ok">✅ {{ ch.progress_message }}</div>
+  {% endif %}
+  {% if ch.state != 'working' and was_busy %}<script>location.reload()</script>{% endif %}
+</div>

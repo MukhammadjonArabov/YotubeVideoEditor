@@ -1,0 +1,252 @@
+# Video tarixi
+
+Har bir tayyor video haqida qisqa xulosa. Avtomatik yoziladi (`video_kit`, `manage.py video_history`);
+`video_check` va `video_import` takroriy mavzu, manba va hook uchun shundan foydalanadi.
+
+## #3 Why Do We Still Have Ancient NIGHTMARES?
+- Tayyor: 2026-09-29 | 7:46
+- Mazmuni: Have you ever woken up in a cold sweat from a terrifying chase dream and wondered why your brain still does that? We explore the evolutionary origins of nightmares and why our ancient ancestors needed these scary nighttime simulations to survive.
+- Hook: Picture this. You are fast asleep in your cozy modern bed, and suddenly a giant sabertooth cat leaps at your face. / You jolt awake, heart pounding, sweating through your expensive sheets. Why does your brain still pull this prank on you?
+- Kalit so'zlar: dream, brain, nightmar, sleep, modern, predator, often, exact, try, out, simulation, might, fail, off, single
+
+## #4 How Did Ancient Humans Deal With INSECTS?
+- Tayyor: 2026-09-29 | 7:57
+- Mazmuni: Mosquitoes and ticks have bothered our species for hundreds of thousands of years. Let us explore the archaeological evidence behind how ancient humans protected themselves from tiny pests before modern bug spray existed.
+- Hook: Have you ever tried to enjoy a quiet evening outside, only to be chased indoors by a single tiny mosquito? / Modern bug spray fixes that in seconds. But what did our ancestors do when the itch got unbearable?
+- Kalit so'zlar: mosquito, bug, insect, bit, have, plant, skin, modern, smoke, built, group, through, fat, imagine, itchy
+
+## #5 Why Did Ancient Humans Stop Walking BAREFOOT?
+- Tayyor: 2026-09-30 | 7:21
+- Mazmuni: Have you ever wondered when our ancestors decided to wrap up their feet? We explore the evolutionary history of shoes, how ancient footwear changed our bodies, and why walking barefoot feels so weird to us today.
+- Hook: Have you ever tried walking on hot pavement without your flip flops? / It hurts instantly. But for most of human history, shoes did not exist.
+- Kalit so'zlar: sho, feet, walk, toe, footwear, barefoot, sneaker, leather, over, without, need, find, bon, wear, history
+
+## #6 What Did Ancient Humans Do When They Lost FIRE?
+- Tayyor: 2026-10-01 | 7:56
+- Mazmuni: Imagine waking up to total darkness and freezing cold because your only warmth just died out. Ancient humans faced this exact terrifying scenario all the time. Let us explore the archaeological and evolutionary science of what happened when early peoples lost their fire and how they got it back.
+- Hook: What did ancient humans do when their fire went out? Panic. Absolute sheer panic. Let us find out why.
+- Kalit so'zlar: fire, hearth, had, ember, dry, spark, wood, out, social, los, without, burn, because, deep, heat
+
+## #8 How Did Ancient Humans Keep Their TEETH Clean?
+- Tayyor: 2026-10-01 | 8:36
+- Mazmuni: Have you ever wondered how people took care of their teeth thousands of years before minty toothpaste and plastic toothbrushes were invented? We look at the fascinating archaeology of ancient dental hygiene and what our ancestors actually did to keep their smiles intact.
+- Hook: Have you ever wondered how ancient humans brushed their teeth without a toothbrush?
+- Kalit so'zlar: teeth, chew, dental, have, brush, modern, without, some, sound, toothbrush, into, used, twig, imagine, breath
+
+## #9 How Did Ancient Humans Make Their First CLOTHES?
+- Tayyor: 2026-10-02 | 8:02
+- Mazmuni: Have you ever wondered how our ancient ancestors figured out clothing long before modern sewing machines or textile factories existed? We explore the fascinating archaeological evidence behind the very first garments worn by early humans.
+- Hook: Have you ever wondered who invented pants? Because my legs are cold right now. / We wear clothes every single day without even thinking about it.
+- Kalit so'zlar: cloth, animal, skin, before, leather, had, body, plant, bone, sew, wear, long, out, wore, winter
+
+## #10 Why Did Ancient Humans Paint CAVES?
+- Tayyor: 2026-10-03 | 6:49
+- Mazmuni: Have you ever wondered why ancient humans crawled deep into dark, dangerous caves just to paint animals on the rock walls? We explore the surprising archaeological theories behind prehistoric art, from trance states to early storytelling.
+- Hook: Imagine crawling through a pitch-black cave with only a flickering torch. / Deep underground, away from sunlight and safety, ancient people painted massive animals on the stone.
+- Kalit so'zlar: paint, deep, cave, dark, wall, animal, artist, cav, into, some, black, crawl, pitch, underground, art
+
+## #11 How Did Ancient Humans TALK Before Language?
+- Tayyor: 2026-10-04 | 6:18
+- Mazmuni: Ever wonder how people gossiped, flirted, or warned about predators before words even existed? We dive deep into the evolutionary origins of human communication to find out how our ancestors chatted without a dictionary.
+- Hook: Imagine trying to explain your taxes without words. / Or ordering a pizza using only grunts and arm flails.
+- Kalit so'zlar: sound, word, hand, try, without, arm, language, over, point, groom, had, cave, evolutionary, built, call
+
+## #12 How Did Ancient Humans FIND Their Way?
+- Tayyor: 2026-10-06 | 7:26
+- Mazmuni: Have you ever wondered how people crossed entire continents long before Google Maps or even paper charts existed? We dive into the fascinating anthropology and cognitive science of ancient navigation. Discover the hidden natural signs our ancestors relied on to cross oceans and forests without getting lost.
+- Hook: Imagine getting lost in the woods without your phone. Pure panic. But ancient humans did this every single day. / They walked across entire continents. They crossed vast oceans. And they did it all without a single paper map.
+- Kalit so'zlar: walk, acros, map, find, without, star, path, direction, wind, song, imagine, single, today, mil, because
+
+## #13 How Did Ancient Humans Taste DEATH in Plants?
+- Tayyor: 2026-10-06 | 10:42
+- Mazmuni: Ever wondered how our ancestors figured out which berries were delicious snacks and which ones would stop your heart in five minutes? Today we explore the trial, error, and fascinating evolutionary tricks ancient humans used to navigate the botanical minefield of nature without a Google search or a warning label.
+- Hook: Imagine wandering into a forest hungry, with zero grocery stores in sight. Every green leaf looks like a gamble. / How did ancient humans know which plants were safe to eat and which ones would cause instant doom?
+- Kalit so'zlar: plant, eat, out, bitter, berry, because, into, safe, today, step, used, survival, toxic, have, surviv
+
+## #14 How Ancient Humans Spent Half Their Lives in the DARK
+- Tayyor: 2026-10-08 | 21:48
+- Mazmuni: For most of human history, the sun went down and twelve hours of darkness began. No lamps, no phones, and predators that could see far better than we could. So what did our ancestors actually do all night? From the first controlled fires a million years ago to 200,000-year-old grass beds, fireside storytelling and star-watching, this is the story of the ancient human night. We also look at what modern science says about how people without electricity really sleep, why a whole camp of Hadza hunter-gatherers was almost never asleep at the same time, and what all this means for your own sleep tod
+- Hook: Imagine the sun drops behind the hills, and for the next twelve hours there is no light switch, no phone, no streetlight. Just darkness. / And somewhere out there, a leopard can see you perfectly. It needs only about a sixth of the light your eyes need. / Today you fight the night with a glowing screen until one a.m., then wonder why your brain won't switch off. That problem is ancient. / So tonight we'll walk through an ancient night, hour by hour. And stay for the strangest part: a camp where scientists found everyone asleep at once for just eighteen minutes.
+- Kalit so'zlar: night, sleep, fire, light, have, hour, cave, some, researcher, may, around, story, found, dark, real
+
+## #17 Was the Stone Age Really a WOOD Age?
+- Tayyor: 2026-10-18 | 8:53
+- Mazmuni: We call it the Stone Age, but most of what ancient humans used every day was wood. This video follows the real finds: a half-million-year-old notched log in Zambia, fire-hardened digging sticks in Italy, spears in Germany, and a brand-new haul of Neanderthal wood from a Spanish rock shelter. Why do we only see the rock? Because rock survives, and wood almost never does.
+- Hook: Quick quiz: what was the Stone Age made of? / Spain just revealed five hundred ninety-seven pieces of Neanderthal wood. / Wood that normally rots away and vanishes forever. / Mineral water wrapped it in stone and saved it.
+- Manbalar: aranguren 2018, barham 2023, general 2023, general archaeological preservation prin, overview: hawks, j., 'four amazing stone, revised 2025, saladie 2018, saladie et al., science advances (abric , thieme 1997, thomsen 1836, three-age system, encyclopaedia britanni, wooden hafting technology in the early n
+- Kalit so'zlar: wood, hundr, wooden, made, neanderthal, picture, real, spear, stick, basically, whole, tool, ago, surviv, digg
+
+## #18 How Did Ancient Humans Remember EVERYTHING Without Writing?
+- Tayyor: 2026-10-21 | 13:51
+- Mazmuni: Quick: what did you eat three days ago? For almost all of human history there was no writing, yet people carried maps, laws, stories and survival knowledge in their heads. How did they remember everything? This video follows how: Aboriginal songlines, the Greek poet Simonides, oral epics, and what modern brain science says about the memory trick they shared. Then you build your own memory palace in under a minute.
+- Hook: Quick: what did you eat three days ago? / Humans lived without writing for nearly three hundred thousand years. / No notes, no phone, no cloud backup. / Yet some stories may have survived seven thousand years.
+- Manbalar: cicero 1966, cicero, de oratore, book 2 (the story of, dresler 2017, earliest writing, cuneiform in mesopotam, ebbinghaus 1885, hublin 2017, kelly 2016, lord 1960, maguire 2003, nunn 2016, quintilian, institutio oratoria, book 11, songlines 2017, sparrow 2011, the iliad, about 15,700 lines; oral-form, yates 1966
+- Kalit so'zlar: memory, remember, story, brain, place, method, walk, have, trick, land, plac, order, writ, phone, some
+
+## #19 Who Cared for the INJURED 50,000 Years Ago?
+- Tayyor: 2026-10-21 | 7:55
+- Mazmuni: A Neanderthal who couldn't hear and had lost part of an arm lived into his forties, 50,000 years ago. Who kept him alive? Four skeletons, one question: did ancient humans care for the injured? This video follows Shanidar 1, a toothless hominin from Dmanisi, a sick child from Sima de los Huesos, and a Neanderthal from El Sidrón who may have chewed a natural painkiller, and what their bones say about us.
+- Bo'limlar: The Neanderthal who shouldn't have survived; Shanidar 1: a deaf man with one arm; Dmanisi: the toothless skull; Sima de los Huesos: a sick child; El Sidrón: the Neanderthal painkiller; The healed femur myth; What care tells us about being human
+- Hook: This Neanderthal couldn't hear, and half his arm was gone. / He still lived into his forties, fifty thousand years ago. / Alone, that's impossible. So who kept him alive? / The bones hold a secret about being human.
+- Manbalar: berger 1995, gracia 2009, history of aspirin: willow bark used as , lordkipanidze 2005, the 'healed femur' story is widely credi, trinkaus 2017, trinkaus 2018, weyrich 2017
+- Kalit so'zlar: his, researcher, bon, found, have, had, neanderthal, liv, kept, someone, hear, him, million, skeleton, survivor
+
+## #21 How Did Ancient Humans Keep Food From ROTTING?
+- Tayyor: 2026-10-22 | 8:52
+- Mazmuni: Fresh meat goes bad in just days. Yet in a Chinese desert, researchers found cheese buried about 3,500 years ago. How did ancient humans beat rot, thousands of years before the fridge? This video follows six ancient tricks: drying, salting, sweet and sour preserving, smart storage, cold, and fermentation. It covers a 500-year-old Inca potato, 8,000-year-old salt works, 11,000-year-old granaries, a Persian ice house in the desert, and the surprising science of fermentation. This video is history and science, not food safety advice.
+- Bo'limlar: Fresh meat goes bad in days; Why does food rot?; Trick one: take away the water (Ötzi, chuño, dried cod); Trick two: salt; Trick three: sweet and sour (honey and vinegar); Trick four: smart storage and the first granaries; Trick five: cold (mammoth bone circle, Persian ice houses); Trick six: fermentation (cheese and fish sauce); The dark side of fermentation; What ancient cooks teach us
+- Hook: Fresh meat goes bad in just days. / Cheese, buried in a Chinese desert thirty-five hundred years ago. / Someone had beaten rot, long before the fridge. / Eleven thousand years ago, villagers were already building granaries.
+- Manbalar: bbc science focus, 'why doesn't honey go, cdc 2003, history.com, 'pickles history timeline';, jay 2005, kuijt 2009, live science report on the 500-year-old , maixner 2018, pryor 2020, salque 2013, smithsonian magazine, 'recovering the fo, star 2017, study 2024, weller 2005, wikipedia, 'yakhchal'; archaeology now, 
+- Kalit so'zlar: trick, microb, ago, hundr, researcher, long, salt, food, have, cheese, slow, water, number, desert, made
+
+## #22 When Did Ancient Humans First Get DRUNK?
+- Tayyor: 2026-10-23 | 7:29
+- Mazmuni: Your gut carries a ten million year old alcohol upgrade. So when did ancient humans first get drunk? Five clues, from wild chimpanzees to the oldest wine jars, show how far back it goes. This video follows wild chimpanzees drinking palm wine, a thirteen thousand year old brewing cave in Israel, giant stone vats at Göbekli Tepe, a nine thousand year old drink from China, and the oldest known wine jars from Georgia. By the end, you'll judge the clues like a detective. This video is history and science. It does not encourage drinking.
+- Bo'limlar: Your gut carries an alcohol upgrade; The ape upgrade: fermented fruit; Chimpanzees and palm wine; Clue one: Raqefet Cave, Israel; Clue two: Göbekli Tepe, Turkey; Clue three: Jiahu, China; Clue four: wine jars from Georgia; The Areni winery in Armenia; Did beer start farming?; The verdict and what's next
+- Hook: Your gut carries a ten million year old alcohol upgrade. / It appeared when our ancestors came down from the trees. / So when did humans first get drunk? / Chemical traces hint at beer thirteen thousand years ago.
+- Manbalar: barnard 2011, carrigan 2015, dietrich 2012, hockings 2015, liu 2018, mcgovern 2004, mcgovern 2017
+- Kalit so'zlar: drink, researcher, may, wine, beer, ferment, have, clue, jar, hundr, alcohol, ago, thirteen, wild, fruit
+
+## #23 Who Performed the World's First SURGERY?
+- Tayyor: 2026-10-24 | 6:58
+- Mazmuni: Thirty-one thousand years ago, someone amputated a child's leg. The child did not die. Who did it, and how was it possible? This video follows the skeleton from Liang Tebo cave in Borneo, the evidence that the wound healed, the earlier record from France, early skull surgery, and the scientists who argue it was not surgery at all. By the end, you'll know how it was possible, and why researchers still disagree. This video is history and science, not medical advice.
+- Bo'limlar: A child lost a leg 31,000 years ago; Borneo and the grave at Liang Tebo; The skeleton and the missing foot; A clean cut and no infection; How they survived for years; Older records: France, skulls and a papyrus; The challenge: was it really surgery?; Either way, someone cared; So who performed the first surgery?
+- Hook: Thirty-one thousand years ago, someone amputated a child's leg. / The child did not die. The child lived for years. / No hospital. No antibiotics. No anesthesia we know of. / The authors say the wound healed cleanly, without infection.
+- Manbalar: alt 1997, aubert 2018, breasted 1930, buquet-marcon, charlier & samzun. a poss, lister 1867, maloney 2022, murphy 2023, trinkaus 2017
+- Kalit so'zlar: leg, infection, ago, someone, author, bone, child, heal, end, left, clean, surgery, team, grave, before
+
+## #24 Why Can Humans Run for HOURS?
+- Tayyor: 2026-10-24 | 6:07
+- Mazmuni: Race a horse over twenty-two miles. You might win. This video explains why humans can outlast almost any animal over distance, and why scientists still argue about how our ancestors used it. By the end, you'll know how springs in your legs, sweat on your skin and a very old chase-hunting idea fit together, and what the critics say. We cover the Man versus Horse marathon in Wales, the Kalahari hunters, the Turkana Boy skeleton and the wolf connection. This video is history and science, not medical or fitness advice.
+- Bo'limlar: Can a runner beat a horse?; The running gear in your body; Turkana Boy and long legs; Sweat: the human cooling system; Why horses overheat; Man versus Horse in Wales; Persistence hunting in the Kalahari; The critics and the reply; What the fossils say; Wolves, dogs and a team-up idea; So why can humans run for hours?
+- Hook: Race a horse over twenty-two miles. You might win. / In Wales, runners have beaten horses over a marathon distance. / How? Because humans are built for endurance. / Researchers say this began almost two million years ago.
+- Manbalar: bramble 1983, bramble 2004, graubner 2011, guinness 2004, kamberov 2018, liebenberg 2006, lieberman 2007, mech 2003, pickering 2007, rolian 2009, ruff 1993, science focus (bbc), 'could you run out 
+- Kalit so'zlar: runn, body, animal, hour, sweat, hunt, horse, have, million, mil, hors, runner, tim, leg, over
+
+## #25 Could You Survive 24 Hours in the STONE AGE?
+- Tayyor: 2026-10-24 | 10:29
+- Mazmuni: You wake up in the Stone Age. Nobody's coming. Could you last twenty-four hours? We test it hour by hour with research on living hunter-gatherers like the Hadza. By the end, you'll know exactly how you'd do: water, fire, food, danger, sleep, and what really shortened life in the past. This video is history and science, not survival or medical advice.
+- Bo'limlar: You wake up in the Stone Age; Ground rules: borrowing from the Hadza; Hour zero and the rule of threes; Water: job number one; Fire and sharp tools; Food: honey, roots and a helpful bird; Do the Hadza really work that hard?; The twist about energy and exercise; Why you wouldn't be alone; Tracks, leopards and the real danger; How long did people really live?; Sleep and evenings by the fire; So, could you survive?
+- Hook: You wake up in the Stone Age. Nobody's coming. / Survivalists swear by a rule called the rule of threes. / Three hours without shelter. Three days without water. / Living hunter-gatherers spend four to six hours finding food.
+- Manbalar: berbesque 2016, brain 1981, bushcraft instructor accounts (propelrc , crittenden 2010, crittenden 2015, gurven 2007, gurven 2012, harmand 2015, hawkes 2014, institute 2005, knowable 2022, liebenberg 1990, murray 2001, national 2009, pontzer 2012, raichlen 2017, rule of threes (survival), wikipedia; wi, sorensen 2018, spottiswoode 2016, stout 2002, wiessner 2014, yetish 2015
+- Kalit so'zlar: hour, hadza, water, honey, food, found, find, honestly, fire, rule, calory, men, long, real, study
+
+## #26 Were Ancient Humans STRONGER Than Us?
+- Tayyor: 2026-10-24 | 10:25
+- Mazmuni: Her arm bones were stronger than a rower's. This video asks whether ancient humans were really stronger than us, and the honest answer depends on what "stronger" means. By the end, you'll know who really wins: we look at bone studies of early farmers and foragers, the Neandertal debate, the chimp strength myth, grip strength today and the heaviest deadlift on record. This video is history and science, not medical or fitness advice.
+- Bo'limlar: Her arm bones beat a rower's; How do we know? Reading bones; The farming women of Central Europe; Hunter-gatherer bones and the lighter skeleton; Neandertals: strong, or just hard-working?; The chimp strength myth; Grip strength and the heaviest deadlift; What does "stronger" really mean?; The shift that began with farming; So who wins?
+- Hook: Her arm bones were stronger than a rower's. / Neolithic women in Central Europe beat modern athletes. / So were ancient humans simply stronger than us? / Chimps aren't ten times stronger than you. Not even close.
+- Manbalar: beier 2018, berger 1995, chirchir 2015, churchill 2006, fain 2016, guinness world records, heaviest deadlif, leong 2015, macintosh 2017, o'neill 2017, ruff 2015, ryan 2015, shaw 2012
+- Kalit so'zlar: bon, arm, stronger, study, hundr, farm, leg, bone, had, women, grip, rower, modern, hip, muscle
+
+## #27 What Could Ancient Humans Do That We CAN'T?
+- Tayyor: 2026-10-24 | 10:33
+- Mazmuni: Meet a child who can see clearly underwater. This video asks what ancient and traditional ways of life could do that most of us can't, and which of those skills you can actually regain. By the end, you'll know which skills you can regain: sea nomads' eyes and spleens, Twa tree climbers, the Hadza gut, the Tsimane heart, Kalahari trackers, scent trails and cold sleeping. This video is history and science, not medical advice.
+- Bo'limlar: A child who sees underwater; Moken sea nomads and their eyes; The Bajau and their spleens; The Twa: climbing with chimp-like ankles; The Hadza gut: bacteria with seasons; The Tsimane heart; Eyesight and time outdoors; Kalahari trackers and CyberTracker; Can you follow a scent trail?; Sleeping in the cold; Which skills are really lost?; So what did we lose?
+- Hook: Meet a child who can see clearly underwater. / Moken sea nomad children beat European kids underwater. / So which ancient skills can't you do anymore? / Some sea nomads have spleens about fifty percent bigger.
+- Manbalar: comment 2018, cybertracker 2003, gislen 2003, gislen 2006, gurven 2007, gurven 2012, ilardo 2018, kaplan 2017, liebenberg 1990, porter 2007, rose 2008, scholander 1958, smits 2017, venkataraman 2013
+- Kalit so'zlar: skill, underwater, children, study, european, moken, percent, had, colleagu, nomad, sea, have, spleen, may, practice
+
+## #28 A Day in the Life of an Early HUMAN
+- Tayyor: 2026-10-24 | 10:09
+- Mazmuni: Dawn, one and a half million years ago. This video follows one imagined early human through an ordinary day, built only from real evidence: footprints, hand axes, bones and the earliest fire. By the end, you'll know how they spent every hour, and why their ordinary day shaped your feet, jaw and skin. This video is history and science, not medical advice.
+- Bo'limlar: Dawn, one and a half million years ago; Honesty first: no diary, only evidence; The footprints at Ileret, Kenya; Stone tools and hand axes; Breakfast and the chewing experiment; The toothless skull from Dmanisi; Fire: not yet; Heat, sweat and skin; The Turkana Boy; Night and sleep; So what did their day look like?
+- Hook: Dawn, one and a half million years ago. / Their footprints are still in the mud in Kenya. / So what did one ordinary day actually look like? / Ninety-seven footprints show at least twenty individuals walking together.
+- Manbalar: bennett 2009, berna 2012, beyene 2013, bunn 1981, hatala 2016, jablonski 2000, kamberov 2018, lepre 2011, lordkipanidze 2005, pickering 2007, roach 2016, semaw 1997, walker & leakey (eds., 1993). the nariok, will 2015, yetish 2015, zink 2016
+- Kalit so'zlar: million, point, ago, walk, had, footprint, axe, hand, chew, meat, fire, group, half, shap, evidence
+
+## #29 Why Did Human BRAINS Shrink?
+- Tayyor: 2026-10-24 | 10:03
+- Mazmuni: Your brain is probably smaller than a Stone Age hunter's. This video follows the skull evidence, the debate about when and why human brains shrank, and what brain size does and doesn't tell us. By the end, you'll know what scientists really think: the three leading suspects (energy, shared knowledge and a changing lifestyle), the critics, Neanderthal eyes, the tiny-brained Homo floresiensis, and why a smaller brain doesn't mean a dumber one. This video is history and science, not medical advice.
+- Bo'limlar: Your brain vs a hunter's; How do we measure ancient brains?; Henneberg, Hawks and the ten percent drop; Why brains are expensive; The three-thousand-year paper and the ants; The critics; Neanderthals and their eyes; Homo floresiensis: tiny brain, stone tools; Does brain size track intelligence?; A small dip on a very big hill; So did our brains shrink?
+- Hook: Your brain is probably smaller than a Stone Age hunter's. / Skull measurements suggest human brains shrank about ten percent. / So did we get dumber, or did something else happen? / One study says the shrinking began three thousand years ago.
+- Manbalar: brown 2004, desilva 2021, gignac 2017, hawks 2011, henneberg 1988, pearce 2013, pietschnig 2015, raichle 2002, villmoare 2022, walker & leakey (eds., 1993). the nariok
+- Kalit so'zlar: brain, skull, found, percent, size, have, smaller, shrink, had, may, head, eye, homo, million, team
+
+## #30 What Would Ancient Humans Think of Our WORLD?
+- Tayyor: 2026-10-24 | 10:02
+- Mazmuni: What if a Stone Age person walked down your street? This video uses real studies to imagine their reactions to crowds, light, sitting, boredom, social rejection, trade and jewelry, and to find out what they might actually envy. By the end, you'll know what they'd actually envy. We look at the shaky "one hundred and fifty friends" rule, a camping study of body clocks, hunters who sit for ten hours, people who preferred electric shocks to quiet thoughts, and the shell beads of Taforalt. This video is history and science, not medical advice.
+- Bo'limlar: A visitor from the Stone Age; Meet our visitor; Thirty people vs millions: crowds and the Dunbar number; Light, night and body clocks; Sitting: hunters sit too; Boredom: alone with your thoughts; Feeling left out; Trade, pigment and jewelry; What would they envy?; So what would they think of our world?
+- Hook: What if a Stone Age person walked down your street? / Their camp held about thirty people. Your city holds millions. / By the end, you'll know what they'd actually envy. / Camping for a week shifted body clocks two hours.
+- Manbalar: bouzouggar 2007, brooks 2018, crittenden 2010, crittenden 2015, dunbar 1992, eisenberger 2003, lindenfors 2021, national 2009, raichlen 2020, wiessner 2014, wilson 2014, wright 2013, yetish 2015
+- Kalit so'zlar: visitor, camp, hadza, hour, out, hundr, body, week, honestly, group, light, half, envy, life, sit
+
+## #31 Sun'iy intellekt nima va u qanday ISHLAYDI?
+- Tayyor: 2026-10-24 | 9:16
+- Mazmuni: Siz bugun sun'iy intellektdan, ehtimol, allaqachon foydalandingiz. Bu videoda sun'iy intellekt nima ekanini, qanday ishlashini, ishlashi uchun nimalar kerakligini, qanday paydo bo'lganini va nega hayotimizga shunchalik tez kirib kelayotganini oddiy tilda tushuntiramiz. Video oxirida sun'iy intellekt nima ekanini, nimaga tayanishini va qanday paydo bo'lganini aniq bilasiz, hamda uni xavfsiz ishlatish uchun uchta oddiy qadamni olasiz. Bu video ta'lim maqsadida; tibbiy, huquqiy yoki moliyaviy maslahat emas. Mundarija: 0:00 Sun'iy intellekt: ehtimol, allaqachon ishlatgansiz 0:50 Sun'iy intellekt a
+- Hook: Siz bugun sun'iy intellektdan, ehtimol, allaqachon foydalandingiz. / Qidiruv, tarjima, kamera: ularning ko'pi shunga tayanadi. / Lekin u aslida qanday ishlaydi, bilasizmi? / Bu videoda uni boshidan, oddiy tilda tushuntiraman.
+- Manbalar: alphago versus lee sedol, seoul, 9-15 ma, brown 2020, campbell 2002, epoch 2025, international 2025, ji 2023, krizhevsky 2012, lecun 2015, lighthill 1973, mccarthy 1955, oecd 2023, ouyang 2022, stanford 2025, strategy for the development of artifici, turing 1950, ubs analyst note reported by reuters, 1-, vaswani 2017
+- Kalit so'zlar: sun, ikki, intellekt, oddiy, bir, yilda, ikkinchi, ming, har, uchun, yil, ham, endi, ema, edi
+
+## #32 Why Were Rainy Nights So DEADLY for Ancient Humans?
+- Tayyor: 2026-10-26 | 10:49
+- Mazmuni: Rain sounds cozy from a modern bed. For most of human history, a rainy night was one of the most dangerous nights there was. By the end, you'll know the five rules that kept sleeping people alive through a storm: why sleep switches off your best heating system, why wet beats cold, the flood that comes from rain you never saw, and the 200,000-year-old grass beds of Border Cave. This video is history and science, not medical or survival advice.
+- Bo'limlar: Rain used to sound like danger; The hidden flaw: sleep and cold; Rule one: pick the right ground; Rule two: don't trust the cave mouth; Wind, rain and open ground; Rule three: a bed that stays dry; The quiet rain that killed; Rule four: never let the fire die; Rule five: don't sleep alone; Long wet seasons; The morning after; So why were rainy nights so deadly?
+- Hook: Rain on a roof sounds cozy tonight. / For most of history, it sounded like danger. / Picture yourself thirty thousand years ago. / Water steals body heat far faster than air.
+- Manbalar: kjellberg 2015, nadel 2004, parmeggiani 1960, princeton university outdoor action, 'hy, riel-salvatore et al., riparo bombrini r, us national weather service and noaa fla, wadley 2011, wadley 2020
+- Kalit so'zlar: rain, bed, water, bedd, heat, air, dry, sleep, wet, night, gras, rule, fire, cold, shiver
+
+## #33 Why Is Your Brain Addicted to BAD News?
+- Tayyor: 2026-10-29 | 17:17
+- Mazmuni: One extra negative word in a headline gets more clicks. Your skin and pulse react to bad news before you've even decided what you think. By the end, you'll know where this pull came from (snakes, campfires and the smoke detector principle), why one insult outweighs ten compliments, the surprising group whose brains barely have it, and how to notice the alarm without obeying it. This video is psychology and history, not medical or mental-health advice.
+- Bo'limlar: One sad word, more clicks; The headline experiment; Seventeen countries, one reaction; Bad is stronger than good; Back to the campfire: snakes; The smoke detector principle; Brain waves and bad pictures; Babies already have the alarm; Do losses really hurt twice as much?; The group that barely has it; Noticing the alarm; An old alarm in a new world; A brain built by careful survivors
+- Hook: One sad word in a headline gets more clicks. / Researchers measured it across a hundred thousand headlines. / You click, you scroll, you feel worse. / Bad news even changes your skin and pulse.
+- Manbalar: baumeister 2001, brown 2021, ito 1998, mather 2005, nesse 2001, robertson 2023, soroka 2019, vaish 2008, wood 2006, öhman 2001
+- Kalit so'zlar: alarm, bad, study, negative, click, test, brain, word, review, found, find, because, pull, remember, out
+
+## #34 Stone Age vs Today: Who Really Lived BETTER?
+- Tayyor: 2026-10-30 | 10:47
+- Mazmuni: Half of all Stone Age children never grew up. Yet many adults lived past seventy, moved more than we do and had more free time. Eight rounds, real studies of today's hunter-gatherers (Hadza, Tsimane, Agta, San) against today's world numbers, and an honest final score. Keep count with me: one round flips what nearly everyone believes. This video is history and science, not medical advice.
+- Bo'limlar: Who really lived better?; How do we even know?; Round 1: Children; Round 2: Did cavemen die at thirty?; Round 3: Free time; Round 4: Moving your body; Round 5: Your heart; Round 6: Sleep (the surprise); Round 7: Friends; Round 8: Getting sick; The final score
+- Hook: Half of all Stone Age children never grew up. / Yet many who reached adulthood lived past seventy. / And they had more free time than you. / Some foragers work about twenty hours a week.
+- Manbalar: dyble 2019, gurven 2007, hill 2011, kaplan 2017, raichlen 2017, un 2024, united nations, world population prospec, volk 2013, who 2025, yetish 2015
+- Kalit so'zlar: round, today, hour, score, adult, heart, group, had, sleep, children, liv, week, world, tsimane, death
+
+## #35 Why Is Saving MONEY So Hard for Humans?
+- Tayyor: 2026-11-02 | 10:20
+- Mazmuni: Two out of three adults failed a simple money test. Not because they're stupid, but because the human brain is far older than money. Five ancient traps explain why saving feels hard and spending feels easy, from brain scans of "right now" choices to five-thousand-year-old debts written on clay. Real studies, an honest look at what scientists still argue about, and why it isn't all your fault.
+- Bo'limlar: Two out of three failed a money test; A world without money; Trap 1: Right now beats later; Trap 2: Losing hurts more than winning; Trap 3: Money you can't see; Trap 4: The neighbours; Trap 5: Debt, the oldest trap; The ancient safety net; Is willpower the answer?; It isn't all your fault
+- Hook: Two out of three adults failed a simple money test. / People in over a hundred forty countries took it. / And no, it's not because they're stupid. / Our species is three hundred thousand years old. Money isn't.
+- Manbalar: code of hammurabi (c. 1754 bce), laws on, hublin 2017, kahneman 1979, klapper 2015, luttmer 2005, mcclure 2004, prelec 2001, watts 2018, wiessner 2022, woodburn 1982
+- Kalit so'zlar: money, trap, later, brain, card, los, today, often, little, number, out, hundr, debt, noth, twice
+
+## #36 Why Do Humans LAUGH?
+- Tayyor: 2026-11-08 | 8:56
+- Mazmuni: In 1962, three schoolgirls started laughing and couldn't stop. Weeks later, a school had to close. Why do humans laugh at all? Laughing rats, playful animals, the oldest recorded joke and a laugh that reveals who your friends are. Laughter turns out to be much older than humour.
+- Bo'limlar: The school that couldn't stop laughing; Do animals laugh?; Why you can't tickle yourself; Laughter in an ancient camp; We laugh 30 times more together; The oldest joke in history; Laughter and pain; Your laugh reveals your friends; Why laugh tracks work; Back to 1962; So why do humans laugh?
+- Hook: In nineteen sixty-two, three schoolgirls started laughing. / And they could not stop. / Within weeks, about ninety-five students were laughing. / The school had to close its doors.
+- Manbalar: blakemore 1998, bryant 2016, cai 2019, davila 2009, dunbar 2012, mcdonald 2008, panksepp 2003, provine 2000, rankin 1963, winkler 2021
+- Kalit so'zlar: laugh, laughter, play, friend, rat, tickl, jok, own, group, together, nineteen, sound, young, brain, found
+
+## #37 Why Do We Make Plans We Never KEEP?
+- Tayyor: 2026-11-10 | 9:18
+- Mazmuni: Sunday night you write the perfect plan. By Wednesday it's gone. Only about 30% of students in a classic study finished on time, and brain scans suggest we treat our future selves like strangers. Here's why plans really fail, what the numbers say about procrastination and New Year's resolutions, and the simple if-then trick tested across dozens of studies.
+- Bo'limlar: The perfect plan that dies by Wednesday; The planning fallacy; 10 years late: the Sydney Opera House; Wanting is not doing; Your brain sees future you as a stranger; Procrastination: 1 in 6 adults; New Year's resolutions: what really works; The if-then trick; Why plans fail, and what to do tonight
+- Hook: Sunday night. You write the perfect plan. / Gym at six. No phone. Finish the big project. / By Wednesday, the plan is gone. / Scientists asked students to predict their own deadlines.
+- Manbalar: buehler 1994, gollwitzer 2006, hershfield 2011, milne 2002, norcross 1988, oscarsson 2020, steel 2007, sydney opera house: planned about 1963 a, webb 2006
+- Kalit so'zlar: plan, future, study, work, brain, stranger, someth, goal, student, made, own, scientist, percent, week, fail
+
+## #38 Why Tiny Daily Habits Beat MOTIVATION
+- Tayyor: 2026-11-10 | 9:31
+- Mazmuni: It doesn't take 21 days to build a habit. In one study it took about 66. Why tiny daily steps beat motivation, why the "willpower battery" story fell apart in 23 labs, and what disciplined people actually do differently. No hype, just what the research says.
+- Bo'limlar: One percent a day; Why tiny beats big; How much of your day is on autopilot?; How long a habit really takes (not 21 days); The willpower battery myth; What disciplined people really do; The one thing that keeps you going; How to actually improve, starting tonight
+- Hook: You've heard it takes twenty-one days to build a habit. / Scientists tested it. It's wrong. / On average, it took about sixty-six days. / For some people, around eight months.
+- Manbalar: amabile 2011, arithmetic illustration: 1.01^365 is abo, galla 2015, gollwitzer 2006, hagger 2016, hofmann 2012, lally 2010, wood 2002
+- Kalit so'zlar: habit, study, month, willpower, tiny, automatic, daily, researcher, step, simple, battery, scientist, around, end, percent
+
+## #39 Conversation Mistakes You Don't Know You're MAKING
+- Tayyor: 2026-11-10 | 9:28
+- Mazmuni: You walk home sure you sounded boring. Research says people probably liked you more than you think. Five everyday conversation mistakes almost everyone makes without noticing, what the studies actually found, and a simple fix for each, including the one kind of question that makes people like you more.
+- Bo'limlar: You sounded boring? Probably not; The liking gap; Mistake 1: Making it about you; Mistake 2: The curse of knowledge; Mistake 3: Planning instead of listening; Mistake 4: Not asking the right questions; Mistake 5: Ending at the wrong time; Five fixes you can try this week
+- Hook: You walk home sure you sounded boring. / Science says you're probably wrong. / You replay every awkward word until midnight. / But people liked us more than we guessed.
+- Manbalar: boothby 2018, derber 1979, huang 2017, kardas 2022, mastroianni 2021, newton 1990, stivers 2009, tamir 2012
+- Kalit so'zlar: question, ask, talk, person, conversation, end, researcher, lik, follow, mistake, mak, heard, guess, almost, stranger
+
+## Musiqa videolari
+
+- #1 Forest Stream Lullaby
+- #2 Night Rain under the Moon
+- #3 When You Can't Stop Overthinking at Night
+- #4 why didn't you say goodbye?
+- #5 Close Your Eyes, You're Safe Now
+- #6 you left before the leaves fell

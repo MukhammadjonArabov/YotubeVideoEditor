@@ -1,0 +1,77 @@
+{% extends "videos/base.html" %}
+{% load ae %}
+{% block title %}Yangi video · AutoExplainer{% endblock %}
+{% block content %}
+<div class="page-head">
+  <div><h1>✨ Yangi video</h1><p>Mavzuni yozing — ssenariy avval sizga ko'rsatiladi, keyin rasm, ovoz va montaj.</p></div>
+</div>
+<div class="grid grid-main">
+  <section>
+    <form method="post" class="card card-accent">
+      {% csrf_token %}
+      {{ form.source_suggestion }}
+      <div class="field">
+        <label for="id_topic">{{ form.topic.label }}</label>
+        <input type="text" id="id_topic" name="topic" value="{{ form.topic.value|default:'' }}" maxlength="300" required autofocus
+               placeholder="{{ form.topic.field.widget.attrs.placeholder }}"
+               hx-get="{% url 'videos:topic_check' %}" hx-trigger="keyup changed delay:500ms, load" hx-target="#topic-check">
+        {{ form.topic.errors }}
+        <div class="help">Videolar ingliz tilida, shuning uchun mavzuni inglizcha yozing. Nisha: {{ niche.name|default:"—" }}.</div>
+      </div>
+      <div id="topic-check">{% include "videos/partials/topic_check.html" %}</div>
+      <div class="grid grid-2">
+        <div class="field"><label for="id_target_minutes">{{ form.target_minutes.label }}</label>{{ form.target_minutes }}{{ form.target_minutes.errors }}</div>
+        <div class="field"><label for="id_seconds_per_image">{{ form.seconds_per_image.label }}</label>{{ form.seconds_per_image }}{{ form.seconds_per_image.errors }}</div>
+      </div>
+      <div class="field"><label for="id_tts_provider">{{ form.tts_provider.label }}</label>{{ form.tts_provider }}</div>
+      <div class="field"><label class="check">{{ form.auto_approve }} {{ form.auto_approve.label }}</label></div>
+      {% if similar %}<div class="field"><label class="check">{{ form.confirm_duplicate }} {{ form.confirm_duplicate.label }}</label></div>{% endif %}
+      <button type="submit" class="btn primary">🚀 Loyihani yaratish</button>
+    </form>
+
+    {% if recent %}
+    <div class="section-title"><h2>Oxirgi loyihalar</h2><a href="{% url 'videos:project_list' %}">Hammasi →</a></div>
+    <div class="card flat"><table><tbody>
+      {% for p in recent %}
+      <tr class="clickable" onclick="location.href='{% url 'videos:project_detail' p.pk %}'">
+        <td><strong>{{ p.title|default:p.topic }}</strong></td>
+        <td style="width:1%"><span class="pill {{ p.status }}">{{ p.get_status_display }}</span></td>
+      </tr>
+      {% endfor %}
+    </tbody></table></div>
+    {% endif %}
+  </section>
+
+  <aside>
+    <div class="card">
+      <h3>💡 Mavzu takliflari</h3>
+      <details class="manual-topic"{% if not suggestions %} open{% endif %}>
+        <summary class="btn sm ghost">✍️ Mavzuni qo'lda qo'shish</summary>
+        <form method="post" action="{% url 'videos:suggestion_add' %}" class="mt-s">
+          {% csrf_token %}
+          <div class="field"><label for="id_topic_text">{{ manual_form.topic_text.label }}</label>
+            <input type="text" id="id_topic_text" name="topic_text" maxlength="300" required
+                   placeholder="{{ manual_form.topic_text.field.widget.attrs.placeholder }}"></div>
+          <div class="field"><label for="id_rationale">{{ manual_form.rationale.label }}</label>
+            <input type="text" id="id_rationale" name="rationale" maxlength="500"
+                   placeholder="{{ manual_form.rationale.field.widget.attrs.placeholder }}"></div>
+          <button type="submit" class="btn sm violet">➕ Takliflarga qo'shish</button>
+        </form>
+      </details>
+      {% for s in suggestions %}
+        <div class="list-item">
+          <div style="font-weight:700">{{ s.topic_text }}</div>
+          <small>{% if s.is_manual %}✍️ Qo'lda qo'shilgan{% else %}📺 {{ s.channel.name }}{% endif %}{% if s.rationale %} · {{ s.rationale|truncatechars:110 }}{% endif %}</small>
+          <div class="row mt-s">
+            <a class="btn sm violet" href="?suggestion={{ s.pk }}">Shu videoni yaratish</a>
+            <form method="post" action="{% url 'videos:suggestion_dismiss' s.pk %}" class="inline" hx-post="{% url 'videos:suggestion_dismiss' s.pk %}" hx-target="closest .list-item" hx-swap="outerHTML">
+              {% csrf_token %}<button class="btn sm ghost">Rad etish</button></form>
+          </div>
+        </div>
+      {% empty %}
+        <p class="muted" style="margin:0">Hozircha taklif yo'q. Yuqorida mavzuni o'zingiz qo'shing yoki <a href="{% url 'videos:channels' %}">📺 Kanallar</a> bo'limida namuna kanal qo'shing — Gemini shu yerga yangi mavzular yozadi.</p>
+      {% endfor %}
+    </div>
+  </aside>
+</div>
+{% endblock %}

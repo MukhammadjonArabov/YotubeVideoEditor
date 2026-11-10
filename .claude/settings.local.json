@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(PYTHONIOENCODING=utf-8 ./venv/Scripts/python scripts/who_cared_injured.py)",
+      "Bash(PYTHONIOENCODING=utf-8 ./venv/Scripts/python manage.py shell -c ' *)",
+      "PowerShell(try { \\(Invoke-WebRequest -Uri http://127.0.0.1:8000/videolar/19/ -UseBasicParsing -TimeoutSec 5\\).StatusCode } catch { \"down: $\\($_.Exception.Message\\)\" }; Get-CimInstance Win32_Process -Filter \"Name='python.exe'\" | Select-Object ProcessId, CommandLine | Format-List | Out-String -Width 200)"
+    ]
+  }
+}

@@ -1,0 +1,2 @@
+# Konsepsiya (egasi tasdiqladi 2026-11-09): Why Do We Make Plans We Never KEEP?
+Hook: yakshanba kechasi ideal reja, chorshanbagacha yo'qoladi; ~30% o'z vaqtida. Rejalashtirish xatosi (Buehler 1994, Sidney opera), niyat-harakat bo'shlig'i (Webb & Sheeran 2006), kelajakdagi men - begona (Hershfield), procrastination 15-20% (Steel 2007), yangi yil va'dalari 40% (Norcross), 58.9 vs 47.1% (Oscarsson 2020), if-then rejalar (Gollwitzer & Sheeran 2006 + 2024), 91% (Milne 2002). Zamonaviy qahramon, qadimgi odamlar yo'q, subtitr bilan.

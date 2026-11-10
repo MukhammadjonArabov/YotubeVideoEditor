@@ -1,0 +1,3 @@
+# Konsepsiya (egasi tasdiqladi 2026-11-10): Conversation Mistakes You Don't Know You're MAKING
+Hook: suhbatdan keyin "zerikarli bo'ldim" deb o'ylaysiz, fan aksini aytadi (liking gap, Boothby 2018). Nega: bu xatolar do'stlik, uchrashuv, ishga ta'sir qiladi. Va'da: 5 xato va har biriga sinalgan yechim. Ochiq savol: odamlarni sizni ko'proq yoqtiradigan savol (follow-up, Huang 2017).
+Xatolar: 1) gapni o'zingizga burish (Tamir & Mitchell 2012, Derber shift response); 2) bilim la'nati (Newton 1990, 2.5% vs 50%); 3) tinglash o'rniga javob tayyorlash (Stivers 2009); 4) savol bermaslik, chuqur suhbatdan qo'rqish (Huang 2017, Kardas 2022); 5) suhbatni tugatish vaqti (Mastroianni 2021). Zamonaviy anime qahramon (#37/#38), subtitr.

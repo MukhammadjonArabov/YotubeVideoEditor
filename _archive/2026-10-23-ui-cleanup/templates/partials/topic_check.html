@@ -1,0 +1,8 @@
+{% if similar %}
+<div class="banner warn">
+  <strong>⚠️ O'xshash video allaqachon qilingan:</strong>
+  <ul>{% for m in similar|slice:":5" %}
+    <li><a href="{% url 'videos:project_detail' m.id %}" target="_blank">#{{ m.id }} {{ m.topic }}</a> — {{ m.score|floatformat:2 }} moslik</li>
+  {% endfor %}</ul>
+</div>
+{% endif %}

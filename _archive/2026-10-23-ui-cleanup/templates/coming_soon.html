@@ -1,0 +1,9 @@
+{% extends "videos/base.html" %}
+{% block title %}{{ title }} · AutoExplainer{% endblock %}
+{% block content %}
+<h1>{{ title }}</h1>
+<div class="card empty-state">
+  <p>{{ text }}</p>
+  <small>Bu bo'lim {{ phase }}-bosqichda qo'shiladi.</small>
+</div>
+{% endblock %}

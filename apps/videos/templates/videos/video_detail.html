@@ -1,0 +1,112 @@
+{% extends "videos/base.html" %}
+{% block title %}#{{ p.pk }} {{ p.title|default:p.topic }} · AutoExplainer{% endblock %}
+{% block head %}{% if p.is_working %}<meta http-equiv="refresh" content="20">{% endif %}{% endblock %}
+{% block content %}
+<div class="page-head">
+  <div>
+    <h1>#{{ p.pk }} {{ p.title|default:p.topic }}</h1>
+    <p><span class="pill {{ p.status }}">{{ p.get_status_display }}</span>
+      {% if p.final_video %} · {{ length }} daqiqa{% endif %}
+      {% if p.finished_at %} · {{ p.finished_at|date:"d.m.Y H:i" }}{% endif %}</p>
+  </div>
+  <a class="btn" href="{% if niche and niche.slug %}{% url 'videos:niche' niche.slug %}{% else %}{% url 'videos:home' %}{% endif %}">← Orqaga</a>
+</div>
+
+{% if p.is_working or not p.final_video %}
+<div class="card"><strong>{{ p.progress_message|default:"Video hali tayyor emas." }}</strong>
+  {% if p.error_message %}<p class="muted">{{ p.error_message|truncatechars:300 }}</p>{% endif %}</div>
+{% endif %}
+
+<div class="grid grid-main">
+  <section>
+    {% if video_url %}
+    <div class="card flat"><video controls preload="metadata" style="width:100%;display:block;background:#000" src="{{ video_url }}"></video></div>
+    <div class="row mt-s">
+      <a class="btn violet" href="{{ video_url }}" download>⬇️ Videoni yuklab olish</a>
+      {% if srt_url %}<a class="btn" href="{{ srt_url }}" download>⬇️ Subtitr (.srt)</a>{% endif %}
+    </div>
+    {% endif %}
+
+    {% if kit.previews %}
+    <div class="section-title"><h2>🖼️ Preview (3 ta variant)</h2></div>
+    <div class="preview-grid">
+      {% for pv in kit.previews %}
+      <div class="preview">
+        <a href="{{ pv.url }}" target="_blank"><img src="{{ pv.url }}" alt="Preview {{ forloop.counter }}"></a>
+        <div class="row">
+          <strong>{{ forloop.counter }}. {{ pv.text }}</strong>
+          <a class="btn sm" href="{{ pv.url }}" download="preview_{{ p.pk }}_{{ forloop.counter }}.jpg">⬇️ Yuklab olish</a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    <p class="muted">1280×720, JPG. YouTube'da "Test &amp; compare" (A/B) uchun 2–3 variantni qo'shing.</p>
+    {% endif %}
+
+    {% if kit.flow_prompts %}
+    <div class="section-title"><h2>🎨 Google Flow promptlari (3 ta)</h2></div>
+    <div class="grid">
+      {% for fp in kit.flow_prompts %}
+      <div class="card">
+        <strong>{{ forloop.counter }}. {{ fp.text }}</strong>
+        <textarea id="flow{{ forloop.counter }}" readonly rows="7" class="kit-text">{{ fp.prompt }}</textarea>
+        <button class="btn sm violet" onclick="copyText('flow{{ forloop.counter }}', this)">📋 Promtni nusxalash</button>
+      </div>
+      {% endfor %}
+    </div>
+    <p class="muted">Flow'da rasmni chizdiring (qahramon namunasini biriktiring), keyin 1280×720 qilib yuklang.</p>
+    {% endif %}
+  </section>
+
+  <aside>
+    <div class="card">
+      <h3>🏷️ Sarlavha (3 variant)</h3>
+      {% for t in titles %}
+      <div class="kit-row">
+        <span id="title{{ forloop.counter }}">{{ t.text }}</span>
+        <small class="muted">{{ t.chars }}/60 belgi</small>
+        <button class="btn sm" onclick="copyText('title{{ forloop.counter }}', this)">📋 Nusxalash</button>
+      </div>
+      {% empty %}<p class="muted">Sarlavhalar hali yozilmagan.</p>{% endfor %}
+    </div>
+
+    <div class="card mt-s">
+      <h3>📝 Description</h3>
+      {% if kit.description %}
+      <textarea id="desc" readonly rows="14" class="kit-text">{{ kit.description }}</textarea>
+      <button class="btn sm violet" onclick="copyText('desc', this)">📋 Nusxalash</button>
+      {% else %}<p class="muted">Tavsif hali yozilmagan.</p>{% endif %}
+    </div>
+
+    <div class="card mt-s">
+      <h3>#️⃣ Teglar</h3>
+      {% if kit.tags %}
+      <textarea id="tags" readonly rows="4" class="kit-text">{{ tags_text }}</textarea>
+      <small class="muted">{{ tags_len }}/500 belgi</small>
+      <button class="btn sm violet" onclick="copyText('tags', this)">📋 Nusxalash</button>
+      {% else %}<p class="muted">Teglar hali yozilmagan.</p>{% endif %}
+    </div>
+
+    {% for d in dubs %}
+    <div class="card mt-s">
+      <h3>🌐 {{ d.uz }} ({{ d.name }})</h3>
+      {% if d.audio_url %}
+      <audio controls preload="none" src="{{ d.audio_url }}" style="width:100%"></audio>
+      <a class="btn sm" href="{{ d.audio_url }}" download>⬇️ Audio (.m4a)</a>
+      <small class="muted">YouTube Studio → Tillar → {{ d.name }} → Audio → Kiritish</small>
+      {% else %}<p class="muted">Audio hali tayyorlanmoqda.</p>{% endif %}
+      {% for t in d.titles %}
+      <div class="kit-row">
+        <span id="t_{{ d.code }}{{ forloop.counter }}">{{ t }}</span>
+        <button class="btn sm" onclick="copyText('t_{{ d.code }}{{ forloop.counter }}', this)">📋</button>
+      </div>
+      {% endfor %}
+      {% if d.description %}
+      <textarea id="desc_{{ d.code }}" readonly rows="8" class="kit-text">{{ d.description }}</textarea>
+      <button class="btn sm violet" onclick="copyText('desc_{{ d.code }}', this)">📋 Nusxalash</button>
+      {% endif %}
+    </div>
+    {% endfor %}
+  </aside>
+</div>
+{% endblock %}

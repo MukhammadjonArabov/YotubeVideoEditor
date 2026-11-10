@@ -1,0 +1,67 @@
+{
+  "title": "Night Rain under the Moon",
+  "music_prompt": "Calm, soothing ambient music for deep sleep on a quiet rainy night: soft gentle rain falling steadily on leaves and grass, distant night birds and a few crickets in the wet meadow, a light breeze moving through tall grass. Over it, warm slow analog pads, sparse soft felt piano notes with long reverb like moonlight, a low gentle cello drone, and a very soft, breathy wordless female vocalise humming quietly far in the background. About 52 BPM, key of A minor turning warm, no drums, no percussion, no lyrics, no spoken words, no thunder, no sudden changes, no build-ups, no crescendo, no climax, no fade-in and no fade-out: it starts and ends at the same soft, quiet level, the volume stays low and perfectly even for the whole track so it loops seamlessly, peaceful and safe.",
+  "music_seconds": 210,
+  "target_minutes": 60,
+  "vocals": true,
+  "flow_prompts": [
+    {
+      "title": "Moonlit meadow rain",
+      "prompt": "A wide meadow at night under a soft full moon, a gentle light rain falling, tall grass swaying slowly in a light breeze, silver moonlight shimmering on wet blades of grass, low mist drifting far away, calm deep blue tones, locked-off camera, seamless loop, no people, no text."
+    },
+    {
+      "title": "Raindrops on leaves",
+      "prompt": "Close-up of large green leaves at night with slow raindrops falling and sliding off, each drop catching cool silver moonlight, soft blurred dark forest behind, gentle mist, everything moves slowly and softly, static camera, seamless loop, no people, no text."
+    },
+    {
+      "title": "Moon over a pond",
+      "prompt": "A small still pond at night surrounded by reeds and grass, soft rain making slow expanding ripples that break the reflection of a bright full moon, faint mist over the water, cool blue and silver light, very calm, static camera, seamless loop, no people, no text."
+    },
+    {
+      "title": "Bird on a wet branch",
+      "prompt": "A small night bird sitting quietly on a wet tree branch in gentle rain, drops falling from the twigs, the full moon glowing softly behind thin clouds, dark blue sky, the bird barely moves, slow and peaceful, static close shot, seamless loop, no people, no text."
+    },
+    {
+      "title": "Grass and fireflies",
+      "prompt": "Low ground-level view of wet grass at night in soft rain, a few fireflies glowing and floating slowly between the blades, raindrops glistening in moonlight, shallow depth of field, gentle slow movement of the grass, calm dreamy mood, static camera, seamless loop, no people, no text."
+    },
+    {
+      "title": "Cottage window rain",
+      "prompt": "A small wooden cottage at the edge of a moonlit meadow at night, warm soft light in one window, gentle rain falling over the roof and the grass, the full moon half hidden by slow drifting clouds, very calm, locked-off wide shot, seamless loop, no people, no text."
+    }
+  ],
+  "titles": [
+    "Soft Night RAIN and Moonlight for Deep Sleep, 1 Hour",
+    "Gentle Rain, Night Birds and Calm Music to SLEEP",
+    "1 Hour of Moonlit Rain Sounds to RELAX"
+  ],
+  "description": "One hour of calm night music: soft rain on leaves and grass, distant night birds and crickets, warm piano and a quiet wordless female voice under the moonlight.\nUse it to fall asleep, study, meditate or simply breathe out after a long day.\n\nMusic created with AI (ElevenLabs) and arranged for this channel. Visuals created with Google Flow.\n\n#rainsounds #sleepmusic #relaxingmusic",
+  "tags": [
+    "rain sounds for sleeping",
+    "night rain",
+    "relaxing music",
+    "sleep music",
+    "rain and piano",
+    "moonlight music",
+    "nature sounds",
+    "calm music",
+    "meditation music",
+    "study music",
+    "1 hour rain",
+    "night birds"
+  ],
+  "thumbnail_prompts": [
+    {
+      "text": "NIGHT RAIN",
+      "prompt": "Wide 16:9 photoreal moonlit meadow at night in soft rain, tall wet grass glistening with silver light, low mist, a full moon behind thin clouds; the words NIGHT RAIN drawn large in soft white rounded capitals with a gentle glow in the upper left, spelled exactly."
+    },
+    {
+      "text": "DEEP SLEEP",
+      "prompt": "Wide 16:9 photoreal still pond at night with rain ripples breaking the reflection of a full moon, reeds around, cool blue tones; the words DEEP SLEEP in large soft white rounded capitals with a subtle shadow, centred in the sky, spelled exactly."
+    },
+    {
+      "text": "1 HOUR",
+      "prompt": "Wide 16:9 photoreal small wooden cottage with a warm window at the edge of a rainy moonlit meadow, soft mist, fireflies; the words 1 HOUR in huge soft yellow-white rounded capitals with a gentle glow, upper third, spelled exactly."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+Siz bugun sun'iy intellektdan, ehtimol, allaqachon foydalandingiz. Bu videoda sun'iy intellekt nima ekanini, qanday ishlashini, ishlashi uchun nimalar kerakligini, qanday paydo bo'lganini va nega hayotimizga shunchalik tez kirib kelayotganini oddiy tilda tushuntiramiz.
+
+Video oxirida sun'iy intellekt nima ekanini, nimaga tayanishini va qanday paydo bo'lganini aniq bilasiz, hamda uni xavfsiz ishlatish uchun uchta oddiy qadamni olasiz.
+
+Bu video ta'lim maqsadida; tibbiy, huquqiy yoki moliyaviy maslahat emas.
+
+Mundarija:
+0:00 Sun'iy intellekt: ehtimol, allaqachon ishlatgansiz
+0:50 Sun'iy intellekt aslida nima?
+2:06 U qanday ishlaydi: o'qitish va foydalanish
+2:53 Ishlashi uchun nimalar kerak?
+4:26 Qisqa tanaffus
+4:42 Qanday paydo bo'lgan? Tyuringdan Chat Ji Pi Ti gacha
+6:31 Nega hayotimizga bunchalik tez kirdi?
+8:21 Amaliy qadamlar va xulosa
+
+Manbalar:
+- LeCun, Bengio & Hinton (2015). Deep learning. Nature.
+- Brown et al. (2020). Language Models are Few-Shot Learners. NeurIPS.
+- Ji et al. (2023). Survey of Hallucination in Natural Language Generation. ACM Computing Surveys.
+- Ouyang et al. (2022). Training language models to follow instructions with human feedback. NeurIPS.
+- Vaswani et al. (2017). Attention Is All You Need. NeurIPS.
+- Krizhevsky, Sutskever & Hinton (2012). ImageNet classification with deep convolutional neural networks.
+- Epoch AI (2025). Training compute of notable AI models.
+- IEA (2025). Energy and AI.
+- Turing (1950). Computing Machinery and Intelligence. Mind.
+- Stanford HAI (2025). AI Index Report 2025.
+- O'zbekiston Respublikasi Prezidentining 2024-yil 14-oktyabrdagi sun'iy intellekt texnologiyalarini 2030-yilgacha rivojlantirish strategiyasi (gov.uz, lex.uz).
+- Boshqa manbalar va tekshiruv tafsilotlari: ai_nima.factcheck.md
+
+Rasmlar sun'iy intellekt yordamida yaratilgan; ovoz sintetik.
+
+#sunʼiyintellekt #teachai #texnologiya

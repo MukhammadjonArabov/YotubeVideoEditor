@@ -1,0 +1,39 @@
+{% extends "videos/base.html" %}
+{% load ae %}
+{% block title %}Kanallar · AutoExplainer{% endblock %}
+{% block content %}
+<div class="page-head">
+  <div><h1>📺 Namuna kanallar</h1><p>Kanal qo'shing — ilova videolarini o'qiydi, Gemini uslubini tahlil qiladi va yangi mavzular taklif qiladi.</p></div>
+</div>
+
+{% if not youtube_ok %}<div class="banner err">.env faylida <code>YOUTUBE_API_KEY</code> yo'q — kanal qo'shib bo'lmaydi.</div>{% endif %}
+{% if not gemini_ok %}<div class="banner warn">.env faylida <code>GEMINI_API_KEY</code> / <code>GEMINI_TEXT_MODEL</code> yo'q — videolar olinadi, lekin uslub tahlili va mavzu takliflari ishlamaydi.</div>{% endif %}
+
+<form method="post" class="card card-accent">
+  {% csrf_token %}
+  <div class="row" style="align-items:flex-end">
+    <div style="flex:1;min-width:260px"><label for="id_url">{{ form.url.label }}</label>{{ form.url }}</div>
+    <button class="btn primary">➕ Kanal qo'shish</button>
+  </div>
+  {{ form.url.errors }}
+</form>
+
+<div class="cards mt">
+  {% for c in channels %}
+  <a class="card vcard" href="{% url 'videos:channel_detail' c.pk %}" style="padding:18px">
+    <div class="row" style="flex-wrap:nowrap">
+      {% if c.thumbnail_url %}<img class="avatar" src="{{ c.thumbnail_url }}" alt="">{% else %}<div class="avatar"></div>{% endif %}
+      <div style="min-width:0"><div class="t" style="margin:0">{{ c.name }}</div><div class="m">{{ c.handle }}</div></div>
+    </div>
+    <div class="row mt-s">
+      <span class="pill {{ c.state }}">{{ c.get_state_display }}</span>
+      {% if c.subscriber_count %}<span class="pill">👥 {{ c.subscriber_count|compact }}</span>{% endif %}
+      <span class="pill">🎬 {{ c.n_videos }}</span>
+      {% if c.n_sugg %}<span class="pill script_ready">💡 {{ c.n_sugg }} taklif</span>{% endif %}
+    </div>
+  </a>
+  {% empty %}
+  <div class="card empty-state" style="grid-column:1/-1"><div class="big">📺</div>Hali kanal yo'q. Masalan, <code>https://www.youtube.com/@Inkexplainer96</code> ni qo'shib ko'ring.</div>
+  {% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,41 @@
+{% load static %}<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}AutoExplainer{% endblock %}</title>
+  <link rel="stylesheet" href="{% static 'css/app.css' %}?v=3">
+  <script src="{% static 'js/htmx.min.js' %}"></script>
+</head>
+<body hx-headers='{"X-CSRFToken": "{{ csrf_token }}"}'>
+{% with u=request.resolver_match.url_name %}
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="{% url 'videos:home' %}">🎬 Auto<span>Explainer</span></a>
+    <nav class="nav">
+      <a href="{% url 'videos:home' %}" class="{% if u == 'home' %}active{% endif %}">✨ Yangi video</a>
+      <a href="{% url 'videos:project_list' %}" class="{% if u == 'project_list' or u == 'project_detail' %}active{% endif %}">📁 Videolar</a>
+      <a href="{% url 'videos:music_list' %}" class="{% if u == 'music_list' or u == 'music_detail' %}active{% endif %}">🌿 Musiqa videolari</a>
+      <a href="{% url 'videos:watch' %}" class="{% if u == 'watch' or u == 'watch_project' or u == 'watch_reference' %}active{% endif %}">▶️ Tomosha</a>
+      <a href="{% url 'videos:niche' %}" class="{% if u == 'niche' %}active{% endif %}">🎯 Nisha</a>
+      <a href="{% url 'videos:channels' %}" class="{% if u == 'channels' or u == 'channel_detail' %}active{% endif %}">📺 Kanallar</a>
+      <a href="{% url 'videos:library' %}" class="{% if u == 'library' %}active{% endif %}">🎵 Kutubxona</a>
+      <a href="{% url 'videos:policy' %}" class="{% if u == 'policy' %}active{% endif %}">🛡️ Qoidalar{% if unreviewed_policy_notes %}<span class="badge">{{ unreviewed_policy_notes }}</span>{% endif %}</a>
+    </nav>
+  </div>
+</header>
+{% if active_niche %}
+<div class="nichebar"><div class="wrap">🎯 Nisha: <strong>{{ active_niche.name }}</strong><span>·</span><span>{{ active_niche.name_en }}</span></div></div>
+{% endif %}
+{% endwith %}
+<main class="wrap">
+  {% if unreviewed_policy_notes %}
+    <div class="banner warn">⚠️ YouTube qoidalari sahifalarida {{ unreviewed_policy_notes }} ta ko'rib chiqilmagan o'zgarish bor. <a href="{% url 'videos:policy' %}">Ko'rish →</a></div>
+  {% endif %}
+  {% for m in messages %}
+    <div class="banner {% if m.tags == 'error' %}err{% elif m.tags == 'warning' %}warn{% elif m.tags == 'success' %}ok{% endif %}">{{ m }}</div>
+  {% endfor %}
+  {% block content %}{% endblock %}
+</main>
+</body>
+</html>

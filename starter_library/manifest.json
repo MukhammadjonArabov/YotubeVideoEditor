@@ -1,0 +1,350 @@
+{
+ "music": [
+  {
+   "file": "music/Ancient_Rite.mp3",
+   "title": "Ancient Rite",
+   "mood_tags": [
+    "epic",
+    "mysterious",
+    "tense"
+   ],
+   "source": "freepd",
+   "license_note": "FreePD.com (Kevin MacLeod & contributors) — public domain / CC0 1.0. Via the SoundSafari/CC0-1.0-Music dataset on GitHub."
+  },
+  {
+   "file": "music/Asking_Questions.mp3",
+   "title": "Asking Questions",
+   "mood_tags": [
+    "quirky",
+    "playful"
+   ],
+   "source": "freepd",
+   "license_note": "FreePD.com (Kevin MacLeod & contributors) — public domain / CC0 1.0. Via the SoundSafari/CC0-1.0-Music dataset on GitHub."
+  },
+  {
+   "file": "music/Attic_Secrets.mp3",
+   "title": "Attic Secrets",
+   "mood_tags": [
+    "mysterious",
+    "quirky"
+   ],
+   "source": "freepd",
+   "license_note": "FreePD.com (Kevin MacLeod & contributors) — public domain / CC0 1.0. Via the SoundSafari/CC0-1.0-Music dataset on GitHub."
+  },
+  {
+   "file": "music/Bonfire.mp3",
+   "title": "Bonfire",
+   "mood_tags": [
+    "calm",
+    "wholesome"
+   ],
+   "source": "freepd",
+   "license_note": "FreePD.com (Kevin MacLeod & contributors) — public domain / CC0 1.0. Via the SoundSafari/CC0-1.0-Music dataset on GitHub."
+  },
+  {
+   "file": "music/Driving_Concern.mp3",
+   "title": "Driving Concern",
+   "mood_tags": [
+    "tense"
+   ],
+   "source": "freepd",
+   "license_note": "FreePD.com (Kevin MacLeod & contributors) — public domain / CC0 1.0. Via the SoundSafari/CC0-1.0-Music dataset on GitHub."
+  },
+  {
+   "file": "music/Happy_Whistling_Ukulele.mp3",
+   "title": "Happy Whistling Ukulele",
+   "mood_tags": [
+    "playful",
+    "wholesome"
+   ],
+   "source": "freepd",
+   "license_note": "FreePD.com (Kevin MacLeod & contributors) — public domain / CC0 1.0. Via the SoundSafari/CC0-1.0-Music dataset on GitHub."
+  },
+  {
+   "file": "music/Heroic_Adventure.mp3",
+   "title": "Heroic Adventure",
+   "mood_tags": [
+    "epic"
+   ],
+   "source": "freepd",
+   "license_note": "FreePD.com (Kevin MacLeod & contributors) — public domain / CC0 1.0. Via the SoundSafari/CC0-1.0-Music dataset on GitHub."
+  },
+  {
+   "file": "music/Hidden_Truth.mp3",
+   "title": "Hidden Truth",
+   "mood_tags": [
+    "mysterious",
+    "tense"
+   ],
+   "source": "freepd",
+   "license_note": "FreePD.com (Kevin MacLeod & contributors) — public domain / CC0 1.0. Via the SoundSafari/CC0-1.0-Music dataset on GitHub."
+  },
+  {
+   "file": "music/Hippety_Hop.mp3",
+   "title": "Hippety Hop",
+   "mood_tags": [
+    "playful",
+    "quirky"
+   ],
+   "source": "freepd",
+   "license_note": "FreePD.com (Kevin MacLeod & contributors) — public domain / CC0 1.0. Via the SoundSafari/CC0-1.0-Music dataset on GitHub."
+  },
+  {
+   "file": "music/Hopeful.mp3",
+   "title": "Hopeful",
+   "mood_tags": [
+    "wholesome",
+    "calm"
+   ],
+   "source": "freepd",
+   "license_note": "FreePD.com (Kevin MacLeod & contributors) — public domain / CC0 1.0. Via the SoundSafari/CC0-1.0-Music dataset on GitHub."
+  },
+  {
+   "file": "music/Infinite_Peace.mp3",
+   "title": "Infinite Peace",
+   "mood_tags": [
+    "calm"
+   ],
+   "source": "freepd",
+   "license_note": "FreePD.com (Kevin MacLeod & contributors) — public domain / CC0 1.0. Via the SoundSafari/CC0-1.0-Music dataset on GitHub."
+  },
+  {
+   "file": "music/Inventing_Flight.mp3",
+   "title": "Inventing Flight",
+   "mood_tags": [
+    "wholesome",
+    "epic"
+   ],
+   "source": "freepd",
+   "license_note": "FreePD.com (Kevin MacLeod & contributors) — public domain / CC0 1.0. Via the SoundSafari/CC0-1.0-Music dataset on GitHub."
+  },
+  {
+   "file": "music/Kalimba_Relaxation_Music.mp3",
+   "title": "Kalimba Relaxation Music",
+   "mood_tags": [
+    "calm"
+   ],
+   "source": "freepd",
+   "license_note": "FreePD.com (Kevin MacLeod & contributors) — public domain / CC0 1.0. Via the SoundSafari/CC0-1.0-Music dataset on GitHub."
+  },
+  {
+   "file": "music/Managing_Mischief.mp3",
+   "title": "Managing Mischief",
+   "mood_tags": [
+    "quirky",
+    "playful"
+   ],
+   "source": "freepd",
+   "license_note": "FreePD.com (Kevin MacLeod & contributors) — public domain / CC0 1.0. Via the SoundSafari/CC0-1.0-Music dataset on GitHub."
+  },
+  {
+   "file": "music/Mysterious_Lights.mp3",
+   "title": "Mysterious Lights",
+   "mood_tags": [
+    "mysterious"
+   ],
+   "source": "freepd",
+   "license_note": "FreePD.com (Kevin MacLeod & contributors) — public domain / CC0 1.0. Via the SoundSafari/CC0-1.0-Music dataset on GitHub."
+  },
+  {
+   "file": "music/Nostalgic_Piano.mp3",
+   "title": "Nostalgic Piano",
+   "mood_tags": [
+    "sad",
+    "calm"
+   ],
+   "source": "freepd",
+   "license_note": "FreePD.com (Kevin MacLeod & contributors) — public domain / CC0 1.0. Via the SoundSafari/CC0-1.0-Music dataset on GitHub."
+  }
+ ],
+ "sfx": [
+  {
+   "file": "sfx/ding_01.wav",
+   "name": "ding 01",
+   "tags": [
+    "ding"
+   ],
+   "license_note": "Kenney (kenney.nl) — CC0 1.0, free for commercial use. See licenses/."
+  },
+  {
+   "file": "sfx/ding_02_long.wav",
+   "name": "ding 02 long",
+   "tags": [
+    "ding"
+   ],
+   "license_note": "Kenney (kenney.nl) — CC0 1.0, free for commercial use. See licenses/."
+  },
+  {
+   "file": "sfx/ding_03_glass.wav",
+   "name": "ding 03 glass",
+   "tags": [
+    "ding"
+   ],
+   "license_note": "Kenney (kenney.nl) — CC0 1.0, free for commercial use. See licenses/."
+  },
+  {
+   "file": "sfx/pop_01.wav",
+   "name": "pop 01",
+   "tags": [
+    "pop"
+   ],
+   "license_note": "Kenney (kenney.nl) — CC0 1.0, free for commercial use. See licenses/."
+  },
+  {
+   "file": "sfx/pop_02.wav",
+   "name": "pop 02",
+   "tags": [
+    "pop"
+   ],
+   "license_note": "Kenney (kenney.nl) — CC0 1.0, free for commercial use. See licenses/."
+  },
+  {
+   "file": "sfx/pop_03_pluck.wav",
+   "name": "pop 03 pluck",
+   "tags": [
+    "pop"
+   ],
+   "license_note": "Kenney (kenney.nl) — CC0 1.0, free for commercial use. See licenses/."
+  },
+  {
+   "file": "sfx/pop_04_bong.wav",
+   "name": "pop 04 bong",
+   "tags": [
+    "pop",
+    "ding"
+   ],
+   "license_note": "Kenney (kenney.nl) — CC0 1.0, free for commercial use. See licenses/."
+  },
+  {
+   "file": "sfx/click_01.wav",
+   "name": "click 01",
+   "tags": [
+    "click"
+   ],
+   "license_note": "Kenney (kenney.nl) — CC0 1.0, free for commercial use. See licenses/."
+  },
+  {
+   "file": "sfx/click_02.wav",
+   "name": "click 02",
+   "tags": [
+    "click"
+   ],
+   "license_note": "Kenney (kenney.nl) — CC0 1.0, free for commercial use. See licenses/."
+  },
+  {
+   "file": "sfx/click_03_select.wav",
+   "name": "click 03 select",
+   "tags": [
+    "click"
+   ],
+   "license_note": "Kenney (kenney.nl) — CC0 1.0, free for commercial use. See licenses/."
+  },
+  {
+   "file": "sfx/question_01.wav",
+   "name": "question 01",
+   "tags": [
+    "ding",
+    "pop"
+   ],
+   "license_note": "Kenney (kenney.nl) — CC0 1.0, free for commercial use. See licenses/."
+  },
+  {
+   "file": "sfx/whoosh_01.wav",
+   "name": "whoosh 01",
+   "tags": [
+    "whoosh"
+   ],
+   "license_note": "Synthesized from scratch for AutoExplainer — no third-party material, CC0 1.0."
+  },
+  {
+   "file": "sfx/whoosh_02.wav",
+   "name": "whoosh 02",
+   "tags": [
+    "whoosh"
+   ],
+   "license_note": "Synthesized from scratch for AutoExplainer — no third-party material, CC0 1.0."
+  },
+  {
+   "file": "sfx/whoosh_03_fast.wav",
+   "name": "whoosh 03 fast",
+   "tags": [
+    "whoosh",
+    "swoosh"
+   ],
+   "license_note": "Synthesized from scratch for AutoExplainer — no third-party material, CC0 1.0."
+  },
+  {
+   "file": "sfx/swoosh_01.wav",
+   "name": "swoosh 01",
+   "tags": [
+    "swoosh",
+    "whoosh"
+   ],
+   "license_note": "Synthesized from scratch for AutoExplainer — no third-party material, CC0 1.0."
+  },
+  {
+   "file": "sfx/swoosh_02.wav",
+   "name": "swoosh 02",
+   "tags": [
+    "swoosh"
+   ],
+   "license_note": "Synthesized from scratch for AutoExplainer — no third-party material, CC0 1.0."
+  },
+  {
+   "file": "sfx/riser_01.wav",
+   "name": "riser 01",
+   "tags": [
+    "riser"
+   ],
+   "license_note": "Synthesized from scratch for AutoExplainer — no third-party material, CC0 1.0."
+  },
+  {
+   "file": "sfx/riser_02_short.wav",
+   "name": "riser 02 short",
+   "tags": [
+    "riser"
+   ],
+   "license_note": "Synthesized from scratch for AutoExplainer — no third-party material, CC0 1.0."
+  },
+  {
+   "file": "sfx/boing_01.wav",
+   "name": "boing 01",
+   "tags": [
+    "boing"
+   ],
+   "license_note": "Synthesized from scratch for AutoExplainer — no third-party material, CC0 1.0."
+  },
+  {
+   "file": "sfx/boing_02_high.wav",
+   "name": "boing 02 high",
+   "tags": [
+    "boing"
+   ],
+   "license_note": "Synthesized from scratch for AutoExplainer — no third-party material, CC0 1.0."
+  },
+  {
+   "file": "sfx/impact_01.wav",
+   "name": "impact 01",
+   "tags": [
+    "impact"
+   ],
+   "license_note": "Synthesized from scratch for AutoExplainer — no third-party material, CC0 1.0."
+  },
+  {
+   "file": "sfx/impact_02_soft.wav",
+   "name": "impact 02 soft",
+   "tags": [
+    "impact"
+   ],
+   "license_note": "Synthesized from scratch for AutoExplainer — no third-party material, CC0 1.0."
+  },
+  {
+   "file": "sfx/impact_03_punch.wav",
+   "name": "impact 03 punch",
+   "tags": [
+    "impact"
+   ],
+   "license_note": "Synthesized from scratch for AutoExplainer — no third-party material, CC0 1.0."
+  }
+ ]
+}

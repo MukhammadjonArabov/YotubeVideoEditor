@@ -1,0 +1,1 @@
+Egasi: raqobatchilar va dolzarb mavzu asosida Stickman tushuntirish nishasida 13 daqiqalik video. Boshlanish (hook) video bo'ladi, egasi uni Google Flow'da o'zi yaratadi. Tomoshabinni ushlab qolsin va unga foydali narsa bersin.

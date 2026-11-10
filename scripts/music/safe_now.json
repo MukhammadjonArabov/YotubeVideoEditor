@@ -1,0 +1,27 @@
+{
+  "title": "Close Your Eyes, You're Safe Now",
+  "music_prompt": "Deep sleep music for a quiet rainy night, made to help an anxious mind fall asleep. Steady soft rain on a window and a roof, very distant low rolling thunder far away and rare, warm slow analog pads, sparse soft felt piano notes with long gentle reverb, a low warm cello drone, and a very soft, breathy female voice humming slowly and quietly far in the background like a lullaby. About 50 BPM, key of C major with warm, safe chords, no drums, no percussion, no beat, no sudden changes, no build-ups, no climax, no fade-in and no fade-out: it starts and ends at the same soft, low level and stays perfectly even so it loops seamlessly for hours. Feeling: safe, held, warm, heavy eyelids.",
+  "music_seconds": 240,
+  "target_minutes": 181,
+  "vocals": true,
+  "flow_prompts": [
+    {"title": "Girl asleep by the rainy window", "prompt": "Anime style, soft dim blue moonlight with a tiny warm night lamp. A young anime girl with long dark hair sleeps peacefully in a cozy bed under a thick blanket next to a large window at night, rain sliding slowly down the glass, the full moon glowing behind thin clouds. Her chest rises and falls slowly, the curtains sway a little. Locked-off camera, very calm, seamless loop. Silent video, no audio, no music, no speech, no text."},
+    {"title": "Man asleep on the sofa", "prompt": "Anime style, warm dim lighting. A young anime man with messy dark hair sleeps peacefully on a soft sofa under a knitted blanket in a small cozy room at night, an open book resting on his chest, rain falling outside the window behind him, a small lamp glowing low. He breathes slowly, the rain shadows drift across the wall. Locked-off camera, quiet and safe, seamless loop. Silent video, no audio, no music, no speech, no text."},
+    {"title": "Moonlit rainy bedroom", "prompt": "Anime style, cool silver moonlight. A quiet anime bedroom at night seen from the doorway: a bed with a sleeping girl curled under a blanket, a cat sleeping at her feet, a big window with gentle rain and a bright moon, a string of tiny warm lights over the headboard. Only the rain, the lights and the cat's slow breathing move. Locked-off camera, peaceful, seamless loop. Silent video, no audio, no music, no speech, no text."},
+    {"title": "Man asleep in an attic room", "prompt": "Anime style, soft blue night light. A young anime man sleeps on his side in a small wooden attic room under a slanted skylight, rain drops running slowly across the skylight glass, moonlight falling on his blanket, a small plant and a few books on the floor. His breathing is slow and calm. Locked-off camera, cozy and safe, seamless loop. Silent video, no audio, no music, no speech, no text."},
+    {"title": "Rain on the window with a candle", "prompt": "Anime style, close-up. A rainy window at night in a cozy dark room, a small candle in a glass jar glowing softly on the windowsill, raindrops sliding slowly down the glass, blurred city lights far away, the flame flickering gently. Very slow and soothing, locked-off camera, seamless loop. Silent video, no audio, no music, no speech, no text, no people."},
+    {"title": "Girl falling asleep with headphones", "prompt": "Anime style, warm lamp light and blue night outside. A young anime girl lies on her bed wearing soft headphones, eyes slowly closing, a soft pillow and a plush toy beside her, rain falling past the window behind her, a bedside lamp glowing low. She drifts to sleep, breathing slowly. Locked-off camera, calm and safe, seamless loop. Silent video, no audio, no music, no speech, no text."}
+  ],
+  "titles": [
+    "Close Your Eyes, You're Safe Now 🌙 Deep SLEEP Music with Soft Rain, 3 Hours",
+    "Fall Asleep in Minutes 😴 Rain and Soft Humming for ANXIETY at Night",
+    "You're Safe Now, Rest 🌧️ 3 Hours of Calm SLEEP Music"
+  ],
+  "description": "Close your eyes. You're safe now.\nThree hours of soft rain, slow piano and a quiet humming voice, made for the nights your mind won't let you rest.\n\nMusic created with AI (ElevenLabs) and arranged for this channel. Visuals created with Google Flow.\n\n#sleepmusic #rainsounds #deepsleep",
+  "tags": ["sleep music", "deep sleep music", "fall asleep fast", "sleep music for anxiety", "rain sounds for sleeping", "3 hours sleep music", "calm music", "anime sleep", "relaxing music", "insomnia music", "soft rain", "lullaby for adults"],
+  "thumbnail_prompts": [
+    {"text": "YOU'RE SAFE NOW", "prompt": "Wide 16:9 anime illustration of a young girl sleeping peacefully in a cozy bed by a rainy window under a full moon, soft blue light, a tiny warm lamp; the words YOU'RE SAFE NOW in large soft white rounded capitals with a gentle glow in the upper left, spelled exactly."},
+    {"text": "CLOSE YOUR EYES", "prompt": "Wide 16:9 anime illustration of a cozy dark bedroom with a girl and a sleeping cat under a blanket, rain on a big window, moonlight; the words CLOSE YOUR EYES in large soft white rounded capitals with a subtle shadow, upper third, spelled exactly."},
+    {"text": "3 HOURS", "prompt": "Wide 16:9 anime illustration of a young man asleep in a small attic room under a rainy skylight with moonlight on his blanket; the words 3 HOURS in huge soft yellow-white rounded capitals with a gentle glow, upper third, spelled exactly."}
+  ]
+}

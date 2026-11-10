@@ -1,0 +1,13 @@
+<div id="scenes" class="card flat">
+  {% for scene in project.scenes.all %}
+    {% include "videos/partials/scene_row.html" %}
+  {% empty %}
+    <div class="empty-state">
+      <p>Hali sahna yo'q.</p>
+      <small>Ssenariy yaratilganda sahnalar avtomatik paydo bo'ladi (2-bosqich). Hozir ularni qo'lda ham qo'shishingiz mumkin.</small>
+    </div>
+  {% endfor %}
+  <div class="adder">
+    <button class="btn sm" hx-post="{% url 'videos:scene_add' project.pk %}" hx-target="#scenes" hx-swap="outerHTML">+ Sahna qo'shish</button>
+  </div>
+</div>

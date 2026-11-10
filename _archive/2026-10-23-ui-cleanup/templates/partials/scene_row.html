@@ -1,0 +1,48 @@
+<div class="scene{% if saved %} saved{% endif %}" id="scene-{{ scene.pk }}">
+  <div class="num">{{ scene.order }}</div>
+  <div class="thumb">
+    {% if scene.image %}<img src="{{ scene.image.url }}?v={{ scene.clip_hash|default:scene.pk }}" alt="" loading="lazy">
+    {% else %}rasm yo'q{% endif %}
+  </div>
+  <div class="body">
+    <div class="text{% if not scene.narration %} empty{% endif %}">{{ scene.narration|default:"Matn yozilmagan" }}</div>
+    {% if scene.image_prompt %}<div class="prompt">🖼 {{ scene.image_prompt|truncatechars:160 }}</div>{% endif %}
+    <div class="chips">
+      <span class="pill {{ scene.beat_type }}">{{ scene.get_beat_type_display }}</span>
+      {% if scene.image_prompt %}<span class="pill">{% if scene.shows_hero %}🧍 Qahramon{% else %}📜 Fakt{% endif %}</span>{% endif %}
+      <span class="pill" title="His-tuyg'u, kuchi {{ scene.intensity }}/3">{{ scene.get_emotion_display }}{% if scene.intensity == 3 %} ↑{% elif scene.intensity == 1 %} ↓{% endif %}</span>
+      {% if scene.pace != 'normal' %}<span class="pill">⏱ {{ scene.get_pace_display }}</span>{% endif %}
+      {% if scene.pause_after_ms %}<span class="pill">⏸ {{ scene.pause_after_ms }} ms</span>{% endif %}
+      {% if scene.camera_move %}<span class="pill">🎥 {{ scene.get_camera_move_display }}</span>{% endif %}
+      {% if scene.transition_in %}<span class="pill">↪ {{ scene.transition_in }}</span>{% endif %}
+      {% if scene.music_cue != 'continue' %}<span class="pill">🎵 {{ scene.get_music_cue_display }}</span>{% endif %}
+      {% for fx in scene.sfx %}<span class="pill" title="{{ fx.offset_ms }} ms, {{ fx.gain_db }} dB">🔊 {{ fx.tag }}{% if fx.offset_ms %} @{{ fx.offset_ms }}ms{% endif %}</span>{% endfor %}
+      {% if scene.fact_source %}<span class="pill" title="{{ scene.fact_source }}">📚 manba</span>{% endif %}
+      {% if scene.on_screen_text %}<span class="pill">🅰 «{{ scene.on_screen_text }}»</span>{% endif %}
+      {% if scene.image_locked %}<span class="pill">o'z rasmingiz</span>{% endif %}
+      {% if scene.audio_duration %}<span class="pill">{{ scene.audio_duration|floatformat:1 }} s</span>{% endif %}
+      {% if scene.status == 'failed' %}<span class="pill failed">xato</span>{% endif %}
+    </div>
+    {% if scene.audio %}<audio controls preload="none" src="{{ scene.audio.url }}" style="margin-top:8px;max-width:320px;height:30px"></audio>{% endif %}
+    {% if scene.status == 'failed' and scene.error_message %}<div class="prompt" style="color:var(--err)">{{ scene.error_message }}</div>{% elif scene.error_message %}<div class="prompt" style="color:var(--warn,#b7791f)">⚠️ {{ scene.error_message }}</div>{% endif %}
+  </div>
+  <div class="actions">
+    <button class="btn sm" hx-get="{% url 'videos:scene_edit' scene.pk %}" hx-target="#scene-{{ scene.pk }}" hx-swap="outerHTML">Tahrirlash</button>
+    {% if scene.narration %}
+    <form method="post" action="{% url 'videos:scene_voice_generate' scene.pk %}" class="inline">
+      {% csrf_token %}<button class="btn ghost sm" title="Ovozni (qayta) yaratish">🔊 {% if scene.audio %}Qayta ovoz{% else %}Ovoz{% endif %}</button>
+    </form>
+    {% endif %}
+    {% if scene.image_prompt and not scene.image_locked %}
+    <form method="post" action="{% url 'videos:scene_image_generate' scene.pk %}" class="inline">
+      {% csrf_token %}<button class="btn ghost sm" title="AI bilan rasm chizish">{% if scene.image %}↻ Qayta chizish{% else %}🎨 Rasm chizish{% endif %}</button>
+    </form>
+    {% endif %}
+    <div class="row" style="gap:0">
+      <button class="btn ghost sm" title="Yuqoriga" hx-post="{% url 'videos:scene_move' scene.pk 'up' %}" hx-target="#scenes" hx-swap="outerHTML">↑</button>
+      <button class="btn ghost sm" title="Pastga" hx-post="{% url 'videos:scene_move' scene.pk 'down' %}" hx-target="#scenes" hx-swap="outerHTML">↓</button>
+      <button class="btn ghost sm" title="Keyin sahna qo'shish" hx-post="{% url 'videos:scene_add' scene.project_id %}" hx-vals='{"after": "{{ scene.order }}"}' hx-target="#scenes" hx-swap="outerHTML">+</button>
+      <button class="btn ghost sm danger" title="O'chirish" hx-post="{% url 'videos:scene_delete' scene.pk %}" hx-confirm="{{ scene.order }}-sahna o'chirilsinmi?" hx-target="#scenes" hx-swap="outerHTML">✕</button>
+    </div>
+  </div>
+</div>
